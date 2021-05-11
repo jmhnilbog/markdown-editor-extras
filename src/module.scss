@@ -1,0 +1,26 @@
+.chat-message,
+.editor {
+  .creature {
+    border: 1em solid green;
+  }
+  .danger {
+    border: 1em solid red;
+  }
+  .readaloud {
+    border: 1em solid black;
+  }
+  .trap {
+    border: 1em solid blue;
+  }
+
+  .unknown {
+    border: 1em solid black;
+  }
+  .aside {
+    width: 50%;
+    float: left;
+  }
+  .inside {
+    float: right;
+  }
+}

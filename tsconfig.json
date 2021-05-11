@@ -2,13 +2,13 @@
   "compilerOptions": {
     "target": "es2018",
     "module": "esnext",
-    "lib": [ "es2015", "es2019", "dom" ],
-    "types": [ "@league-of-foundry-developers/foundry-vtt-types", "webpack-env" ],
+    "lib": ["es2015", "es2019", "dom"],
+    "types": ["@league-of-foundry-developers/foundry-vtt-types", "webpack-env"],
     "moduleResolution": "node",
     "sourceMap": true,
     "strict": true,
     "allowJs": true,
-
+    "allowSyntheticDefaultImports": true,
     //TODO: enable again
     "noImplicitAny": false /* Raise error on expressions and declarations with an implied 'any' type. */,
     "strictNullChecks": true /* Enable strict null checks. */,
@@ -26,5 +26,5 @@
 
     "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
   },
-  "exclude": [ "node_modules", "webpack.config.js" ]
+  "exclude": ["node_modules", "webpack.config.js", "dist"]
 }
