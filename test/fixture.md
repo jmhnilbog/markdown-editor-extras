@@ -4,55 +4,44 @@
 	}
 </style>
 
-::: custom-style
+We're outside of the editor, so this is mostly unstyled.
+
+::: editor
+
+We're in `.editor`.
+
+:::: custom-style
 This should be bold, because of markdown-it-container.
-:::
+::::
 
 And this should be, because of markdown-it-attrs. {.custom-style}
 
 Everything else in here is from the css present in this module's styles.
 
 # h1
-
 ## h2
-
 ### h3
-
 #### h4
-
 ##### h5
-
 ###### h6
 
-::: fake-section
-
-# h1
-
-## h2
-
-### h3
-
-#### h4
-
-##### h5
-
-###### h6
-
-:::
+:::: aside
+Well check this out! it's an aside!
+::::
 
 # Header {.red}
 
-::: any-class
+:::: any-class
 I've got some stuff in any-class.
-:::
+::::
 
-::: withV
+:::: withV
 Uh....
-:::
+::::
 
-::: red
+:::: red
 What?
-:::
+::::
 
 Term 1
 
@@ -75,16 +64,4 @@ Here is an inline note.^[Inlines notes are easier to write, since
 you don't have to pick an identifier and move down to type the
 note.]
 
-::: red
-I'm in the block
 :::
-
-I'm out.
-
-:::: aside
-
-::: hidden
-This stuff is only conditionally revealed.
-:::
-
-::::

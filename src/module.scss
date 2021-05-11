@@ -1,8 +1,41 @@
 .chat-message,
 .editor {
+  %callout {
+    border: 1px solid red;
+    width: 50%;
+    float: left;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    &::after {
+      clear: both;
+    }
+  }
+
+  .aside {
+    @extend %callout;
+  }
+
+  .obvious {
+    font-weight: bold;
+  }
+
+  .hidden {
+    font-style: italic;
+  }
+
   .creature {
     border: 1em solid green;
+
+    dl {
+      margin-left: 1em;
+    }
   }
+
   .danger {
     border: 1em solid red;
   }
@@ -12,15 +45,11 @@
   .trap {
     border: 1em solid blue;
   }
+  .treasure {
+    border: 1em solid blue;
+  }
 
   .unknown {
     border: 1em solid black;
-  }
-  .aside {
-    width: 50%;
-    float: left;
-  }
-  .inside {
-    float: right;
   }
 }
