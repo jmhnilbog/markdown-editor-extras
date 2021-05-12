@@ -43,20 +43,5 @@
     "webpack-dev-server": "^3.11.2",
     "webpack-import-glob-loader": "^1.6.3"
   },
-  "dependencies": {
-    "markdown-it-attrs": "^4.0.0",
-    "markdown-it-checkbox": "^1.1.0",
-    "markdown-it-container": "^3.0.0",
-    "markdown-it-deflist": "^2.1.0",
-    "markdown-it-emoji": "^2.0.0",
-    "markdown-it-footnote": "^3.0.2",
-    "markdown-it-html5-embed": "^1.0.0",
-    "markdown-it-kbd": "^2.2.2",
-    "markdown-it-mark": "^3.0.1",
-    "markdown-it-multimd-table": "^4.1.0",
-    "markdown-it-sub": "^1.0.0",
-    "markdown-it-sup": "^1.0.0",
-    "markdown-it-toc": "^1.1.0",
-    "markdown-it-underline": "^1.0.1"
-  }
+  "dependencies": {}
 }

@@ -18,6 +18,14 @@
     {
       "name": "markdown-editor",
       "manifest": "https://raw.githubusercontent.com/Moerill/fvtt-markdown-editor/master/module.json"
+    },
+    {
+      "name": "markdown-editor-extras",
+      "manifest": "https://raw.githubusercontent.com/jmhnilbog/markdown-editor-extras/main/module.json"
+    },
+    {
+      "name": "gm-notes",
+      "manifest": "https://raw.githubusercontent.com/syl3r86/gm-notes/master/module.json"
     }
   ],
   "conflicts": [],
@@ -46,6 +54,7 @@
       "label": "SotSS Items",
       "path": "packs/items.db",
       "entity": "Item",
+      "system": "dcc",
       "module": "sailors-on-the-starless-sea"
     },
     {
@@ -53,6 +62,7 @@
       "label": "SotSS Unique Items",
       "path": "packs/unique-items.db",
       "entity": "Item",
+      "system": "dcc",
       "module": "sailors-on-the-starless-sea"
     },
     {
@@ -60,6 +70,7 @@
       "label": "SotSS Creatures",
       "path": "packs/creatures.db",
       "entity": "Actor",
+      "system": "dcc",
       "module": "sailors-on-the-starless-sea"
     },
     {
@@ -67,6 +78,7 @@
       "label": "SotSS Unique Creatures",
       "path": "packs/unique-creatures.db",
       "entity": "Actor",
+      "system": "dcc",
       "module": "sailors-on-the-starless-sea"
     },
     {
@@ -74,6 +86,7 @@
       "label": "SotSS Scenes",
       "path": "packs/scenes.db",
       "entity": "Scene",
+      "system": "dcc",
       "module": "sailors-on-the-starless-sea"
     },
     {
@@ -81,6 +94,7 @@
       "label": "SotSS Playlists",
       "path": "packs/playlists.db",
       "entity": "Playlist",
+      "system": "dcc",
       "module": "sailors-on-the-starless-sea"
     },
     {
@@ -88,6 +102,7 @@
       "label": "SotSS Rolltables",
       "path": "packs/rolltables.db",
       "entity": "RollTable",
+      "system": "dcc",
       "module": "sailors-on-the-starless-sea"
     },
     {
@@ -95,6 +110,7 @@
       "label": "SotSS Macros",
       "path": "packs/macros.db",
       "entity": "Macro",
+      "system": "dcc",
       "module": "sailors-on-the-starless-sea"
     },
     {
@@ -102,6 +118,7 @@
       "label": "SotSS Journals",
       "path": "packs/journals.db",
       "entity": "JournalEntry",
+      "system": "dcc",
       "module": "sailors-on-the-starless-sea"
     }
   ]
