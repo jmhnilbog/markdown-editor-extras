@@ -1,5 +1,3 @@
-import "./module.scss";
-
 import { TemplatePreloader } from "./module/helper/TemplatePreloader";
 
 import * as markdownItAttrs from "markdown-it-attrs";
@@ -14,9 +12,18 @@ import * as markdownItMark from "markdown-it-mark";
 import * as markdownItMultimdTable from "markdown-it-multimd-table";
 import * as markdownItSub from "markdown-it-sub";
 import * as markdownItSup from "markdown-it-sup";
-import * as markdownItToc from "markdown-it-toc";
+// import * as markdownItToc from "markdown-it-toc";
 import * as markdownItUnderline from "markdown-it-underline";
+import MarkdownIt from "markdown-it";
 
+Hooks.once("MemeActivateEditor", async (options: MarkdownIt.Options) => {
+  options.typographer = true;
+  return options;
+});
+Hooks.once("MemeActivateChat", async (options: MarkdownIt.Options) => {
+  options.typographer = true;
+  return options;
+});
 Hooks.once("init", async () => {
   const { markdownIt } = window.MEME;
 
@@ -90,7 +97,8 @@ Hooks.once("init", async () => {
 
   markdownIt.use(markdownItSup);
 
-  markdownIt.use(markdownItToc);
+  // TODO: see if there's a way to link directly to a journal
+  // markdownIt.use(markdownItToc);
 
   markdownIt.use(markdownItUnderline);
 

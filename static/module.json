@@ -1,6 +1,6 @@
 {
-  "name": "markdown-editor-extras",
-  "title": "Markdown-editor-extras",
+  "name": "sailors-on-the-starless-sea",
+  "title": "sailors-on-the-starless-sea",
   "description": "Blurg",
   "version": "This is auto replaced",
   "library": "false",
@@ -38,6 +38,71 @@
     {
       "type": "icon",
       "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
+    }
+  ],
+  "packs": [
+    {
+      "name": "items",
+      "label": "SotSS Items",
+      "path": "packs/items.db",
+      "entity": "Item",
+      "module": "sailors-on-the-starless-sea"
+    },
+    {
+      "name": "unique-items",
+      "label": "SotSS Unique Items",
+      "path": "packs/unique-items.db",
+      "entity": "Item",
+      "module": "sailors-on-the-starless-sea"
+    },
+    {
+      "name": "creatures",
+      "label": "SotSS Creatures",
+      "path": "packs/creatures.db",
+      "entity": "Actor",
+      "module": "sailors-on-the-starless-sea"
+    },
+    {
+      "name": "unique-creatures",
+      "label": "SotSS Unique Creatures",
+      "path": "packs/unique-creatures.db",
+      "entity": "Actor",
+      "module": "sailors-on-the-starless-sea"
+    },
+    {
+      "name": "scenes",
+      "label": "SotSS Scenes",
+      "path": "packs/scenes.db",
+      "entity": "Scene",
+      "module": "sailors-on-the-starless-sea"
+    },
+    {
+      "name": "playlists",
+      "label": "SotSS Playlists",
+      "path": "packs/playlists.db",
+      "entity": "Playlist",
+      "module": "sailors-on-the-starless-sea"
+    },
+    {
+      "name": "rollTables",
+      "label": "SotSS Rolltables",
+      "path": "packs/rolltables.db",
+      "entity": "RollTable",
+      "module": "sailors-on-the-starless-sea"
+    },
+    {
+      "name": "macros",
+      "label": "SotSS Macros",
+      "path": "packs/macros.db",
+      "entity": "Macro",
+      "module": "sailors-on-the-starless-sea"
+    },
+    {
+      "name": "journals",
+      "label": "SotSS Journals",
+      "path": "packs/journals.db",
+      "entity": "JournalEntry",
+      "module": "sailors-on-the-starless-sea"
     }
   ]
 }

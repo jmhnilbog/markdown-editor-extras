@@ -23,7 +23,7 @@ module.exports = (env) => {
   const isDevelopment = environment.mode === "development";
 
   const config = {
-    entry: "./src/markdown-editor-extras.ts",
+    entry: "./src/sailors-on-the-starless-sea.ts",
     watch: environment.watch,
     devtool: "inline-source-map",
     stats: "minimal",
