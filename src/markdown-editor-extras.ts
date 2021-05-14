@@ -1,100 +1,193 @@
-import "./module.scss";
+// import "./module.scss";
 
 import { TemplatePreloader } from "./module/helper/TemplatePreloader";
 
-import * as markdownItAttrs from "markdown-it-attrs";
-import * as markdownItCheckbox from "markdown-it-checkbox";
-import * as markdownItContainer from "markdown-it-container";
-import * as markdownItDeflist from "markdown-it-deflist";
-import * as markdownItEmoji from "markdown-it-emoji";
-import * as markdownItFootnote from "markdown-it-footnote";
-import * as markdownItHTML5Embed from "markdown-it-html5-embed";
-import markdownItKbd from "markdown-it-kbd";
-import * as markdownItMark from "markdown-it-mark";
-import * as markdownItMultimdTable from "markdown-it-multimd-table";
-import * as markdownItSub from "markdown-it-sub";
-import * as markdownItSup from "markdown-it-sup";
-import * as markdownItToc from "markdown-it-toc";
-import * as markdownItUnderline from "markdown-it-underline";
+import MarkdownIt from "markdown-it";
 
+import addExtras from "./addExtras";
+
+// Use pretty quotes
+Hooks.once("MemeActivateEditor", async (options: MarkdownIt.Options) => {
+  options.typographer = true;
+  return options;
+});
+Hooks.once("MemeActivateChat", async (options: MarkdownIt.Options) => {
+  options.typographer = true;
+  return options;
+});
 Hooks.once("init", async () => {
   const { markdownIt } = window.MEME;
 
-  // TODO: choose which plugins to include via settings
+  addExtras(markdownIt);
 
-  const attrsConfig = {
-    leftDelimiter: "{",
-    rightDelimiter: "}",
-    allowedAttributes: ["class", "id", /^(?!on).*$/gim],
-  };
+  // // TODO: choose which plugins to include via settings
 
-  markdownIt.use(markdownItAttrs, attrsConfig);
+  // const attrsConfig = {
+  //   leftDelimiter: "{",
+  //   rightDelimiter: "}",
+  //   allowedAttributes: ["class", "id", /^(?!on).*$/gim],
+  // };
 
-  // change the rule applied to write a custom name attr on headers in MEME
-  markdownIt.renderer.rules["heading_open"] = (
-    tokens,
-    idx,
-    options,
-    _env,
-    self
-  ) => {
-    const token = tokens[idx];
-    const nextToken = tokens[idx + 1];
-    const link = nextToken?.content || "";
+  // markdownIt.use(markdownItAttrs, attrsConfig);
 
-    token.attrSet("name", `${token.markup}${link}`);
+  // // change the rule applied to write a custom name attr on headers in MEME
+  // // markdownIt.renderer.rules["heading_open"] = (
+  // //   tokens,
+  // //   idx,
+  // //   options,
+  // //   _env,
+  // //   self
+  // // ) => {
+  // //   const token = tokens[idx];
+  // //   const nextToken = tokens[idx + 1];
+  // //   const link = nextToken?.content || "";
 
-    return self.renderToken(tokens, idx, options);
-  };
+  // //   token.attrSet("name", `${token.markup}${link}`);
 
-  markdownIt.use(markdownItCheckbox, {
-    divWrap: true,
-    divClass: "cb",
-    idPrefix: "cbx_",
-  });
+  // //   return self.renderToken(tokens, idx, options);
+  // // };
 
-  markdownIt.use(markdownItContainer, "sensory-info", {});
-  markdownIt.use(markdownItContainer, "hidden", {});
-  markdownIt.use(markdownItContainer, "danger", {});
-  markdownIt.use(markdownItContainer, "trap", {});
-  markdownIt.use(markdownItContainer, "creature", {});
+  // let firstHeader = true;
 
-  // give any other containers an 'unknown' class
-  markdownIt.use(markdownItContainer, "unknown", {
-    validate: (_params) => {
-      return true;
-    },
-  });
+  // // change the rule applied to write a custom name attr on headers in MEME
+  // // AND...allow easy folding
+  // markdownIt.renderer.rules["heading_open"] = (
+  //   tokens,
+  //   idx,
+  //   options,
+  //   _env,
+  //   self
+  // ) => {
+  //   const token = tokens[idx];
+  //   const nextToken = tokens[idx + 1];
+  //   const link = nextToken?.content || "";
 
-  markdownIt.use(markdownItDeflist);
+  //   token.attrSet("name", `${token.markup}${link}`);
 
-  markdownIt.use(markdownItEmoji);
+  //   const headerOpen = self.renderToken(tokens, idx, options);
 
-  markdownIt.use(markdownItFootnote);
+  //   let wrapped = `<details open="1"><summary>${headerOpen}`;
 
-  markdownIt.use(markdownItHTML5Embed, {
-    html5embed: {
-      useImageSyntax: true, // Enables video/audio embed with ![]() syntax (default)
-      useLinkSyntax: true, // Enables video/audio embed with []() syntax
-    },
-  });
+  //   if (firstHeader) {
+  //     firstHeader = false;
+  //   } else {
+  //     wrapped = `</details>${wrapped}`;
+  //   }
 
-  // TODO: check TS error
-  markdownIt.use(markdownItKbd);
+  //   console.log("TOKEN:", wrapped);
 
-  markdownIt.use(markdownItMark);
+  //   return wrapped;
+  // };
 
-  markdownIt.use(markdownItMultimdTable);
+  // markdownIt.renderer.rules["heading_close"] = (
+  //   tokens,
+  //   idx,
+  //   options,
+  //   _env,
+  //   self
+  // ) => {
+  //   const headerClose = self.renderToken(tokens, idx, options);
 
-  markdownIt.use(markdownItSub);
+  //   return `${headerClose}</summary>`;
+  // };
 
-  markdownIt.use(markdownItSup);
+  // markdownIt.use(markdownItCheckbox, {
+  //   divWrap: true,
+  //   divClass: "cb",
+  //   idPrefix: "cbx_",
+  // });
 
-  markdownIt.use(markdownItToc);
+  // markdownIt.use(markdownItContainer, "fold-closed", {
+  //   validate: (params) => {
+  //     return params.trim().match(/^fold-closed\s+(.*)$/);
+  //   },
 
-  markdownIt.use(markdownItUnderline);
+  //   render: (tokens, idx) => {
+  //     const m = tokens[idx].info.trim().match(/^fold-closed\s+(.*)$/);
 
-  console.log("INIT markdownit extras wATTRS!", markdownIt);
+  //     if (tokens[idx].nesting === 1) {
+  //       return (
+  //         "<details><summary>" +
+  //         markdownIt.utils.escapeHtml(m[1]) +
+  //         "</summary>\n"
+  //       );
+  //     } else {
+  //       // closing tag
+  //       return "</details>\n";
+  //     }
+  //   },
+  // });
+
+  // markdownIt.use(markdownItContainer, "fold", {
+  //   validate: (params) => {
+  //     return params.trim().match(/^fold\s+(.*)$/);
+  //   },
+
+  //   render: (tokens, idx) => {
+  //     const m = tokens[idx].info.trim().match(/^fold\s+(.*)$/);
+
+  //     if (tokens[idx].nesting === 1) {
+  //       return (
+  //         "<details open='1'><summary>" +
+  //         markdownIt.utils.escapeHtml(m[1]) +
+  //         "</summary>\n"
+  //       );
+  //     } else {
+  //       // closing tag
+  //       return "</details>\n";
+  //     }
+  //   },
+  // });
+
+  // markdownIt.use(markdownItContainer, "any-class", {
+  //   validate: () => true,
+
+  //   render: (tokens, idx, options, _env, self) => {
+  //     const m = tokens[idx].info.trim().match(/^(.*)$/);
+
+  //     tokens[idx].attrPush(["class", m[1]]);
+
+  //     return self.renderToken(tokens, idx, options);
+  //   },
+  // });
+
+  // // // give any other containers an 'unknown' class
+  // // markdownIt.use(markdownItContainer, "unknown", {
+  // //   validate: (_params) => {
+  // //     return true;
+  // //   },
+  // // });
+
+  // markdownIt.use(markdownItDeflist);
+
+  // markdownIt.use(markdownItEmoji);
+
+  // markdownIt.use(markdownItFootnote);
+
+  // markdownIt.use(markdownItHTML5Embed, {
+  //   html5embed: {
+  //     useImageSyntax: true, // Enables video/audio embed with ![]() syntax (default)
+  //     useLinkSyntax: true, // Enables video/audio embed with []() syntax
+  //   },
+  // });
+
+  // // TODO: check TS error
+  // markdownIt.use(markdownItKbd);
+
+  // markdownIt.use(markdownItMark);
+
+  // markdownIt.use(markdownItMultimdTable);
+
+  // markdownIt.use(markdownItSub);
+
+  // markdownIt.use(markdownItSup);
+
+  // // TODO: see if there's a way to link directly to a journal
+  // // markdownIt.use(markdownItToc);
+
+  // markdownIt.use(markdownItUnderline);
+
+  // console.log("INIT markdownit extras wATTRS!", markdownIt);
 });
 
 Hooks.once("MemeRenderEditor", async (a, b) => {
