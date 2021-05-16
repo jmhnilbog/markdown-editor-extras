@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="./other-styles/style.css" />
+    <link rel="stylesheet" href="./other-styles/all.min.css" />
+    <link rel="stylesheet" href="./other-styles/dcc.css" />
+    <link rel="stylesheet" href="./other-styles/markdown-editor.css" />
+    <link rel="stylesheet" href="../dist/styles/module.css" />
+    <link rel="stylesheet" href="../dist/styles/style.css" />
+  </head>
+  <body>
+    <div class="editor" data-owner="1"><p>&lt;style&gt;
+.custom-style {
+font-weight: 700;
+}
+&lt;/style&gt;</p>
+<p>We’re outside of the editor, so this is mostly unstyled.</p>
+<div class="editor">
+<p>We’re in <code>.editor</code>.</p>
+<div class="custom-style">
+<p>This should be bold, because of markdown-it-container.</p>
+</div>
+</div>
+<p class="custom-style">And this should be, because of markdown-it-attrs.</p>
+<p>Everything else in here is from the css present in this module’s styles.</p>
+<details open="1"><summary><h1 name="#h1">h1</h1>
+</details><details open="1"><summary><h2 name="##h2">h2</h2>
+</details><details open="1"><summary><h3 name="###h3">h3</h3>
+</details><details open="1"><summary><h4 name="####h4">h4</h4>
+</details><details open="1"><summary><h5 name="#####h5">h5</h5>
+</details><details open="1"><summary><h6 name="######h6">h6</h6>
+</details><div class="aside">
+<p>Well check this out! it’s an aside!</p>
+</div>
+<details open="1"><summary><h1 class="red" name="#Header {.red}">Header</h1>
+</details><div class="any-class">
+<p>I’ve got some stuff in any-class.</p>
+</div>
+<div class="withV">
+<p>Uh…</p>
+</div>
+<div class="red">
+<p>What?</p>
+</div>
+<dl>
+<dt>Term 1</dt>
+<dd>Definition 1</dd>
+<dt>beefy</dt>
+<dd>This might be a racist term</dd>
+</dl>
+<p>Here is a footnote reference,[^1] and another.[^longnote]</p>
+<p>[^1]: Here is the footnote.</p>
+<p>[^longnote]: Here’s one with multiple blocks.</p>
+<pre><code>Subsequent paragraphs are indented to show that they
+</code></pre>
+<p>belong to the previous footnote.</p>
+<p>Here is an inline note.^[Inlines notes are easier to write, since
+you don’t have to pick an identifier and move down to type the
+note.]</p>
+<div class=""></div>
+    </div>
+  </body>
+</html>

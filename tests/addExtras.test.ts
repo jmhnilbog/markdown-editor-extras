@@ -33,29 +33,23 @@ export class ExtrasTest {
     const ex = addExtras(this.md);
 
     const testFiles = [
-      "chat",
+      // "chat",
       "creature",
-      "fixture",
+      // "fixture",
       "item",
       "location",
-      "scene",
-      "trap",
+      // "scene",
+      // "trap",
     ];
 
-    fs.readFile("./tests/creature.md", "utf-8", (err, data) => {
-      if (err) {
-        throw err;
-      }
-      console.log(data);
+    testFiles.forEach((f) => {
+      const markdown = fs.readFileSync(`./tests/${f}.md`).toString();
+
+      const rendered = ex.render(markdown.toString());
+      const wrapped = `${this.prefix}${rendered}${this.suffix}`;
+      fs.writeFileSync(`./samples/${f}.html`, wrapped);
     });
 
-    const creatureMarkdown = fs.readFileSync("./tests/creature.md").toString();
-    // console.log("Loaded:");
-    // console.log(creatureMarkdown);
-    const rendered = ex.render(creatureMarkdown.toString());
-    // console.log(rendered);
-    const wrapped = `${this.prefix}${rendered}${this.suffix}`;
-    fs.writeFileSync("./samples/creature.html", wrapped);
     return true;
   }
 }

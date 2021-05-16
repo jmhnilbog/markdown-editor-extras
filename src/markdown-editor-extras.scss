@@ -1,106 +1,22 @@
 .chat-message,
 .editor {
-  // This should be the 'hero' image.
-  img:first-child {
-    width: 40%;
-    float: left;
-    margin-right: 1em;
-    margin-bottom: 1em;
+  .location {
+    background-color: rgba(100, 100, 100, 0.5);
   }
 
-  /* open/close each header */
-  summary {
-    list-style: none;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      display: inline-block;
-    }
-  }
-  summary::-webkit-details-marker {
-    display: none;
-  }
-  details summary::before {
-    color: red;
-    content: "➤";
-  }
-
-  /* By using [open] we can define different styles when the disclosure widget is open */
-  details[open] summary::before {
-    content: "▼";
-    color: red;
-  }
-
-  /*
-    Read-aloud text is within a block given the read-aloud class.
-    If reading certain sections of the text is conditional, it should be formatted as
-    as dictionary list.
-    */
-  .read-aloud > * {
-    margin-bottom: 1em;
+  .creature {
+    background-color: rgba(0, 0, 100, 0.7);
   }
 
   .read-aloud {
-    width: 100%;
-    margin: 0 auto;
-    font-size: 1.1em;
-    font-family: "Georgia";
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 1em;
-    list-style-type: none;
+    background-color: rgba(0, 0, 100, 0.5);
   }
 
-  .read-aloud > p::before {
-    content: "“";
+  .hazard {
+    background-color: rgba(0, 0, 100, 0.3);
   }
 
-  .read-aloud > p:last-of-type:after {
-    content: "”";
-  }
-
-  /*
-    General features about an area are presented as an unordered list given the features class.
-    */
-
-  h2.features {
-    display: none;
-  }
-
-  .features {
-    list-style-type: none;
-    margin: 1em auto 0 auto;
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .features > * {
-    margin: 0;
-    margin-bottom: 1em;
-    padding: 0;
-  }
-
-  /*
-    Information dependent on timing is presented in a definition list.
-    */
-
-  h2.time-dependent {
-    display: none;
-  }
-
-  .time-dependent {
-    margin: 1em auto 0 auto;
-    padding: 1em;
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-
-  .time-dependent > dt {
-    font-weight: bold;
-  }
-
-  .time-dependent > dd {
-    margin-bottom: 1em;
+  .impression {
+    background-color: rgba(0, 0, 100, 0.3);
   }
 }
