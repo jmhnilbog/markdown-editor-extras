@@ -4,7 +4,7 @@ import markdownItContainer from "markdown-it-container";
 import markdownItDeflist from "markdown-it-deflist";
 import markdownItEmoji from "markdown-it-emoji";
 // import * as markdownItFootnote from "markdown-it-footnote";
-import markdownItHTML5Embed from "markdown-it-html5-embed";
+// import markdownItHTML5Embed from "markdown-it-html5-embed";
 // import markdownItKbd from "markdown-it-kbd";
 import markdownItMark from "markdown-it-mark";
 import markdownItMultimdTable from "markdown-it-multimd-table";
@@ -50,7 +50,7 @@ export const addExtras = (md: MarkdownIt) => {
 
   md.use(markdownItEmoji);
 
-  md.use(markdownItHTML5Embed);
+  // md.use(markdownItHTML5Embed);
 
   md.use(markdownItMark);
 
