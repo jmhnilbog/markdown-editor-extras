@@ -65,3 +65,4 @@ The Judge may wish to ask players if any of the characters are blacksmiths, or o
 The horrors’ true nature becomes apparent when the characters approach. The vines unwind from the posts, freeing the horrors to shamble toward the PCs.
 
 Keary’s corpse is still carrying a **short sword** and **dagger** (gifts forged by his father), and Alban’s corpse has **5 cp** hidden in its right boot.
+

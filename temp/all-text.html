@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Sailors on the Starless Sea</title>
+        <style>
+/* From extension i-cellmobilsoft.vscode-markdown-it-container */
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* From extension jebbs.markdown-extended */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAfIAAsAAAAADDAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFZW7kosY21hcAAAAYAAAADTAAACjtP6ytBnbHlmAAACVAAAAxgAAAQ4zRtvlGhlYWQAAAVsAAAALwAAADYRwZsnaGhlYQAABZwAAAAcAAAAJAeKAzxobXR4AAAFuAAAABIAAAA8OGQAAGxvY2EAAAXMAAAAIAAAACAG5AfwbWF4cAAABewAAAAfAAAAIAEfAERuYW1lAAAGDAAAAVcAAAKFkAhoC3Bvc3QAAAdkAAAAYgAAAK2vz7wkeJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkPsQ4gYGVgYOpk+kMAwNDP4RmfM1gxMjBwMDEwMrMgBUEpLmmMDgwVLy4xKzzX4chhrmK4QpQmBEkBwAZygyweJzFkr0NwjAQhZ+TEP6CRUfHBEwRUWaQTICyQbpMwRCskA5RUIONxG0RnnNpKAIV4qzPku/8c353ACYAYrIjCWCuMAh2ptf0/hiL3p/gyPUWa3osqlt0L1zu9r71z8dGrJRykFoauXQd932Lj5vhG+MjxGeYI8MKETObMpslf5EyP8tg+vHun5r539PvlvXzaVhRFVQDTPEWKVQR90KhnnC5Ek67vUKN4VuFasM/ldARj43CCkCsEjpJSoVVgRyU0GVSK6wUpFFCx8lFgX0BiXpRPQB4nE2TTWjcRhTH3xttpDhxN7uxPlp3u/FK7moRPixafRijNosxSw/LUsIwNcaEHPZggo/FmEKMCKWU4kNOOftQSlhE8alnH0Ix9BqWnHooPRrTQ0+mnu2bXTu2pPdGM9LM/6c3fwECTM4gBBMYQNqxzLrZAjqYSlqu2TAHZQA0/DQJH6FtzqGDnvbt4Ggwvzw/nL8EfH8kW0fsuRqhgWXZnY7M1picaUL7Du5BHeDzMIl83dAt016wH1qmvtSMo5R6YRJHTR//FXsff/nj/tc/5K9P5d+nP22+fFK5u7v3K39SW3y+OtDKO3L85vD09PD9z5X17a2N1g4tqk01RlqX7gyoEmnsWQtVr4rtZMmukEaFBZxzefkCn11cyKMLZgshRwgTYNoLNXCBz2ja7HvZG7hDpPSNfoo5vs0knK/9hb+rNpu+8kHPgk/Ao4kK3tWtTpSEtvkA9c+wE6UaUdwieNkaHg55tBEtRiEPw1s0+FtrtTcc9two2lhMknV7PZF/cs6+uUFTmpTGbEx7sQCPSLOttHS3GRltqp7SNzVSKzl6aWnZT/CX5k6/v9N3Hh8fHBwffJVjhrC6OgH5dkIt/tPsq+d/PD5Qz7G7efzq1THFjdZVPe/N6ulQ3JnDWSE5junsFsVIiFwL/htf1S5gJ3BfOcUxfHKLnzqpFpyfZ9cX+/5WB6a+Y0pHpzkNrYNVDwMsikK+y7WuLCRg/oFHkA8VT3rDg5ZnU6ktzzINymV0m74Xd5pfIGXyFeVEQSShkzqG7TBBa2OxVRKitLXv7h3uuftXnXq7lz2tZ/WnWa9dx9dCjDhHzmuVQATlmljr9dZErUydSo2Hbi/b1vXtrOeGCk2/8s3ZlO8+ueJT8BVlw5pGw2oYccdSiHHqx0RlabHqdNR9jAETl6PreJcPBnnfpTLnOQ8C3OV8AmQGzouV1iZdeb5SSIoVc8W8/kcDtksUH5FrU6/aqBqNWcMEzxG4DAQ14qRQhi9mWU0rzepKezbjfgCwQKxVYq5ajRgpRqy45CqwkJydcEkbTkvRz8P5/2ZpDTN4nGNgZGBgAOKb6v+/xvPbfGXgZmEAgeuB2kkI+v8bFgbmKiCXg4EJJAoAPyAKhQB4nGNgZGBg1vmvwxDDwgACQJKRARXwAwAzZQHQeJxjYQCCFAYGFgbSMQAcWACdAAAAAAAAAAwALgBgAIQAmADSAQgBIgE8AVABoAHeAfwCHHicY2BkYGDgZ7BgYGMAASYg5gJCBob/YD4DAA/hAWQAeJxlkbtuwkAURMc88gApQomUJoq0TdIQzEOpUDokKCNR0BuzBiO/tF6QSJcPyHflE9Klyyekz2CuG8cr7547M3d9JQO4xjccnJ57vid2cMHqxDWc40G4Tv1JuEF+Fm6ijRfhM+oz4Ra6eBVu4wZvvMFpXLIa40PYQQefwjVc4Uu4Tv1HuEH+FW7i1mkKn6Hj3Am3sHC6wm08Ou8tpSZGe1av1PKggjSxPd8zJtSGTuinyVGa6/Uu8kxZludCmzxMEzV0B6U004k25W35fj2yNlCBSWM1paujKFWZSbfat+7G2mzc7weiu34aczzFNYGBhgfLfcV6iQP3ACkSaj349AxXSN9IT0j16JepOb01doiKbNWt1ovippz6sVYYwsXgX2rGVFIkq7Pl2PNrI6qW6eOshj0xaSq9mpNEZIWs8LZUfOouNkVXxp/d5woqebeYIf4D2J1ywQB4nG3LOw6AIBAE0B384B+PAkgEa+QwNnYmHt+EpXSal5lkSBBnoP8oCFSo0aCFRIceA0ZMmLFAYSW88rmvtMUjG3RiQ9HvpfusM6zWNmtc5H/iPewha50tOt5PS/QBx2IeSwAA") format("woff");
+}
+
+.admonition {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  position: relative;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  border-left: .4rem solid rgba(68, 138, 255, .8);
+  border-radius: .2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  overflow: auto;
+}
+
+.admonition>p {
+  margin-top: .8rem;
+}
+
+.admonition>.admonition-title {
+  margin: 0 -1.2rem;
+  padding: .8rem 1.2rem .8rem 3.6rem;
+  border-bottom: 1px solid rgba(68, 138, 255, .2);
+  background-color: rgba(68, 138, 255, .1);
+  font-weight: 700;
+}
+
+.admonition>.admonition-title:before {
+  position: absolute;
+  left: 1.2rem;
+  font-size: 1.5rem;
+  color: rgba(68, 138, 255, .8);
+  content: "\E3C9";
+}
+
+.admonition>.admonition-title:before {
+  font-family: Material Icons;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  text-transform: none;
+  white-space: nowrap;
+  speak: none;
+  word-wrap: normal;
+  direction: ltr;
+}
+
+.admonition.summary,
+.admonition.abstract,
+.admonition.tldr {
+  border-left-color: rgba(0, 176, 255, .8);
+}
+
+.admonition.summary>.admonition-title,
+.admonition.abstract>.admonition-title,
+.admonition.tldr>.admonition-title {
+  background-color: rgba(0, 176, 255, .1);
+  border-bottom-color: rgba(0, 176, 255, .2);
+}
+
+.admonition.summary>.admonition-title:before,
+.admonition.abstract>.admonition-title:before,
+.admonition.tldr>.admonition-title:before {
+  color: rgba(0, 176, 255, 1);
+  ;
+  content: "\E8D2";
+}
+
+.admonition.hint,
+.admonition.tip {
+  border-left-color: rgba(0, 191, 165, .8);
+}
+
+.admonition.hint>.admonition-title,
+.admonition.tip>.admonition-title {
+  background-color: rgba(0, 191, 165, .1);
+  border-bottom-color: rgba(0, 191, 165, .2);
+}
+
+.admonition.hint>.admonition-title:before,
+.admonition.tip>.admonition-title:before {
+  color: rgba(0, 191, 165, 1);
+  content: "\E80E";
+}
+
+.admonition.info,
+.admonition.todo {
+  border-left-color: rgba(0, 184, 212, .8);
+}
+
+.admonition.info>.admonition-title,
+.admonition.todo>.admonition-title {
+  background-color: rgba(0, 184, 212, .1);
+  border-bottom-color: rgba(0, 184, 212, .2);
+}
+
+.admonition.info>.admonition-title:before,
+.admonition.todo>.admonition-title:before {
+  color: rgba(0, 184, 212, 1);
+  ;
+  content: "\E88E";
+}
+
+.admonition.success,
+.admonition.check,
+.admonition.done {
+  border-left-color: rgba(0, 200, 83, .8);
+}
+
+.admonition.success>.admonition-title,
+.admonition.check>.admonition-title,
+.admonition.done>.admonition-title {
+  background-color: rgba(0, 200, 83, .1);
+  border-bottom-color: rgba(0, 200, 83, .2);
+}
+
+.admonition.success>.admonition-title:before,
+.admonition.check>.admonition-title:before,
+.admonition.done>.admonition-title:before {
+  color: rgba(0, 200, 83, 1);
+  ;
+  content: "\E876";
+}
+
+.admonition.question,
+.admonition.help,
+.admonition.faq {
+  border-left-color: rgba(100, 221, 23, .8);
+}
+
+.admonition.question>.admonition-title,
+.admonition.help>.admonition-title,
+.admonition.faq>.admonition-title {
+  background-color: rgba(100, 221, 23, .1);
+  border-bottom-color: rgba(100, 221, 23, .2);
+}
+
+.admonition.question>.admonition-title:before,
+.admonition.help>.admonition-title:before,
+.admonition.faq>.admonition-title:before {
+  color: rgba(100, 221, 23, 1);
+  ;
+  content: "\E887";
+}
+
+.admonition.warning,
+.admonition.attention,
+.admonition.caution {
+  border-left-color: rgba(255, 145, 0, .8);
+}
+
+.admonition.warning>.admonition-title,
+.admonition.attention>.admonition-title,
+.admonition.caution>.admonition-title {
+  background-color: rgba(255, 145, 0, .1);
+  border-bottom-color: rgba(255, 145, 0, .2);
+}
+
+.admonition.attention>.admonition-title:before {
+  color: rgba(255, 145, 0, 1);
+  content: "\E417";
+}
+
+.admonition.warning>.admonition-title:before,
+.admonition.caution>.admonition-title:before {
+  color: rgba(255, 145, 0, 1);
+  content: "\E002";
+}
+
+.admonition.failure,
+.admonition.fail,
+.admonition.missing {
+  border-left-color: rgba(255, 82, 82, .8);
+}
+
+.admonition.failure>.admonition-title,
+.admonition.fail>.admonition-title,
+.admonition.missing>.admonition-title {
+  background-color: rgba(255, 82, 82, .1);
+  border-bottom-color: rgba(255, 82, 82, .2);
+}
+
+.admonition.failure>.admonition-title:before,
+.admonition.fail>.admonition-title:before,
+.admonition.missing>.admonition-title:before {
+  color: rgba(255, 82, 82, 1);
+  ;
+  content: "\E14C";
+}
+
+.admonition.danger,
+.admonition.error,
+.admonition.bug {
+  border-left-color: rgba(255, 23, 68, .8);
+}
+
+.admonition.danger>.admonition-title,
+.admonition.error>.admonition-title,
+.admonition.bug>.admonition-title {
+  background-color: rgba(255, 23, 68, .1);
+  border-bottom-color: rgba(255, 23, 68, .2);
+}
+
+.admonition.danger>.admonition-title:before {
+  color: rgba(255, 23, 68, 1);
+  content: "\E3E7";
+}
+
+.admonition.error>.admonition-title:before {
+  color: rgba(255, 23, 68, 1);
+  content: "\E14C";
+}
+
+.admonition.bug>.admonition-title:before {
+  color: rgba(255, 23, 68, 1);
+  content: "\E868";
+}
+
+.admonition.example,
+.admonition.snippet {
+  border-left-color: rgba(0, 184, 212, .8);
+}
+
+.admonition.example>.admonition-title,
+.admonition.snippet>.admonition-title {
+  background-color: rgba(0, 184, 212, .1);
+  border-bottom-color: rgba(0, 184, 212, .2);
+}
+
+.admonition.example>.admonition-title:before,
+.admonition.snippet>.admonition-title:before {
+  color: rgba(0, 184, 212, 1);
+  ;
+  content: "\E242";
+}
+
+.admonition.quote,
+.admonition.cite {
+  border-left-color: rgba(158, 158, 158, .8);
+}
+
+.admonition.quote>.admonition-title,
+.admonition.cite>.admonition-title {
+  background-color: rgba(158, 158, 158, .1);
+  border-bottom-color: rgba(158, 158, 158, .2);
+}
+
+.admonition.quote>.admonition-title:before,
+.admonition.cite>.admonition-title:before {
+  color: rgba(158, 158, 158, 1);
+  ;
+  content: "\E244";
+}
+.vscode-light kbd,
+.vscode-dark kbd,
+.vscode-high-contrast kbd {
+  display: inline-block;
+  padding: 3px 5px;
+  font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  line-height: 10px;
+  vertical-align: middle;
+  border: solid 1px #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.vscode-light kbd {
+  color: #444d56;
+  background-color: #fafbfc;
+}
+/* From extension phoihos.markdown-markmap */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-size: 1em;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.token.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #9a6e3a;
+	/* This background color was intended by the author of this theme. */
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function,
+.token.class-name {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+@font-face{font-family:KaTeX_AMS;src:url(fonts/KaTeX_AMS-Regular.woff2) format("woff2"),url(fonts/KaTeX_AMS-Regular.woff) format("woff"),url(fonts/KaTeX_AMS-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Bold.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Bold.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Caligraphic;src:url(fonts/KaTeX_Caligraphic-Regular.woff2) format("woff2"),url(fonts/KaTeX_Caligraphic-Regular.woff) format("woff"),url(fonts/KaTeX_Caligraphic-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Bold.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Bold.woff) format("woff"),url(fonts/KaTeX_Fraktur-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Fraktur;src:url(fonts/KaTeX_Fraktur-Regular.woff2) format("woff2"),url(fonts/KaTeX_Fraktur-Regular.woff) format("woff"),url(fonts/KaTeX_Fraktur-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Bold.woff2) format("woff2"),url(fonts/KaTeX_Main-Bold.woff) format("woff"),url(fonts/KaTeX_Main-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Main-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Main-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Italic.woff2) format("woff2"),url(fonts/KaTeX_Main-Italic.woff) format("woff"),url(fonts/KaTeX_Main-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:KaTeX_Main;src:url(fonts/KaTeX_Main-Regular.woff2) format("woff2"),url(fonts/KaTeX_Main-Regular.woff) format("woff"),url(fonts/KaTeX_Main-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-BoldItalic.woff2) format("woff2"),url(fonts/KaTeX_Math-BoldItalic.woff) format("woff"),url(fonts/KaTeX_Math-BoldItalic.ttf) format("truetype");font-weight:700;font-style:italic}@font-face{font-family:KaTeX_Math;src:url(fonts/KaTeX_Math-Italic.woff2) format("woff2"),url(fonts/KaTeX_Math-Italic.woff) format("woff"),url(fonts/KaTeX_Math-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Bold.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Bold.woff) format("woff"),url(fonts/KaTeX_SansSerif-Bold.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Italic.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Italic.woff) format("woff"),url(fonts/KaTeX_SansSerif-Italic.ttf) format("truetype");font-weight:400;font-style:italic}@font-face{font-family:"KaTeX_SansSerif";src:url(fonts/KaTeX_SansSerif-Regular.woff2) format("woff2"),url(fonts/KaTeX_SansSerif-Regular.woff) format("woff"),url(fonts/KaTeX_SansSerif-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Script;src:url(fonts/KaTeX_Script-Regular.woff2) format("woff2"),url(fonts/KaTeX_Script-Regular.woff) format("woff"),url(fonts/KaTeX_Script-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size1;src:url(fonts/KaTeX_Size1-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size1-Regular.woff) format("woff"),url(fonts/KaTeX_Size1-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size2;src:url(fonts/KaTeX_Size2-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size2-Regular.woff) format("woff"),url(fonts/KaTeX_Size2-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size3;src:url(fonts/KaTeX_Size3-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size3-Regular.woff) format("woff"),url(fonts/KaTeX_Size3-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Size4;src:url(fonts/KaTeX_Size4-Regular.woff2) format("woff2"),url(fonts/KaTeX_Size4-Regular.woff) format("woff"),url(fonts/KaTeX_Size4-Regular.ttf) format("truetype");font-weight:400;font-style:normal}@font-face{font-family:KaTeX_Typewriter;src:url(fonts/KaTeX_Typewriter-Regular.woff2) format("woff2"),url(fonts/KaTeX_Typewriter-Regular.woff) format("woff"),url(fonts/KaTeX_Typewriter-Regular.ttf) format("truetype");font-weight:400;font-style:normal}.katex{font:normal 1.21em KaTeX_Main,Times New Roman,serif;line-height:1.2;text-indent:0;text-rendering:auto;border-color:currentColor}.katex *{-ms-high-contrast-adjust:none!important}.katex .katex-version:after{content:"0.12.0"}.katex .katex-mathml{position:absolute;clip:rect(1px,1px,1px,1px);padding:0;border:0;height:1px;width:1px;overflow:hidden}.katex .katex-html>.newline{display:block}.katex .base{position:relative;white-space:nowrap;width:min-content}.katex .base,.katex .strut{display:inline-block}.katex .textbf{font-weight:700}.katex .textit{font-style:italic}.katex .textrm{font-family:KaTeX_Main}.katex .textsf{font-family:KaTeX_SansSerif}.katex .texttt{font-family:KaTeX_Typewriter}.katex .mathnormal{font-family:KaTeX_Math;font-style:italic}.katex .mathit{font-family:KaTeX_Main;font-style:italic}.katex .mathrm{font-style:normal}.katex .mathbf{font-family:KaTeX_Main;font-weight:700}.katex .boldsymbol{font-family:KaTeX_Math;font-weight:700;font-style:italic}.katex .amsrm,.katex .mathbb,.katex .textbb{font-family:KaTeX_AMS}.katex .mathcal{font-family:KaTeX_Caligraphic}.katex .mathfrak,.katex .textfrak{font-family:KaTeX_Fraktur}.katex .mathtt{font-family:KaTeX_Typewriter}.katex .mathscr,.katex .textscr{font-family:KaTeX_Script}.katex .mathsf,.katex .textsf{font-family:KaTeX_SansSerif}.katex .mathboldsf,.katex .textboldsf{font-family:KaTeX_SansSerif;font-weight:700}.katex .mathitsf,.katex .textitsf{font-family:KaTeX_SansSerif;font-style:italic}.katex .mainrm{font-family:KaTeX_Main;font-style:normal}.katex .vlist-t{display:inline-table;table-layout:fixed;border-collapse:collapse}.katex .vlist-r{display:table-row}.katex .vlist{display:table-cell;vertical-align:bottom;position:relative}.katex .vlist>span{display:block;height:0;position:relative}.katex .vlist>span>span{display:inline-block}.katex .vlist>span>.pstrut{overflow:hidden;width:0}.katex .vlist-t2{margin-right:-2px}.katex .vlist-s{display:table-cell;vertical-align:bottom;font-size:1px;width:2px;min-width:2px}.katex .vbox{-ms-flex-direction:column;flex-direction:column;align-items:baseline}.katex .hbox,.katex .vbox{display:-ms-inline-flexbox;display:inline-flex}.katex .hbox{-ms-flex-direction:row;flex-direction:row;width:100%}.katex .thinbox{display:inline-flex;flex-direction:row;width:0;max-width:0}.katex .msupsub{text-align:left}.katex .mfrac>span>span{text-align:center}.katex .mfrac .frac-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline,.katex .hline,.katex .mfrac .frac-line,.katex .overline .overline-line,.katex .rule,.katex .underline .underline-line{min-height:1px}.katex .mspace{display:inline-block}.katex .clap,.katex .llap,.katex .rlap{width:0;position:relative}.katex .clap>.inner,.katex .llap>.inner,.katex .rlap>.inner{position:absolute}.katex .clap>.fix,.katex .llap>.fix,.katex .rlap>.fix{display:inline-block}.katex .llap>.inner{right:0}.katex .clap>.inner,.katex .rlap>.inner{left:0}.katex .clap>.inner>span{margin-left:-50%;margin-right:50%}.katex .rule{display:inline-block;border:0 solid;position:relative}.katex .hline,.katex .overline .overline-line,.katex .underline .underline-line{display:inline-block;width:100%;border-bottom-style:solid}.katex .hdashline{display:inline-block;width:100%;border-bottom-style:dashed}.katex .sqrt>.root{margin-left:.27777778em;margin-right:-.55555556em}.katex .fontsize-ensurer.reset-size1.size1,.katex .sizing.reset-size1.size1{font-size:1em}.katex .fontsize-ensurer.reset-size1.size2,.katex .sizing.reset-size1.size2{font-size:1.2em}.katex .fontsize-ensurer.reset-size1.size3,.katex .sizing.reset-size1.size3{font-size:1.4em}.katex .fontsize-ensurer.reset-size1.size4,.katex .sizing.reset-size1.size4{font-size:1.6em}.katex .fontsize-ensurer.reset-size1.size5,.katex .sizing.reset-size1.size5{font-size:1.8em}.katex .fontsize-ensurer.reset-size1.size6,.katex .sizing.reset-size1.size6{font-size:2em}.katex .fontsize-ensurer.reset-size1.size7,.katex .sizing.reset-size1.size7{font-size:2.4em}.katex .fontsize-ensurer.reset-size1.size8,.katex .sizing.reset-size1.size8{font-size:2.88em}.katex .fontsize-ensurer.reset-size1.size9,.katex .sizing.reset-size1.size9{font-size:3.456em}.katex .fontsize-ensurer.reset-size1.size10,.katex .sizing.reset-size1.size10{font-size:4.148em}.katex .fontsize-ensurer.reset-size1.size11,.katex .sizing.reset-size1.size11{font-size:4.976em}.katex .fontsize-ensurer.reset-size2.size1,.katex .sizing.reset-size2.size1{font-size:.83333333em}.katex .fontsize-ensurer.reset-size2.size2,.katex .sizing.reset-size2.size2{font-size:1em}.katex .fontsize-ensurer.reset-size2.size3,.katex .sizing.reset-size2.size3{font-size:1.16666667em}.katex .fontsize-ensurer.reset-size2.size4,.katex .sizing.reset-size2.size4{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size2.size5,.katex .sizing.reset-size2.size5{font-size:1.5em}.katex .fontsize-ensurer.reset-size2.size6,.katex .sizing.reset-size2.size6{font-size:1.66666667em}.katex .fontsize-ensurer.reset-size2.size7,.katex .sizing.reset-size2.size7{font-size:2em}.katex .fontsize-ensurer.reset-size2.size8,.katex .sizing.reset-size2.size8{font-size:2.4em}.katex .fontsize-ensurer.reset-size2.size9,.katex .sizing.reset-size2.size9{font-size:2.88em}.katex .fontsize-ensurer.reset-size2.size10,.katex .sizing.reset-size2.size10{font-size:3.45666667em}.katex .fontsize-ensurer.reset-size2.size11,.katex .sizing.reset-size2.size11{font-size:4.14666667em}.katex .fontsize-ensurer.reset-size3.size1,.katex .sizing.reset-size3.size1{font-size:.71428571em}.katex .fontsize-ensurer.reset-size3.size2,.katex .sizing.reset-size3.size2{font-size:.85714286em}.katex .fontsize-ensurer.reset-size3.size3,.katex .sizing.reset-size3.size3{font-size:1em}.katex .fontsize-ensurer.reset-size3.size4,.katex .sizing.reset-size3.size4{font-size:1.14285714em}.katex .fontsize-ensurer.reset-size3.size5,.katex .sizing.reset-size3.size5{font-size:1.28571429em}.katex .fontsize-ensurer.reset-size3.size6,.katex .sizing.reset-size3.size6{font-size:1.42857143em}.katex .fontsize-ensurer.reset-size3.size7,.katex .sizing.reset-size3.size7{font-size:1.71428571em}.katex .fontsize-ensurer.reset-size3.size8,.katex .sizing.reset-size3.size8{font-size:2.05714286em}.katex .fontsize-ensurer.reset-size3.size9,.katex .sizing.reset-size3.size9{font-size:2.46857143em}.katex .fontsize-ensurer.reset-size3.size10,.katex .sizing.reset-size3.size10{font-size:2.96285714em}.katex .fontsize-ensurer.reset-size3.size11,.katex .sizing.reset-size3.size11{font-size:3.55428571em}.katex .fontsize-ensurer.reset-size4.size1,.katex .sizing.reset-size4.size1{font-size:.625em}.katex .fontsize-ensurer.reset-size4.size2,.katex .sizing.reset-size4.size2{font-size:.75em}.katex .fontsize-ensurer.reset-size4.size3,.katex .sizing.reset-size4.size3{font-size:.875em}.katex .fontsize-ensurer.reset-size4.size4,.katex .sizing.reset-size4.size4{font-size:1em}.katex .fontsize-ensurer.reset-size4.size5,.katex .sizing.reset-size4.size5{font-size:1.125em}.katex .fontsize-ensurer.reset-size4.size6,.katex .sizing.reset-size4.size6{font-size:1.25em}.katex .fontsize-ensurer.reset-size4.size7,.katex .sizing.reset-size4.size7{font-size:1.5em}.katex .fontsize-ensurer.reset-size4.size8,.katex .sizing.reset-size4.size8{font-size:1.8em}.katex .fontsize-ensurer.reset-size4.size9,.katex .sizing.reset-size4.size9{font-size:2.16em}.katex .fontsize-ensurer.reset-size4.size10,.katex .sizing.reset-size4.size10{font-size:2.5925em}.katex .fontsize-ensurer.reset-size4.size11,.katex .sizing.reset-size4.size11{font-size:3.11em}.katex .fontsize-ensurer.reset-size5.size1,.katex .sizing.reset-size5.size1{font-size:.55555556em}.katex .fontsize-ensurer.reset-size5.size2,.katex .sizing.reset-size5.size2{font-size:.66666667em}.katex .fontsize-ensurer.reset-size5.size3,.katex .sizing.reset-size5.size3{font-size:.77777778em}.katex .fontsize-ensurer.reset-size5.size4,.katex .sizing.reset-size5.size4{font-size:.88888889em}.katex .fontsize-ensurer.reset-size5.size5,.katex .sizing.reset-size5.size5{font-size:1em}.katex .fontsize-ensurer.reset-size5.size6,.katex .sizing.reset-size5.size6{font-size:1.11111111em}.katex .fontsize-ensurer.reset-size5.size7,.katex .sizing.reset-size5.size7{font-size:1.33333333em}.katex .fontsize-ensurer.reset-size5.size8,.katex .sizing.reset-size5.size8{font-size:1.6em}.katex .fontsize-ensurer.reset-size5.size9,.katex .sizing.reset-size5.size9{font-size:1.92em}.katex .fontsize-ensurer.reset-size5.size10,.katex .sizing.reset-size5.size10{font-size:2.30444444em}.katex .fontsize-ensurer.reset-size5.size11,.katex .sizing.reset-size5.size11{font-size:2.76444444em}.katex .fontsize-ensurer.reset-size6.size1,.katex .sizing.reset-size6.size1{font-size:.5em}.katex .fontsize-ensurer.reset-size6.size2,.katex .sizing.reset-size6.size2{font-size:.6em}.katex .fontsize-ensurer.reset-size6.size3,.katex .sizing.reset-size6.size3{font-size:.7em}.katex .fontsize-ensurer.reset-size6.size4,.katex .sizing.reset-size6.size4{font-size:.8em}.katex .fontsize-ensurer.reset-size6.size5,.katex .sizing.reset-size6.size5{font-size:.9em}.katex .fontsize-ensurer.reset-size6.size6,.katex .sizing.reset-size6.size6{font-size:1em}.katex .fontsize-ensurer.reset-size6.size7,.katex .sizing.reset-size6.size7{font-size:1.2em}.katex .fontsize-ensurer.reset-size6.size8,.katex .sizing.reset-size6.size8{font-size:1.44em}.katex .fontsize-ensurer.reset-size6.size9,.katex .sizing.reset-size6.size9{font-size:1.728em}.katex .fontsize-ensurer.reset-size6.size10,.katex .sizing.reset-size6.size10{font-size:2.074em}.katex .fontsize-ensurer.reset-size6.size11,.katex .sizing.reset-size6.size11{font-size:2.488em}.katex .fontsize-ensurer.reset-size7.size1,.katex .sizing.reset-size7.size1{font-size:.41666667em}.katex .fontsize-ensurer.reset-size7.size2,.katex .sizing.reset-size7.size2{font-size:.5em}.katex .fontsize-ensurer.reset-size7.size3,.katex .sizing.reset-size7.size3{font-size:.58333333em}.katex .fontsize-ensurer.reset-size7.size4,.katex .sizing.reset-size7.size4{font-size:.66666667em}.katex .fontsize-ensurer.reset-size7.size5,.katex .sizing.reset-size7.size5{font-size:.75em}.katex .fontsize-ensurer.reset-size7.size6,.katex .sizing.reset-size7.size6{font-size:.83333333em}.katex .fontsize-ensurer.reset-size7.size7,.katex .sizing.reset-size7.size7{font-size:1em}.katex .fontsize-ensurer.reset-size7.size8,.katex .sizing.reset-size7.size8{font-size:1.2em}.katex .fontsize-ensurer.reset-size7.size9,.katex .sizing.reset-size7.size9{font-size:1.44em}.katex .fontsize-ensurer.reset-size7.size10,.katex .sizing.reset-size7.size10{font-size:1.72833333em}.katex .fontsize-ensurer.reset-size7.size11,.katex .sizing.reset-size7.size11{font-size:2.07333333em}.katex .fontsize-ensurer.reset-size8.size1,.katex .sizing.reset-size8.size1{font-size:.34722222em}.katex .fontsize-ensurer.reset-size8.size2,.katex .sizing.reset-size8.size2{font-size:.41666667em}.katex .fontsize-ensurer.reset-size8.size3,.katex .sizing.reset-size8.size3{font-size:.48611111em}.katex .fontsize-ensurer.reset-size8.size4,.katex .sizing.reset-size8.size4{font-size:.55555556em}.katex .fontsize-ensurer.reset-size8.size5,.katex .sizing.reset-size8.size5{font-size:.625em}.katex .fontsize-ensurer.reset-size8.size6,.katex .sizing.reset-size8.size6{font-size:.69444444em}.katex .fontsize-ensurer.reset-size8.size7,.katex .sizing.reset-size8.size7{font-size:.83333333em}.katex .fontsize-ensurer.reset-size8.size8,.katex .sizing.reset-size8.size8{font-size:1em}.katex .fontsize-ensurer.reset-size8.size9,.katex .sizing.reset-size8.size9{font-size:1.2em}.katex .fontsize-ensurer.reset-size8.size10,.katex .sizing.reset-size8.size10{font-size:1.44027778em}.katex .fontsize-ensurer.reset-size8.size11,.katex .sizing.reset-size8.size11{font-size:1.72777778em}.katex .fontsize-ensurer.reset-size9.size1,.katex .sizing.reset-size9.size1{font-size:.28935185em}.katex .fontsize-ensurer.reset-size9.size2,.katex .sizing.reset-size9.size2{font-size:.34722222em}.katex .fontsize-ensurer.reset-size9.size3,.katex .sizing.reset-size9.size3{font-size:.40509259em}.katex .fontsize-ensurer.reset-size9.size4,.katex .sizing.reset-size9.size4{font-size:.46296296em}.katex .fontsize-ensurer.reset-size9.size5,.katex .sizing.reset-size9.size5{font-size:.52083333em}.katex .fontsize-ensurer.reset-size9.size6,.katex .sizing.reset-size9.size6{font-size:.5787037em}.katex .fontsize-ensurer.reset-size9.size7,.katex .sizing.reset-size9.size7{font-size:.69444444em}.katex .fontsize-ensurer.reset-size9.size8,.katex .sizing.reset-size9.size8{font-size:.83333333em}.katex .fontsize-ensurer.reset-size9.size9,.katex .sizing.reset-size9.size9{font-size:1em}.katex .fontsize-ensurer.reset-size9.size10,.katex .sizing.reset-size9.size10{font-size:1.20023148em}.katex .fontsize-ensurer.reset-size9.size11,.katex .sizing.reset-size9.size11{font-size:1.43981481em}.katex .fontsize-ensurer.reset-size10.size1,.katex .sizing.reset-size10.size1{font-size:.24108004em}.katex .fontsize-ensurer.reset-size10.size2,.katex .sizing.reset-size10.size2{font-size:.28929605em}.katex .fontsize-ensurer.reset-size10.size3,.katex .sizing.reset-size10.size3{font-size:.33751205em}.katex .fontsize-ensurer.reset-size10.size4,.katex .sizing.reset-size10.size4{font-size:.38572806em}.katex .fontsize-ensurer.reset-size10.size5,.katex .sizing.reset-size10.size5{font-size:.43394407em}.katex .fontsize-ensurer.reset-size10.size6,.katex .sizing.reset-size10.size6{font-size:.48216008em}.katex .fontsize-ensurer.reset-size10.size7,.katex .sizing.reset-size10.size7{font-size:.57859209em}.katex .fontsize-ensurer.reset-size10.size8,.katex .sizing.reset-size10.size8{font-size:.69431051em}.katex .fontsize-ensurer.reset-size10.size9,.katex .sizing.reset-size10.size9{font-size:.83317261em}.katex .fontsize-ensurer.reset-size10.size10,.katex .sizing.reset-size10.size10{font-size:1em}.katex .fontsize-ensurer.reset-size10.size11,.katex .sizing.reset-size10.size11{font-size:1.19961427em}.katex .fontsize-ensurer.reset-size11.size1,.katex .sizing.reset-size11.size1{font-size:.20096463em}.katex .fontsize-ensurer.reset-size11.size2,.katex .sizing.reset-size11.size2{font-size:.24115756em}.katex .fontsize-ensurer.reset-size11.size3,.katex .sizing.reset-size11.size3{font-size:.28135048em}.katex .fontsize-ensurer.reset-size11.size4,.katex .sizing.reset-size11.size4{font-size:.32154341em}.katex .fontsize-ensurer.reset-size11.size5,.katex .sizing.reset-size11.size5{font-size:.36173633em}.katex .fontsize-ensurer.reset-size11.size6,.katex .sizing.reset-size11.size6{font-size:.40192926em}.katex .fontsize-ensurer.reset-size11.size7,.katex .sizing.reset-size11.size7{font-size:.48231511em}.katex .fontsize-ensurer.reset-size11.size8,.katex .sizing.reset-size11.size8{font-size:.57877814em}.katex .fontsize-ensurer.reset-size11.size9,.katex .sizing.reset-size11.size9{font-size:.69453376em}.katex .fontsize-ensurer.reset-size11.size10,.katex .sizing.reset-size11.size10{font-size:.83360129em}.katex .fontsize-ensurer.reset-size11.size11,.katex .sizing.reset-size11.size11{font-size:1em}.katex .delimsizing.size1{font-family:KaTeX_Size1}.katex .delimsizing.size2{font-family:KaTeX_Size2}.katex .delimsizing.size3{font-family:KaTeX_Size3}.katex .delimsizing.size4{font-family:KaTeX_Size4}.katex .delimsizing.mult .delim-size1>span{font-family:KaTeX_Size1}.katex .delimsizing.mult .delim-size4>span{font-family:KaTeX_Size4}.katex .nulldelimiter{display:inline-block;width:.12em}.katex .delimcenter,.katex .op-symbol{position:relative}.katex .op-symbol.small-op{font-family:KaTeX_Size1}.katex .op-symbol.large-op{font-family:KaTeX_Size2}.katex .op-limits>.vlist-t{text-align:center}.katex .accent>.vlist-t{text-align:center}.katex .accent .accent-body{position:relative}.katex .accent .accent-body:not(.accent-full){width:0}.katex .overlay{display:block}.katex .mtable .vertical-separator{display:inline-block;min-width:1px}.katex .mtable .arraycolsep{display:inline-block}.katex .mtable .col-align-c>.vlist-t{text-align:center}.katex .mtable .col-align-l>.vlist-t{text-align:left}.katex .mtable .col-align-r>.vlist-t{text-align:right}.katex .svg-align{text-align:left}.katex svg{display:block;position:absolute;width:100%;height:inherit;fill:currentColor;stroke:currentColor;fill-rule:nonzero;fill-opacity:1;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1}.katex svg path{stroke:none}.katex img{border-style:none;min-width:0;min-height:0;max-width:none;max-height:none}.katex .stretchy{width:100%;display:block;position:relative;overflow:hidden}.katex .stretchy:after,.katex .stretchy:before{content:""}.katex .hide-tail{width:100%;position:relative;overflow:hidden}.katex .halfarrow-left{position:absolute;left:0;width:50.2%;overflow:hidden}.katex .halfarrow-right{position:absolute;right:0;width:50.2%;overflow:hidden}.katex .brace-left{position:absolute;left:0;width:25.1%;overflow:hidden}.katex .brace-center{position:absolute;left:25%;width:50%;overflow:hidden}.katex .brace-right{position:absolute;right:0;width:25.1%;overflow:hidden}.katex .x-arrow-pad{padding:0 .5em}.katex .mover,.katex .munder,.katex .x-arrow{text-align:center}.katex .boxpad{padding:0 .3em}.katex .fbox,.katex .fcolorbox{box-sizing:border-box;border:.04em solid}.katex .cancel-pad{padding:0 .2em}.katex .cancel-lap{margin-left:-.2em;margin-right:-.2em}.katex .sout{border-bottom-style:solid;border-bottom-width:.08em}.katex-display{display:block;margin:1em 0;text-align:center}.katex-display>.katex{display:block;text-align:center;white-space:nowrap}.katex-display>.katex>.katex-html{display:block;position:relative}.katex-display>.katex>.katex-html>.tag{position:absolute;right:0}.katex-display.leqno>.katex>.katex-html>.tag{left:0;right:auto}.katex-display.fleqn>.katex{text-align:left;padding-left:2em}
+
+.markmap {
+    display: block;
+    line-height: 1;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        <script type="text/javascript">
+/* From extension phoihos.markdown-markmap */
+/*! For license information please see markmap.bundle.js.LICENSE.txt */
+(()=>{"use strict";(()=>{function t(t,n){let e;if(void 0===n)for(const n of t)null!=n&&(e<n||void 0===e&&n>=n)&&(e=n);else{let r=-1;for(let i of t)null!=(i=n(i,++r,t))&&(e<i||void 0===e&&i>=i)&&(e=i)}return e}function n(t,n){let e;if(void 0===n)for(const n of t)null!=n&&(e>n||void 0===e&&n>=n)&&(e=n);else{let r=-1;for(let i of t)null!=(i=n(i,++r,t))&&(e>i||void 0===e&&i>=i)&&(e=i)}return e}function e(){}function r(t){return null==t?e:function(){return this.querySelector(t)}}function i(t){return"object"==typeof t&&"length"in t?t:Array.from(t)}function o(){return[]}function a(t){return null==t?o:function(){return this.querySelectorAll(t)}}function u(t){return function(){return this.matches(t)}}function s(t){return function(n){return n.matches(t)}}var c=Array.prototype.find;function l(){return this.firstElementChild}var h=Array.prototype.filter;function f(){return this.children}function p(t){return new Array(t.length)}function d(t,n){this.ownerDocument=t.ownerDocument,this.namespaceURI=t.namespaceURI,this._next=null,this._parent=t,this.__data__=n}function g(t){return function(){return t}}function v(t,n,e,r,i,o){for(var a,u=0,s=n.length,c=o.length;u<c;++u)(a=n[u])?(a.__data__=o[u],r[u]=a):e[u]=new d(t,o[u]);for(;u<s;++u)(a=n[u])&&(i[u]=a)}function y(t,n,e,r,i,o,a){var u,s,c,l=new Map,h=n.length,f=o.length,p=new Array(h);for(u=0;u<h;++u)(s=n[u])&&(p[u]=c=a.call(s,s.__data__,u,n)+"",l.has(c)?i[u]=s:l.set(c,s));for(u=0;u<f;++u)c=a.call(t,o[u],u,o)+"",(s=l.get(c))?(r[u]=s,s.__data__=o[u],l.delete(c)):e[u]=new d(t,o[u]);for(u=0;u<h;++u)(s=n[u])&&l.get(p[u])===s&&(i[u]=s)}function m(t){return t.__data__}function _(t,n){return t<n?-1:t>n?1:t>=n?0:NaN}d.prototype={constructor:d,appendChild:function(t){return this._parent.insertBefore(t,this._next)},insertBefore:function(t,n){return this._parent.insertBefore(t,n)},querySelector:function(t){return this._parent.querySelector(t)},querySelectorAll:function(t){return this._parent.querySelectorAll(t)}};var w="http://www.w3.org/1999/xhtml";const x={svg:"http://www.w3.org/2000/svg",xhtml:w,xlink:"http://www.w3.org/1999/xlink",xml:"http://www.w3.org/XML/1998/namespace",xmlns:"http://www.w3.org/2000/xmlns/"};function b(t){var n=t+="",e=n.indexOf(":");return e>=0&&"xmlns"!==(n=t.slice(0,e))&&(t=t.slice(e+1)),x.hasOwnProperty(n)?{space:x[n],local:t}:t}function k(t){return function(){this.removeAttribute(t)}}function z(t){return function(){this.removeAttributeNS(t.space,t.local)}}function M(t,n){return function(){this.setAttribute(t,n)}}function E(t,n){return function(){this.setAttributeNS(t.space,t.local,n)}}function S(t,n){return function(){var e=n.apply(this,arguments);null==e?this.removeAttribute(t):this.setAttribute(t,e)}}function A(t,n){return function(){var e=n.apply(this,arguments);null==e?this.removeAttributeNS(t.space,t.local):this.setAttributeNS(t.space,t.local,e)}}function C(t){return t.ownerDocument&&t.ownerDocument.defaultView||t.document&&t||t.defaultView}function N(t){return function(){this.style.removeProperty(t)}}function X(t,n,e){return function(){this.style.setProperty(t,n,e)}}function T(t,n,e){return function(){var r=n.apply(this,arguments);null==r?this.style.removeProperty(t):this.style.setProperty(t,r,e)}}function $(t,n){return t.style.getPropertyValue(n)||C(t).getComputedStyle(t,null).getPropertyValue(n)}function O(t){return function(){delete this[t]}}function R(t,n){return function(){this[t]=n}}function j(t,n){return function(){var e=n.apply(this,arguments);null==e?delete this[t]:this[t]=e}}function B(t){return t.trim().split(/^|\s+/)}function I(t){return t.classList||new P(t)}function P(t){this._node=t,this._names=B(t.getAttribute("class")||"")}function q(t,n){for(var e=I(t),r=-1,i=n.length;++r<i;)e.add(n[r])}function Y(t,n){for(var e=I(t),r=-1,i=n.length;++r<i;)e.remove(n[r])}function D(t){return function(){q(this,t)}}function H(t){return function(){Y(this,t)}}function L(t,n){return function(){(n.apply(this,arguments)?q:Y)(this,t)}}function V(){this.textContent=""}function F(t){return function(){this.textContent=t}}function U(t){return function(){var n=t.apply(this,arguments);this.textContent=null==n?"":n}}function Z(){this.innerHTML=""}function G(t){return function(){this.innerHTML=t}}function K(t){return function(){var n=t.apply(this,arguments);this.innerHTML=null==n?"":n}}function Q(){this.nextSibling&&this.parentNode.appendChild(this)}function W(){this.previousSibling&&this.parentNode.insertBefore(this,this.parentNode.firstChild)}function J(t){return function(){var n=this.ownerDocument,e=this.namespaceURI;return e===w&&n.documentElement.namespaceURI===w?n.createElement(t):n.createElementNS(e,t)}}function tt(t){return function(){return this.ownerDocument.createElementNS(t.space,t.local)}}function nt(t){var n=b(t);return(n.local?tt:J)(n)}function et(){return null}function rt(){var t=this.parentNode;t&&t.removeChild(this)}function it(){var t=this.cloneNode(!1),n=this.parentNode;return n?n.insertBefore(t,this.nextSibling):t}function ot(){var t=this.cloneNode(!0),n=this.parentNode;return n?n.insertBefore(t,this.nextSibling):t}function at(t){return t.trim().split(/^|\s+/).map((function(t){var n="",e=t.indexOf(".");return e>=0&&(n=t.slice(e+1),t=t.slice(0,e)),{type:t,name:n}}))}function ut(t){return function(){var n=this.__on;if(n){for(var e,r=0,i=-1,o=n.length;r<o;++r)e=n[r],t.type&&e.type!==t.type||e.name!==t.name?n[++i]=e:this.removeEventListener(e.type,e.listener,e.options);++i?n.length=i:delete this.__on}}}function st(t,n,e){return function(){var r,i=this.__on,o=function(t){return function(n){t.call(this,n,this.__data__)}}(n);if(i)for(var a=0,u=i.length;a<u;++a)if((r=i[a]).type===t.type&&r.name===t.name)return this.removeEventListener(r.type,r.listener,r.options),this.addEventListener(r.type,r.listener=o,r.options=e),void(r.value=n);this.addEventListener(t.type,o,e),r={type:t.type,name:t.name,value:n,listener:o,options:e},i?i.push(r):this.__on=[r]}}function ct(t,n,e){var r=C(t),i=r.CustomEvent;"function"==typeof i?i=new i(n,e):(i=r.document.createEvent("Event"),e?(i.initEvent(n,e.bubbles,e.cancelable),i.detail=e.detail):i.initEvent(n,!1,!1)),t.dispatchEvent(i)}function lt(t,n){return function(){return ct(this,t,n)}}function ht(t,n){return function(){return ct(this,t,n.apply(this,arguments))}}P.prototype={add:function(t){this._names.indexOf(t)<0&&(this._names.push(t),this._node.setAttribute("class",this._names.join(" ")))},remove:function(t){var n=this._names.indexOf(t);n>=0&&(this._names.splice(n,1),this._node.setAttribute("class",this._names.join(" ")))},contains:function(t){return this._names.indexOf(t)>=0}};var ft=[null];function pt(t,n){this._groups=t,this._parents=n}function dt(){return new pt([[document.documentElement]],ft)}pt.prototype=dt.prototype={constructor:pt,select:function(t){"function"!=typeof t&&(t=r(t));for(var n=this._groups,e=n.length,i=new Array(e),o=0;o<e;++o)for(var a,u,s=n[o],c=s.length,l=i[o]=new Array(c),h=0;h<c;++h)(a=s[h])&&(u=t.call(a,a.__data__,h,s))&&("__data__"in a&&(u.__data__=a.__data__),l[h]=u);return new pt(i,this._parents)},selectAll:function(t){t="function"==typeof t?function(t){return function(){var n=t.apply(this,arguments);return null==n?[]:i(n)}}(t):a(t);for(var n=this._groups,e=n.length,r=[],o=[],u=0;u<e;++u)for(var s,c=n[u],l=c.length,h=0;h<l;++h)(s=c[h])&&(r.push(t.call(s,s.__data__,h,c)),o.push(s));return new pt(r,o)},selectChild:function(t){return this.select(null==t?l:function(t){return function(){return c.call(this.children,t)}}("function"==typeof t?t:s(t)))},selectChildren:function(t){return this.selectAll(null==t?f:function(t){return function(){return h.call(this.children,t)}}("function"==typeof t?t:s(t)))},filter:function(t){"function"!=typeof t&&(t=u(t));for(var n=this._groups,e=n.length,r=new Array(e),i=0;i<e;++i)for(var o,a=n[i],s=a.length,c=r[i]=[],l=0;l<s;++l)(o=a[l])&&t.call(o,o.__data__,l,a)&&c.push(o);return new pt(r,this._parents)},data:function(t,n){if(!arguments.length)return Array.from(this,m);var e=n?y:v,r=this._parents,o=this._groups;"function"!=typeof t&&(t=g(t));for(var a=o.length,u=new Array(a),s=new Array(a),c=new Array(a),l=0;l<a;++l){var h=r[l],f=o[l],p=f.length,d=i(t.call(h,h&&h.__data__,l,r)),_=d.length,w=s[l]=new Array(_),x=u[l]=new Array(_),b=c[l]=new Array(p);e(h,f,w,x,b,d,n);for(var k,z,M=0,E=0;M<_;++M)if(k=w[M]){for(M>=E&&(E=M+1);!(z=x[E])&&++E<_;);k._next=z||null}}return(u=new pt(u,r))._enter=s,u._exit=c,u},enter:function(){return new pt(this._enter||this._groups.map(p),this._parents)},exit:function(){return new pt(this._exit||this._groups.map(p),this._parents)},join:function(t,n,e){var r=this.enter(),i=this,o=this.exit();return r="function"==typeof t?t(r):r.append(t+""),null!=n&&(i=n(i)),null==e?o.remove():e(o),r&&i?r.merge(i).order():i},merge:function(t){if(!(t instanceof pt))throw new Error("invalid merge");for(var n=this._groups,e=t._groups,r=n.length,i=e.length,o=Math.min(r,i),a=new Array(r),u=0;u<o;++u)for(var s,c=n[u],l=e[u],h=c.length,f=a[u]=new Array(h),p=0;p<h;++p)(s=c[p]||l[p])&&(f[p]=s);for(;u<r;++u)a[u]=n[u];return new pt(a,this._parents)},selection:function(){return this},order:function(){for(var t=this._groups,n=-1,e=t.length;++n<e;)for(var r,i=t[n],o=i.length-1,a=i[o];--o>=0;)(r=i[o])&&(a&&4^r.compareDocumentPosition(a)&&a.parentNode.insertBefore(r,a),a=r);return this},sort:function(t){function n(n,e){return n&&e?t(n.__data__,e.__data__):!n-!e}t||(t=_);for(var e=this._groups,r=e.length,i=new Array(r),o=0;o<r;++o){for(var a,u=e[o],s=u.length,c=i[o]=new Array(s),l=0;l<s;++l)(a=u[l])&&(c[l]=a);c.sort(n)}return new pt(i,this._parents).order()},call:function(){var t=arguments[0];return arguments[0]=this,t.apply(null,arguments),this},nodes:function(){return Array.from(this)},node:function(){for(var t=this._groups,n=0,e=t.length;n<e;++n)for(var r=t[n],i=0,o=r.length;i<o;++i){var a=r[i];if(a)return a}return null},size:function(){let t=0;for(const n of this)++t;return t},empty:function(){return!this.node()},each:function(t){for(var n=this._groups,e=0,r=n.length;e<r;++e)for(var i,o=n[e],a=0,u=o.length;a<u;++a)(i=o[a])&&t.call(i,i.__data__,a,o);return this},attr:function(t,n){var e=b(t);if(arguments.length<2){var r=this.node();return e.local?r.getAttributeNS(e.space,e.local):r.getAttribute(e)}return this.each((null==n?e.local?z:k:"function"==typeof n?e.local?A:S:e.local?E:M)(e,n))},style:function(t,n,e){return arguments.length>1?this.each((null==n?N:"function"==typeof n?T:X)(t,n,null==e?"":e)):$(this.node(),t)},property:function(t,n){return arguments.length>1?this.each((null==n?O:"function"==typeof n?j:R)(t,n)):this.node()[t]},classed:function(t,n){var e=B(t+"");if(arguments.length<2){for(var r=I(this.node()),i=-1,o=e.length;++i<o;)if(!r.contains(e[i]))return!1;return!0}return this.each(("function"==typeof n?L:n?D:H)(e,n))},text:function(t){return arguments.length?this.each(null==t?V:("function"==typeof t?U:F)(t)):this.node().textContent},html:function(t){return arguments.length?this.each(null==t?Z:("function"==typeof t?K:G)(t)):this.node().innerHTML},raise:function(){return this.each(Q)},lower:function(){return this.each(W)},append:function(t){var n="function"==typeof t?t:nt(t);return this.select((function(){return this.appendChild(n.apply(this,arguments))}))},insert:function(t,n){var e="function"==typeof t?t:nt(t),i=null==n?et:"function"==typeof n?n:r(n);return this.select((function(){return this.insertBefore(e.apply(this,arguments),i.apply(this,arguments)||null)}))},remove:function(){return this.each(rt)},clone:function(t){return this.select(t?ot:it)},datum:function(t){return arguments.length?this.property("__data__",t):this.node().__data__},on:function(t,n,e){var r,i,o=at(t+""),a=o.length;if(!(arguments.length<2)){for(u=n?st:ut,r=0;r<a;++r)this.each(u(o[r],n,e));return this}var u=this.node().__on;if(u)for(var s,c=0,l=u.length;c<l;++c)for(r=0,s=u[c];r<a;++r)if((i=o[r]).type===s.type&&i.name===s.name)return s.value},dispatch:function(t,n){return this.each(("function"==typeof n?ht:lt)(t,n))},[Symbol.iterator]:function*(){for(var t=this._groups,n=0,e=t.length;n<e;++n)for(var r,i=t[n],o=0,a=i.length;o<a;++o)(r=i[o])&&(yield r)}};const gt=dt;var vt={value:()=>{}};function yt(){for(var t,n=0,e=arguments.length,r={};n<e;++n){if(!(t=arguments[n]+"")||t in r||/[\s.]/.test(t))throw new Error("illegal type: "+t);r[t]=[]}return new mt(r)}function mt(t){this._=t}function _t(t,n){return t.trim().split(/^|\s+/).map((function(t){var e="",r=t.indexOf(".");if(r>=0&&(e=t.slice(r+1),t=t.slice(0,r)),t&&!n.hasOwnProperty(t))throw new Error("unknown type: "+t);return{type:t,name:e}}))}function wt(t,n){for(var e,r=0,i=t.length;r<i;++r)if((e=t[r]).name===n)return e.value}function xt(t,n,e){for(var r=0,i=t.length;r<i;++r)if(t[r].name===n){t[r]=vt,t=t.slice(0,r).concat(t.slice(r+1));break}return null!=e&&t.push({name:n,value:e}),t}mt.prototype=yt.prototype={constructor:mt,on:function(t,n){var e,r=this._,i=_t(t+"",r),o=-1,a=i.length;if(!(arguments.length<2)){if(null!=n&&"function"!=typeof n)throw new Error("invalid callback: "+n);for(;++o<a;)if(e=(t=i[o]).type)r[e]=xt(r[e],t.name,n);else if(null==n)for(e in r)r[e]=xt(r[e],t.name,null);return this}for(;++o<a;)if((e=(t=i[o]).type)&&(e=wt(r[e],t.name)))return e},copy:function(){var t={},n=this._;for(var e in n)t[e]=n[e].slice();return new mt(t)},call:function(t,n){if((e=arguments.length-2)>0)for(var e,r,i=new Array(e),o=0;o<e;++o)i[o]=arguments[o+2];if(!this._.hasOwnProperty(t))throw new Error("unknown type: "+t);for(o=0,e=(r=this._[t]).length;o<e;++o)r[o].value.apply(n,i)},apply:function(t,n,e){if(!this._.hasOwnProperty(t))throw new Error("unknown type: "+t);for(var r=this._[t],i=0,o=r.length;i<o;++i)r[i].value.apply(n,e)}};const bt=yt;var kt,zt,Mt=0,Et=0,St=0,At=0,Ct=0,Nt=0,Xt="object"==typeof performance&&performance.now?performance:Date,Tt="object"==typeof window&&window.requestAnimationFrame?window.requestAnimationFrame.bind(window):function(t){setTimeout(t,17)};function $t(){return Ct||(Tt(Ot),Ct=Xt.now()+Nt)}function Ot(){Ct=0}function Rt(){this._call=this._time=this._next=null}function jt(t,n,e){var r=new Rt;return r.restart(t,n,e),r}function Bt(){Ct=(At=Xt.now())+Nt,Mt=Et=0;try{!function(){$t(),++Mt;for(var t,n=kt;n;)(t=Ct-n._time)>=0&&n._call.call(null,t),n=n._next;--Mt}()}finally{Mt=0,function(){for(var t,n,e=kt,r=1/0;e;)e._call?(r>e._time&&(r=e._time),t=e,e=e._next):(n=e._next,e._next=null,e=t?t._next=n:kt=n);zt=t,Pt(r)}(),Ct=0}}function It(){var t=Xt.now(),n=t-At;n>1e3&&(Nt-=n,At=t)}function Pt(t){Mt||(Et&&(Et=clearTimeout(Et)),t-Ct>24?(t<1/0&&(Et=setTimeout(Bt,t-Xt.now()-Nt)),St&&(St=clearInterval(St))):(St||(At=Xt.now(),St=setInterval(It,1e3)),Mt=1,Tt(Bt)))}function qt(t,n,e){var r=new Rt;return n=null==n?0:+n,r.restart((e=>{r.stop(),t(e+n)}),n,e),r}Rt.prototype=jt.prototype={constructor:Rt,restart:function(t,n,e){if("function"!=typeof t)throw new TypeError("callback is not a function");e=(null==e?$t():+e)+(null==n?0:+n),this._next||zt===this||(zt?zt._next=this:kt=this,zt=this),this._call=t,this._time=e,Pt()},stop:function(){this._call&&(this._call=null,this._time=1/0,Pt())}};var Yt=bt("start","end","cancel","interrupt"),Dt=[];function Ht(t,n,e,r,i,o){var a=t.__transition;if(a){if(e in a)return}else t.__transition={};!function(t,n,e){var r,i=t.__transition;function o(s){var c,l,h,f;if(1!==e.state)return u();for(c in i)if((f=i[c]).name===e.name){if(3===f.state)return qt(o);4===f.state?(f.state=6,f.timer.stop(),f.on.call("interrupt",t,t.__data__,f.index,f.group),delete i[c]):+c<n&&(f.state=6,f.timer.stop(),f.on.call("cancel",t,t.__data__,f.index,f.group),delete i[c])}if(qt((function(){3===e.state&&(e.state=4,e.timer.restart(a,e.delay,e.time),a(s))})),e.state=2,e.on.call("start",t,t.__data__,e.index,e.group),2===e.state){for(e.state=3,r=new Array(h=e.tween.length),c=0,l=-1;c<h;++c)(f=e.tween[c].value.call(t,t.__data__,e.index,e.group))&&(r[++l]=f);r.length=l+1}}function a(n){for(var i=n<e.duration?e.ease.call(null,n/e.duration):(e.timer.restart(u),e.state=5,1),o=-1,a=r.length;++o<a;)r[o].call(t,i);5===e.state&&(e.on.call("end",t,t.__data__,e.index,e.group),u())}function u(){for(var r in e.state=6,e.timer.stop(),delete i[n],i)return;delete t.__transition}i[n]=e,e.timer=jt((function(t){e.state=1,e.timer.restart(o,e.delay,e.time),e.delay<=t&&o(t-e.delay)}),0,e.time)}(t,e,{name:n,index:r,group:i,on:Yt,tween:Dt,time:o.time,delay:o.delay,duration:o.duration,ease:o.ease,timer:null,state:0})}function Lt(t,n){var e=Ft(t,n);if(e.state>0)throw new Error("too late; already scheduled");return e}function Vt(t,n){var e=Ft(t,n);if(e.state>3)throw new Error("too late; already running");return e}function Ft(t,n){var e=t.__transition;if(!e||!(e=e[n]))throw new Error("transition not found");return e}function Ut(t,n){var e,r,i,o=t.__transition,a=!0;if(o){for(i in n=null==n?null:n+"",o)(e=o[i]).name===n?(r=e.state>2&&e.state<5,e.state=6,e.timer.stop(),e.on.call(r?"interrupt":"cancel",t,t.__data__,e.index,e.group),delete o[i]):a=!1;a&&delete t.__transition}}function Zt(t,n){return t=+t,n=+n,function(e){return t*(1-e)+n*e}}var Gt,Kt=180/Math.PI,Qt={translateX:0,translateY:0,rotate:0,skewX:0,scaleX:1,scaleY:1};function Wt(t,n,e,r,i,o){var a,u,s;return(a=Math.sqrt(t*t+n*n))&&(t/=a,n/=a),(s=t*e+n*r)&&(e-=t*s,r-=n*s),(u=Math.sqrt(e*e+r*r))&&(e/=u,r/=u,s/=u),t*r<n*e&&(t=-t,n=-n,s=-s,a=-a),{translateX:i,translateY:o,rotate:Math.atan2(n,t)*Kt,skewX:Math.atan(s)*Kt,scaleX:a,scaleY:u}}function Jt(t,n,e,r){function i(t){return t.length?t.pop()+" ":""}return function(o,a){var u=[],s=[];return o=t(o),a=t(a),function(t,r,i,o,a,u){if(t!==i||r!==o){var s=a.push("translate(",null,n,null,e);u.push({i:s-4,x:Zt(t,i)},{i:s-2,x:Zt(r,o)})}else(i||o)&&a.push("translate("+i+n+o+e)}(o.translateX,o.translateY,a.translateX,a.translateY,u,s),function(t,n,e,o){t!==n?(t-n>180?n+=360:n-t>180&&(t+=360),o.push({i:e.push(i(e)+"rotate(",null,r)-2,x:Zt(t,n)})):n&&e.push(i(e)+"rotate("+n+r)}(o.rotate,a.rotate,u,s),function(t,n,e,o){t!==n?o.push({i:e.push(i(e)+"skewX(",null,r)-2,x:Zt(t,n)}):n&&e.push(i(e)+"skewX("+n+r)}(o.skewX,a.skewX,u,s),function(t,n,e,r,o,a){if(t!==e||n!==r){var u=o.push(i(o)+"scale(",null,",",null,")");a.push({i:u-4,x:Zt(t,e)},{i:u-2,x:Zt(n,r)})}else 1===e&&1===r||o.push(i(o)+"scale("+e+","+r+")")}(o.scaleX,o.scaleY,a.scaleX,a.scaleY,u,s),o=a=null,function(t){for(var n,e=-1,r=s.length;++e<r;)u[(n=s[e]).i]=n.x(t);return u.join("")}}}var tn=Jt((function(t){const n=new("function"==typeof DOMMatrix?DOMMatrix:WebKitCSSMatrix)(t+"");return n.isIdentity?Qt:Wt(n.a,n.b,n.c,n.d,n.e,n.f)}),"px, ","px)","deg)"),nn=Jt((function(t){return null==t?Qt:(Gt||(Gt=document.createElementNS("http://www.w3.org/2000/svg","g")),Gt.setAttribute("transform",t),(t=Gt.transform.baseVal.consolidate())?Wt((t=t.matrix).a,t.b,t.c,t.d,t.e,t.f):Qt)}),", ",")",")");function en(t,n){var e,r;return function(){var i=Vt(this,t),o=i.tween;if(o!==e)for(var a=0,u=(r=e=o).length;a<u;++a)if(r[a].name===n){(r=r.slice()).splice(a,1);break}i.tween=r}}function rn(t,n,e){var r,i;if("function"!=typeof e)throw new Error;return function(){var o=Vt(this,t),a=o.tween;if(a!==r){i=(r=a).slice();for(var u={name:n,value:e},s=0,c=i.length;s<c;++s)if(i[s].name===n){i[s]=u;break}s===c&&i.push(u)}o.tween=i}}function on(t,n,e){var r=t._id;return t.each((function(){var t=Vt(this,r);(t.value||(t.value={}))[n]=e.apply(this,arguments)})),function(t){return Ft(t,r).value[n]}}function an(t,n,e){t.prototype=n.prototype=e,e.constructor=t}function un(t,n){var e=Object.create(t.prototype);for(var r in n)e[r]=n[r];return e}function sn(){}var cn=.7,ln=1/cn,hn="\\s*([+-]?\\d+)\\s*",fn="\\s*([+-]?\\d*\\.?\\d+(?:[eE][+-]?\\d+)?)\\s*",pn="\\s*([+-]?\\d*\\.?\\d+(?:[eE][+-]?\\d+)?)%\\s*",dn=/^#([0-9a-f]{3,8})$/,gn=new RegExp("^rgb\\("+[hn,hn,hn]+"\\)$"),vn=new RegExp("^rgb\\("+[pn,pn,pn]+"\\)$"),yn=new RegExp("^rgba\\("+[hn,hn,hn,fn]+"\\)$"),mn=new RegExp("^rgba\\("+[pn,pn,pn,fn]+"\\)$"),_n=new RegExp("^hsl\\("+[fn,pn,pn]+"\\)$"),wn=new RegExp("^hsla\\("+[fn,pn,pn,fn]+"\\)$"),xn={aliceblue:15792383,antiquewhite:16444375,aqua:65535,aquamarine:8388564,azure:15794175,beige:16119260,bisque:16770244,black:0,blanchedalmond:16772045,blue:255,blueviolet:9055202,brown:10824234,burlywood:14596231,cadetblue:6266528,chartreuse:8388352,chocolate:13789470,coral:16744272,cornflowerblue:6591981,cornsilk:16775388,crimson:14423100,cyan:65535,darkblue:139,darkcyan:35723,darkgoldenrod:12092939,darkgray:11119017,darkgreen:25600,darkgrey:11119017,darkkhaki:12433259,darkmagenta:9109643,darkolivegreen:5597999,darkorange:16747520,darkorchid:10040012,darkred:9109504,darksalmon:15308410,darkseagreen:9419919,darkslateblue:4734347,darkslategray:3100495,darkslategrey:3100495,darkturquoise:52945,darkviolet:9699539,deeppink:16716947,deepskyblue:49151,dimgray:6908265,dimgrey:6908265,dodgerblue:2003199,firebrick:11674146,floralwhite:16775920,forestgreen:2263842,fuchsia:16711935,gainsboro:14474460,ghostwhite:16316671,gold:16766720,goldenrod:14329120,gray:8421504,green:32768,greenyellow:11403055,grey:8421504,honeydew:15794160,hotpink:16738740,indianred:13458524,indigo:4915330,ivory:16777200,khaki:15787660,lavender:15132410,lavenderblush:16773365,lawngreen:8190976,lemonchiffon:16775885,lightblue:11393254,lightcoral:15761536,lightcyan:14745599,lightgoldenrodyellow:16448210,lightgray:13882323,lightgreen:9498256,lightgrey:13882323,lightpink:16758465,lightsalmon:16752762,lightseagreen:2142890,lightskyblue:8900346,lightslategray:7833753,lightslategrey:7833753,lightsteelblue:11584734,lightyellow:16777184,lime:65280,limegreen:3329330,linen:16445670,magenta:16711935,maroon:8388608,mediumaquamarine:6737322,mediumblue:205,mediumorchid:12211667,mediumpurple:9662683,mediumseagreen:3978097,mediumslateblue:8087790,mediumspringgreen:64154,mediumturquoise:4772300,mediumvioletred:13047173,midnightblue:1644912,mintcream:16121850,mistyrose:16770273,moccasin:16770229,navajowhite:16768685,navy:128,oldlace:16643558,olive:8421376,olivedrab:7048739,orange:16753920,orangered:16729344,orchid:14315734,palegoldenrod:15657130,palegreen:10025880,paleturquoise:11529966,palevioletred:14381203,papayawhip:16773077,peachpuff:16767673,peru:13468991,pink:16761035,plum:14524637,powderblue:11591910,purple:8388736,rebeccapurple:6697881,red:16711680,rosybrown:12357519,royalblue:4286945,saddlebrown:9127187,salmon:16416882,sandybrown:16032864,seagreen:3050327,seashell:16774638,sienna:10506797,silver:12632256,skyblue:8900331,slateblue:6970061,slategray:7372944,slategrey:7372944,snow:16775930,springgreen:65407,steelblue:4620980,tan:13808780,teal:32896,thistle:14204888,tomato:16737095,turquoise:4251856,violet:15631086,wheat:16113331,white:16777215,whitesmoke:16119285,yellow:16776960,yellowgreen:10145074};function bn(){return this.rgb().formatHex()}function kn(){return this.rgb().formatRgb()}function zn(t){var n,e;return t=(t+"").trim().toLowerCase(),(n=dn.exec(t))?(e=n[1].length,n=parseInt(n[1],16),6===e?Mn(n):3===e?new Cn(n>>8&15|n>>4&240,n>>4&15|240&n,(15&n)<<4|15&n,1):8===e?En(n>>24&255,n>>16&255,n>>8&255,(255&n)/255):4===e?En(n>>12&15|n>>8&240,n>>8&15|n>>4&240,n>>4&15|240&n,((15&n)<<4|15&n)/255):null):(n=gn.exec(t))?new Cn(n[1],n[2],n[3],1):(n=vn.exec(t))?new Cn(255*n[1]/100,255*n[2]/100,255*n[3]/100,1):(n=yn.exec(t))?En(n[1],n[2],n[3],n[4]):(n=mn.exec(t))?En(255*n[1]/100,255*n[2]/100,255*n[3]/100,n[4]):(n=_n.exec(t))?$n(n[1],n[2]/100,n[3]/100,1):(n=wn.exec(t))?$n(n[1],n[2]/100,n[3]/100,n[4]):xn.hasOwnProperty(t)?Mn(xn[t]):"transparent"===t?new Cn(NaN,NaN,NaN,0):null}function Mn(t){return new Cn(t>>16&255,t>>8&255,255&t,1)}function En(t,n,e,r){return r<=0&&(t=n=e=NaN),new Cn(t,n,e,r)}function Sn(t){return t instanceof sn||(t=zn(t)),t?new Cn((t=t.rgb()).r,t.g,t.b,t.opacity):new Cn}function An(t,n,e,r){return 1===arguments.length?Sn(t):new Cn(t,n,e,null==r?1:r)}function Cn(t,n,e,r){this.r=+t,this.g=+n,this.b=+e,this.opacity=+r}function Nn(){return"#"+Tn(this.r)+Tn(this.g)+Tn(this.b)}function Xn(){var t=this.opacity;return(1===(t=isNaN(t)?1:Math.max(0,Math.min(1,t)))?"rgb(":"rgba(")+Math.max(0,Math.min(255,Math.round(this.r)||0))+", "+Math.max(0,Math.min(255,Math.round(this.g)||0))+", "+Math.max(0,Math.min(255,Math.round(this.b)||0))+(1===t?")":", "+t+")")}function Tn(t){return((t=Math.max(0,Math.min(255,Math.round(t)||0)))<16?"0":"")+t.toString(16)}function $n(t,n,e,r){return r<=0?t=n=e=NaN:e<=0||e>=1?t=n=NaN:n<=0&&(t=NaN),new Rn(t,n,e,r)}function On(t){if(t instanceof Rn)return new Rn(t.h,t.s,t.l,t.opacity);if(t instanceof sn||(t=zn(t)),!t)return new Rn;if(t instanceof Rn)return t;var n=(t=t.rgb()).r/255,e=t.g/255,r=t.b/255,i=Math.min(n,e,r),o=Math.max(n,e,r),a=NaN,u=o-i,s=(o+i)/2;return u?(a=n===o?(e-r)/u+6*(e<r):e===o?(r-n)/u+2:(n-e)/u+4,u/=s<.5?o+i:2-o-i,a*=60):u=s>0&&s<1?0:a,new Rn(a,u,s,t.opacity)}function Rn(t,n,e,r){this.h=+t,this.s=+n,this.l=+e,this.opacity=+r}function jn(t,n,e){return 255*(t<60?n+(e-n)*t/60:t<180?e:t<240?n+(e-n)*(240-t)/60:n)}function Bn(t,n,e,r,i){var o=t*t,a=o*t;return((1-3*t+3*o-a)*n+(4-6*o+3*a)*e+(1+3*t+3*o-3*a)*r+a*i)/6}an(sn,zn,{copy:function(t){return Object.assign(new this.constructor,this,t)},displayable:function(){return this.rgb().displayable()},hex:bn,formatHex:bn,formatHsl:function(){return On(this).formatHsl()},formatRgb:kn,toString:kn}),an(Cn,An,un(sn,{brighter:function(t){return t=null==t?ln:Math.pow(ln,t),new Cn(this.r*t,this.g*t,this.b*t,this.opacity)},darker:function(t){return t=null==t?cn:Math.pow(cn,t),new Cn(this.r*t,this.g*t,this.b*t,this.opacity)},rgb:function(){return this},displayable:function(){return-.5<=this.r&&this.r<255.5&&-.5<=this.g&&this.g<255.5&&-.5<=this.b&&this.b<255.5&&0<=this.opacity&&this.opacity<=1},hex:Nn,formatHex:Nn,formatRgb:Xn,toString:Xn})),an(Rn,(function(t,n,e,r){return 1===arguments.length?On(t):new Rn(t,n,e,null==r?1:r)}),un(sn,{brighter:function(t){return t=null==t?ln:Math.pow(ln,t),new Rn(this.h,this.s,this.l*t,this.opacity)},darker:function(t){return t=null==t?cn:Math.pow(cn,t),new Rn(this.h,this.s,this.l*t,this.opacity)},rgb:function(){var t=this.h%360+360*(this.h<0),n=isNaN(t)||isNaN(this.s)?0:this.s,e=this.l,r=e+(e<.5?e:1-e)*n,i=2*e-r;return new Cn(jn(t>=240?t-240:t+120,i,r),jn(t,i,r),jn(t<120?t+240:t-120,i,r),this.opacity)},displayable:function(){return(0<=this.s&&this.s<=1||isNaN(this.s))&&0<=this.l&&this.l<=1&&0<=this.opacity&&this.opacity<=1},formatHsl:function(){var t=this.opacity;return(1===(t=isNaN(t)?1:Math.max(0,Math.min(1,t)))?"hsl(":"hsla(")+(this.h||0)+", "+100*(this.s||0)+"%, "+100*(this.l||0)+"%"+(1===t?")":", "+t+")")}}));const In=t=>()=>t;function Pn(t,n){var e=n-t;return e?function(t,n){return function(e){return t+e*n}}(t,e):In(isNaN(t)?n:t)}const qn=function t(n){var e=function(t){return 1==(t=+t)?Pn:function(n,e){return e-n?function(t,n,e){return t=Math.pow(t,e),n=Math.pow(n,e)-t,e=1/e,function(r){return Math.pow(t+r*n,e)}}(n,e,t):In(isNaN(n)?e:n)}}(n);function r(t,n){var r=e((t=An(t)).r,(n=An(n)).r),i=e(t.g,n.g),o=e(t.b,n.b),a=Pn(t.opacity,n.opacity);return function(n){return t.r=r(n),t.g=i(n),t.b=o(n),t.opacity=a(n),t+""}}return r.gamma=t,r}(1);function Yn(t){return function(n){var e,r,i=n.length,o=new Array(i),a=new Array(i),u=new Array(i);for(e=0;e<i;++e)r=An(n[e]),o[e]=r.r||0,a[e]=r.g||0,u[e]=r.b||0;return o=t(o),a=t(a),u=t(u),r.opacity=1,function(t){return r.r=o(t),r.g=a(t),r.b=u(t),r+""}}}Yn((function(t){var n=t.length-1;return function(e){var r=e<=0?e=0:e>=1?(e=1,n-1):Math.floor(e*n),i=t[r],o=t[r+1],a=r>0?t[r-1]:2*i-o,u=r<n-1?t[r+2]:2*o-i;return Bn((e-r/n)*n,a,i,o,u)}})),Yn((function(t){var n=t.length;return function(e){var r=Math.floor(((e%=1)<0?++e:e)*n),i=t[(r+n-1)%n],o=t[r%n],a=t[(r+1)%n],u=t[(r+2)%n];return Bn((e-r/n)*n,i,o,a,u)}}));var Dn=/[-+]?(?:\d+\.?\d*|\.?\d+)(?:[eE][-+]?\d+)?/g,Hn=new RegExp(Dn.source,"g");function Ln(t,n){var e,r,i,o=Dn.lastIndex=Hn.lastIndex=0,a=-1,u=[],s=[];for(t+="",n+="";(e=Dn.exec(t))&&(r=Hn.exec(n));)(i=r.index)>o&&(i=n.slice(o,i),u[a]?u[a]+=i:u[++a]=i),(e=e[0])===(r=r[0])?u[a]?u[a]+=r:u[++a]=r:(u[++a]=null,s.push({i:a,x:Zt(e,r)})),o=Hn.lastIndex;return o<n.length&&(i=n.slice(o),u[a]?u[a]+=i:u[++a]=i),u.length<2?s[0]?function(t){return function(n){return t(n)+""}}(s[0].x):function(t){return function(){return t}}(n):(n=s.length,function(t){for(var e,r=0;r<n;++r)u[(e=s[r]).i]=e.x(t);return u.join("")})}function Vn(t,n){var e;return("number"==typeof n?Zt:n instanceof zn?qn:(e=zn(n))?(n=e,qn):Ln)(t,n)}function Fn(t){return function(){this.removeAttribute(t)}}function Un(t){return function(){this.removeAttributeNS(t.space,t.local)}}function Zn(t,n,e){var r,i,o=e+"";return function(){var a=this.getAttribute(t);return a===o?null:a===r?i:i=n(r=a,e)}}function Gn(t,n,e){var r,i,o=e+"";return function(){var a=this.getAttributeNS(t.space,t.local);return a===o?null:a===r?i:i=n(r=a,e)}}function Kn(t,n,e){var r,i,o;return function(){var a,u,s=e(this);if(null!=s)return(a=this.getAttribute(t))===(u=s+"")?null:a===r&&u===i?o:(i=u,o=n(r=a,s));this.removeAttribute(t)}}function Qn(t,n,e){var r,i,o;return function(){var a,u,s=e(this);if(null!=s)return(a=this.getAttributeNS(t.space,t.local))===(u=s+"")?null:a===r&&u===i?o:(i=u,o=n(r=a,s));this.removeAttributeNS(t.space,t.local)}}function Wn(t,n){return function(e){this.setAttribute(t,n.call(this,e))}}function Jn(t,n){return function(e){this.setAttributeNS(t.space,t.local,n.call(this,e))}}function te(t,n){var e,r;function i(){var i=n.apply(this,arguments);return i!==r&&(e=(r=i)&&Jn(t,i)),e}return i._value=n,i}function ne(t,n){var e,r;function i(){var i=n.apply(this,arguments);return i!==r&&(e=(r=i)&&Wn(t,i)),e}return i._value=n,i}function ee(t,n){return function(){Lt(this,t).delay=+n.apply(this,arguments)}}function re(t,n){return n=+n,function(){Lt(this,t).delay=n}}function ie(t,n){return function(){Vt(this,t).duration=+n.apply(this,arguments)}}function oe(t,n){return n=+n,function(){Vt(this,t).duration=n}}function ae(t,n){if("function"!=typeof n)throw new Error;return function(){Vt(this,t).ease=n}}function ue(t,n,e){var r,i,o=function(t){return(t+"").trim().split(/^|\s+/).every((function(t){var n=t.indexOf(".");return n>=0&&(t=t.slice(0,n)),!t||"start"===t}))}(n)?Lt:Vt;return function(){var a=o(this,t),u=a.on;u!==r&&(i=(r=u).copy()).on(n,e),a.on=i}}var se=gt.prototype.constructor;function ce(t){return function(){this.style.removeProperty(t)}}function le(t,n,e){return function(r){this.style.setProperty(t,n.call(this,r),e)}}function he(t,n,e){var r,i;function o(){var o=n.apply(this,arguments);return o!==i&&(r=(i=o)&&le(t,o,e)),r}return o._value=n,o}function fe(t){return function(n){this.textContent=t.call(this,n)}}function pe(t){var n,e;function r(){var r=t.apply(this,arguments);return r!==e&&(n=(e=r)&&fe(r)),n}return r._value=t,r}var de=0;function ge(t,n,e,r){this._groups=t,this._parents=n,this._name=e,this._id=r}function ve(){return++de}var ye=gt.prototype;ge.prototype=function(t){return gt().transition(t)}.prototype={constructor:ge,select:function(t){var n=this._name,e=this._id;"function"!=typeof t&&(t=r(t));for(var i=this._groups,o=i.length,a=new Array(o),u=0;u<o;++u)for(var s,c,l=i[u],h=l.length,f=a[u]=new Array(h),p=0;p<h;++p)(s=l[p])&&(c=t.call(s,s.__data__,p,l))&&("__data__"in s&&(c.__data__=s.__data__),f[p]=c,Ht(f[p],n,e,p,f,Ft(s,e)));return new ge(a,this._parents,n,e)},selectAll:function(t){var n=this._name,e=this._id;"function"!=typeof t&&(t=a(t));for(var r=this._groups,i=r.length,o=[],u=[],s=0;s<i;++s)for(var c,l=r[s],h=l.length,f=0;f<h;++f)if(c=l[f]){for(var p,d=t.call(c,c.__data__,f,l),g=Ft(c,e),v=0,y=d.length;v<y;++v)(p=d[v])&&Ht(p,n,e,v,d,g);o.push(d),u.push(c)}return new ge(o,u,n,e)},filter:function(t){"function"!=typeof t&&(t=u(t));for(var n=this._groups,e=n.length,r=new Array(e),i=0;i<e;++i)for(var o,a=n[i],s=a.length,c=r[i]=[],l=0;l<s;++l)(o=a[l])&&t.call(o,o.__data__,l,a)&&c.push(o);return new ge(r,this._parents,this._name,this._id)},merge:function(t){if(t._id!==this._id)throw new Error;for(var n=this._groups,e=t._groups,r=n.length,i=e.length,o=Math.min(r,i),a=new Array(r),u=0;u<o;++u)for(var s,c=n[u],l=e[u],h=c.length,f=a[u]=new Array(h),p=0;p<h;++p)(s=c[p]||l[p])&&(f[p]=s);for(;u<r;++u)a[u]=n[u];return new ge(a,this._parents,this._name,this._id)},selection:function(){return new se(this._groups,this._parents)},transition:function(){for(var t=this._name,n=this._id,e=ve(),r=this._groups,i=r.length,o=0;o<i;++o)for(var a,u=r[o],s=u.length,c=0;c<s;++c)if(a=u[c]){var l=Ft(a,n);Ht(a,t,e,c,u,{time:l.time+l.delay+l.duration,delay:0,duration:l.duration,ease:l.ease})}return new ge(r,this._parents,t,e)},call:ye.call,nodes:ye.nodes,node:ye.node,size:ye.size,empty:ye.empty,each:ye.each,on:function(t,n){var e=this._id;return arguments.length<2?Ft(this.node(),e).on.on(t):this.each(ue(e,t,n))},attr:function(t,n){var e=b(t),r="transform"===e?nn:Vn;return this.attrTween(t,"function"==typeof n?(e.local?Qn:Kn)(e,r,on(this,"attr."+t,n)):null==n?(e.local?Un:Fn)(e):(e.local?Gn:Zn)(e,r,n))},attrTween:function(t,n){var e="attr."+t;if(arguments.length<2)return(e=this.tween(e))&&e._value;if(null==n)return this.tween(e,null);if("function"!=typeof n)throw new Error;var r=b(t);return this.tween(e,(r.local?te:ne)(r,n))},style:function(t,n,e){var r="transform"==(t+="")?tn:Vn;return null==n?this.styleTween(t,function(t,n){var e,r,i;return function(){var o=$(this,t),a=(this.style.removeProperty(t),$(this,t));return o===a?null:o===e&&a===r?i:i=n(e=o,r=a)}}(t,r)).on("end.style."+t,ce(t)):"function"==typeof n?this.styleTween(t,function(t,n,e){var r,i,o;return function(){var a=$(this,t),u=e(this),s=u+"";return null==u&&(this.style.removeProperty(t),s=u=$(this,t)),a===s?null:a===r&&s===i?o:(i=s,o=n(r=a,u))}}(t,r,on(this,"style."+t,n))).each(function(t,n){var e,r,i,o,a="style."+n,u="end."+a;return function(){var s=Vt(this,t),c=s.on,l=null==s.value[a]?o||(o=ce(n)):void 0;c===e&&i===l||(r=(e=c).copy()).on(u,i=l),s.on=r}}(this._id,t)):this.styleTween(t,function(t,n,e){var r,i,o=e+"";return function(){var a=$(this,t);return a===o?null:a===r?i:i=n(r=a,e)}}(t,r,n),e).on("end.style."+t,null)},styleTween:function(t,n,e){var r="style."+(t+="");if(arguments.length<2)return(r=this.tween(r))&&r._value;if(null==n)return this.tween(r,null);if("function"!=typeof n)throw new Error;return this.tween(r,he(t,n,null==e?"":e))},text:function(t){return this.tween("text","function"==typeof t?function(t){return function(){var n=t(this);this.textContent=null==n?"":n}}(on(this,"text",t)):function(t){return function(){this.textContent=t}}(null==t?"":t+""))},textTween:function(t){var n="text";if(arguments.length<1)return(n=this.tween(n))&&n._value;if(null==t)return this.tween(n,null);if("function"!=typeof t)throw new Error;return this.tween(n,pe(t))},remove:function(){return this.on("end.remove",function(t){return function(){var n=this.parentNode;for(var e in this.__transition)if(+e!==t)return;n&&n.removeChild(this)}}(this._id))},tween:function(t,n){var e=this._id;if(t+="",arguments.length<2){for(var r,i=Ft(this.node(),e).tween,o=0,a=i.length;o<a;++o)if((r=i[o]).name===t)return r.value;return null}return this.each((null==n?en:rn)(e,t,n))},delay:function(t){var n=this._id;return arguments.length?this.each(("function"==typeof t?ee:re)(n,t)):Ft(this.node(),n).delay},duration:function(t){var n=this._id;return arguments.length?this.each(("function"==typeof t?ie:oe)(n,t)):Ft(this.node(),n).duration},ease:function(t){var n=this._id;return arguments.length?this.each(ae(n,t)):Ft(this.node(),n).ease},easeVarying:function(t){if("function"!=typeof t)throw new Error;return this.each(function(t,n){return function(){var e=n.apply(this,arguments);if("function"!=typeof e)throw new Error;Vt(this,t).ease=e}}(this._id,t))},end:function(){var t,n,e=this,r=e._id,i=e.size();return new Promise((function(o,a){var u={value:a},s={value:function(){0==--i&&o()}};e.each((function(){var e=Vt(this,r),i=e.on;i!==t&&((n=(t=i).copy())._.cancel.push(u),n._.interrupt.push(u),n._.end.push(s)),e.on=n})),0===i&&o()}))},[Symbol.iterator]:ye[Symbol.iterator]};var me={time:null,delay:0,duration:250,ease:function(t){return((t*=2)<=1?t*t*t:(t-=2)*t*t+2)/2}};function _e(t,n){for(var e;!(e=t.__transition)||!(e=e[n]);)if(!(t=t.parentNode))throw new Error(`transition ${n} not found`);return e}gt.prototype.interrupt=function(t){return this.each((function(){Ut(this,t)}))},gt.prototype.transition=function(t){var n,e;t instanceof ge?(n=t._id,t=t._name):(n=ve(),(e=me).time=$t(),t=null==t?null:t+"");for(var r=this._groups,i=r.length,o=0;o<i;++o)for(var a,u=r[o],s=u.length,c=0;c<s;++c)(a=u[c])&&Ht(a,t,n,c,u,e||_e(a,n));return new ge(r,this._parents,t,n)};const{abs:we,max:xe,min:be}=Math;function ke(t){return{type:t}}function ze(t,n){switch(arguments.length){case 0:break;case 1:this.range(t);break;default:this.range(n).domain(t)}return this}["w","e"].map(ke),["n","s"].map(ke),["n","w","e","s","nw","ne","sw","se"].map(ke);const Me=Symbol("implicit"),Ee=function(t){for(var n=t.length/6|0,e=new Array(n),r=0;r<n;)e[r]="#"+t.slice(6*r,6*++r);return e}("1f77b4ff7f0e2ca02cd627289467bd8c564be377c27f7f7fbcbd2217becf");function Se(t){return"string"==typeof t?new pt([[document.querySelector(t)]],[document.documentElement]):new pt([[t]],ft)}const Ae=Math.PI,Ce=2*Ae,Ne=1e-6,Xe=Ce-Ne;function Te(){this._x0=this._y0=this._x1=this._y1=null,this._=""}function $e(){return new Te}Te.prototype=$e.prototype={constructor:Te,moveTo:function(t,n){this._+="M"+(this._x0=this._x1=+t)+","+(this._y0=this._y1=+n)},closePath:function(){null!==this._x1&&(this._x1=this._x0,this._y1=this._y0,this._+="Z")},lineTo:function(t,n){this._+="L"+(this._x1=+t)+","+(this._y1=+n)},quadraticCurveTo:function(t,n,e,r){this._+="Q"+ +t+","+ +n+","+(this._x1=+e)+","+(this._y1=+r)},bezierCurveTo:function(t,n,e,r,i,o){this._+="C"+ +t+","+ +n+","+ +e+","+ +r+","+(this._x1=+i)+","+(this._y1=+o)},arcTo:function(t,n,e,r,i){t=+t,n=+n,e=+e,r=+r,i=+i;var o=this._x1,a=this._y1,u=e-t,s=r-n,c=o-t,l=a-n,h=c*c+l*l;if(i<0)throw new Error("negative radius: "+i);if(null===this._x1)this._+="M"+(this._x1=t)+","+(this._y1=n);else if(h>Ne)if(Math.abs(l*u-s*c)>Ne&&i){var f=e-o,p=r-a,d=u*u+s*s,g=f*f+p*p,v=Math.sqrt(d),y=Math.sqrt(h),m=i*Math.tan((Ae-Math.acos((d+h-g)/(2*v*y)))/2),_=m/y,w=m/v;Math.abs(_-1)>Ne&&(this._+="L"+(t+_*c)+","+(n+_*l)),this._+="A"+i+","+i+",0,0,"+ +(l*f>c*p)+","+(this._x1=t+w*u)+","+(this._y1=n+w*s)}else this._+="L"+(this._x1=t)+","+(this._y1=n)},arc:function(t,n,e,r,i,o){t=+t,n=+n,o=!!o;var a=(e=+e)*Math.cos(r),u=e*Math.sin(r),s=t+a,c=n+u,l=1^o,h=o?r-i:i-r;if(e<0)throw new Error("negative radius: "+e);null===this._x1?this._+="M"+s+","+c:(Math.abs(this._x1-s)>Ne||Math.abs(this._y1-c)>Ne)&&(this._+="L"+s+","+c),e&&(h<0&&(h=h%Ce+Ce),h>Xe?this._+="A"+e+","+e+",0,1,"+l+","+(t-a)+","+(n-u)+"A"+e+","+e+",0,1,"+l+","+(this._x1=s)+","+(this._y1=c):h>Ne&&(this._+="A"+e+","+e+",0,"+ +(h>=Ae)+","+l+","+(this._x1=t+e*Math.cos(i))+","+(this._y1=n+e*Math.sin(i))))},rect:function(t,n,e,r){this._+="M"+(this._x0=this._x1=+t)+","+(this._y0=this._y1=+n)+"h"+ +e+"v"+ +r+"h"+-e+"Z"},toString:function(){return this._}};const Oe=$e;var Re=Array.prototype.slice;function je(t){return function(){return t}}function Be(t){return t[0]}function Ie(t){return t[1]}function Pe(t){return t.source}function qe(t){return t.target}function Ye(t,n,e,r,i){t.moveTo(n,e),t.bezierCurveTo(n=(n+r)/2,e,n,i,r,i)}function De(t){t.preventDefault(),t.stopImmediatePropagation()}function He(t){var n=t.document.documentElement,e=Se(t).on("dragstart.drag",De,!0);"onselectstart"in n?e.on("selectstart.drag",De,!0):(n.__noselect=n.style.MozUserSelect,n.style.MozUserSelect="none")}function Le(t,n){var e=t.document.documentElement,r=Se(t).on("dragstart.drag",null);n&&(r.on("click.drag",De,!0),setTimeout((function(){r.on("click.drag",null)}),0)),"onselectstart"in e?r.on("selectstart.drag",null):(e.style.MozUserSelect=e.__noselect,delete e.__noselect)}function Ve(t){return((t=Math.exp(t))+1/t)/2}const Fe=function t(n,e,r){function i(t,i){var o,a,u=t[0],s=t[1],c=t[2],l=i[0],h=i[1],f=i[2],p=l-u,d=h-s,g=p*p+d*d;if(g<1e-12)a=Math.log(f/c)/n,o=function(t){return[u+t*p,s+t*d,c*Math.exp(n*t*a)]};else{var v=Math.sqrt(g),y=(f*f-c*c+r*g)/(2*c*e*v),m=(f*f-c*c-r*g)/(2*f*e*v),_=Math.log(Math.sqrt(y*y+1)-y),w=Math.log(Math.sqrt(m*m+1)-m);a=(w-_)/n,o=function(t){var r,i=t*a,o=Ve(_),l=c/(e*v)*(o*(r=n*i+_,((r=Math.exp(2*r))-1)/(r+1))-function(t){return((t=Math.exp(t))-1/t)/2}(_));return[u+l*p,s+l*d,c*o/Ve(n*i+_)]}}return o.duration=1e3*a*n/Math.SQRT2,o}return i.rho=function(n){var e=Math.max(.001,+n),r=e*e;return t(e,r,r*r)},i}(Math.SQRT2,2,4);function Ue(t,n){if(t=function(t){let n;for(;n=t.sourceEvent;)t=n;return t}(t),void 0===n&&(n=t.currentTarget),n){var e=n.ownerSVGElement||n;if(e.createSVGPoint){var r=e.createSVGPoint();return r.x=t.clientX,r.y=t.clientY,[(r=r.matrixTransform(n.getScreenCTM().inverse())).x,r.y]}if(n.getBoundingClientRect){var i=n.getBoundingClientRect();return[t.clientX-i.left-n.clientLeft,t.clientY-i.top-n.clientTop]}}return[t.pageX,t.pageY]}const Ze=t=>()=>t;function Ge(t,{sourceEvent:n,target:e,transform:r,dispatch:i}){Object.defineProperties(this,{type:{value:t,enumerable:!0,configurable:!0},sourceEvent:{value:n,enumerable:!0,configurable:!0},target:{value:e,enumerable:!0,configurable:!0},transform:{value:r,enumerable:!0,configurable:!0},_:{value:i}})}function Ke(t,n,e){this.k=t,this.x=n,this.y=e}Ke.prototype={constructor:Ke,scale:function(t){return 1===t?this:new Ke(this.k*t,this.x,this.y)},translate:function(t,n){return 0===t&0===n?this:new Ke(this.k,this.x+this.k*t,this.y+this.k*n)},apply:function(t){return[t[0]*this.k+this.x,t[1]*this.k+this.y]},applyX:function(t){return t*this.k+this.x},applyY:function(t){return t*this.k+this.y},invert:function(t){return[(t[0]-this.x)/this.k,(t[1]-this.y)/this.k]},invertX:function(t){return(t-this.x)/this.k},invertY:function(t){return(t-this.y)/this.k},rescaleX:function(t){return t.copy().domain(t.range().map(this.invertX,this).map(t.invert,t))},rescaleY:function(t){return t.copy().domain(t.range().map(this.invertY,this).map(t.invert,t))},toString:function(){return"translate("+this.x+","+this.y+") scale("+this.k+")"}};var Qe=new Ke(1,0,0);function We(t){for(;!t.__zoom;)if(!(t=t.parentNode))return Qe;return t.__zoom}function Je(t){t.stopImmediatePropagation()}function tr(t){t.preventDefault(),t.stopImmediatePropagation()}function nr(t){return!(t.ctrlKey&&"wheel"!==t.type||t.button)}function er(){var t=this;return t instanceof SVGElement?(t=t.ownerSVGElement||t).hasAttribute("viewBox")?[[(t=t.viewBox.baseVal).x,t.y],[t.x+t.width,t.y+t.height]]:[[0,0],[t.width.baseVal.value,t.height.baseVal.value]]:[[0,0],[t.clientWidth,t.clientHeight]]}function rr(){return this.__zoom||Qe}function ir(t){return-t.deltaY*(1===t.deltaMode?.05:t.deltaMode?1:.002)*(t.ctrlKey?10:1)}function or(){return navigator.maxTouchPoints||"ontouchstart"in this}function ar(t,n,e){var r=t.invertX(n[0][0])-e[0][0],i=t.invertX(n[1][0])-e[1][0],o=t.invertY(n[0][1])-e[0][1],a=t.invertY(n[1][1])-e[1][1];return t.translate(i>r?(r+i)/2:Math.min(0,r)||Math.max(0,i),a>o?(o+a)/2:Math.min(0,o)||Math.max(0,a))}function ur(){return(ur=Object.assign||function(t){for(var n=1;n<arguments.length;n++){var e=arguments[n];for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&(t[r]=e[r])}return t}).apply(this,arguments)}function sr(t){if(void 0===t)throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return t}function cr(t,n){for(var e=0;e<n.length;e++){var r=n[e];r.enumerable=r.enumerable||!1,r.configurable=!0,"value"in r&&(r.writable=!0),Object.defineProperty(t,r.key,r)}}function lr(t,n,e){return n&&cr(t.prototype,n),e&&cr(t,e),t}function hr(t,n){return(hr=Object.setPrototypeOf||function(t,n){return t.__proto__=n,t})(t,n)}function fr(t,n){t.prototype=Object.create(n.prototype),t.prototype.constructor=t,hr(t,n)}function pr(t){var n=0,e=t.children,r=e&&e.length;if(r)for(;--r>=0;)n+=e[r].value;else n=1;t.value=n}function dr(t,n){var e,r,i,o,a,u=new mr(t),s=+t.value&&(u.value=t.value),c=[u];for(null==n&&(n=gr);e=c.pop();)if(s&&(e.value=+e.data.value),(i=n(e.data))&&(a=i.length))for(e.children=new Array(a),o=a-1;o>=0;--o)c.push(r=e.children[o]=new mr(i[o])),r.parent=e,r.depth=e.depth+1;return u.eachBefore(yr)}function gr(t){return t.children}function vr(t){t.data=t.data.data}function yr(t){var n=0;do{t.height=n}while((t=t.parent)&&t.height<++n)}function mr(t){this.data=t,this.depth=this.height=0,this.parent=null}We.prototype=Ke.prototype,mr.prototype=dr.prototype={constructor:mr,count:function(){return this.eachAfter(pr)},each:function(t){var n,e,r,i,o=this,a=[o];do{for(n=a.reverse(),a=[];o=n.pop();)if(t(o),e=o.children)for(r=0,i=e.length;r<i;++r)a.push(e[r])}while(a.length);return this},eachAfter:function(t){for(var n,e,r,i=this,o=[i],a=[];i=o.pop();)if(a.push(i),n=i.children)for(e=0,r=n.length;e<r;++e)o.push(n[e]);for(;i=a.pop();)t(i);return this},eachBefore:function(t){for(var n,e,r=this,i=[r];r=i.pop();)if(t(r),n=r.children)for(e=n.length-1;e>=0;--e)i.push(n[e]);return this},sum:function(t){return this.eachAfter((function(n){for(var e=+t(n.data)||0,r=n.children,i=r&&r.length;--i>=0;)e+=r[i].value;n.value=e}))},sort:function(t){return this.eachBefore((function(n){n.children&&n.children.sort(t)}))},path:function(t){for(var n=this,e=function(t,n){if(t===n)return t;var e=t.ancestors(),r=n.ancestors(),i=null;for(t=e.pop(),n=r.pop();t===n;)i=t,t=e.pop(),n=r.pop();return i}(n,t),r=[n];n!==e;)n=n.parent,r.push(n);for(var i=r.length;t!==e;)r.splice(i,0,t),t=t.parent;return r},ancestors:function(){for(var t=this,n=[t];t=t.parent;)n.push(t);return n},descendants:function(){var t=[];return this.each((function(n){t.push(n)})),t},leaves:function(){var t=[];return this.eachBefore((function(n){n.children||t.push(n)})),t},links:function(){var t=this,n=[];return t.each((function(e){e!==t&&n.push({source:e.parent,target:e})})),n},copy:function(){return dr(this).eachBefore(vr)}};var _r=Object.freeze({children:function(t){return t.children},nodeSize:function(t){return t.data.size},spacing:0});function wr(t){var n=Object.assign({},_r,t);function e(t){var e=n[t];return"function"==typeof e?e:function(){return e}}function r(t){var n,r,a,u=o((n=i(),r=e("nodeSize"),a=e("spacing"),function(t){function n(n){var e;return e=t.call(this,n)||this,Object.assign(sr(e),{x:0,y:0,relX:0,prelim:0,shift:0,change:0,lExt:sr(e),lExtRelX:0,lThr:null,rExt:sr(e),rExtRelX:0,rThr:null}),e}fr(n,t);var e=n.prototype;return e.spacing=function(t){return a(this.data,t.data)},e.update=function(){return xr(this),br(this),this},lr(n,[{key:"size",get:function(){return r(this.data)}},{key:"x",get:function(){return this.data.x},set:function(t){this.data.x=t}},{key:"y",get:function(){return this.data.y},set:function(t){this.data.y=t}}]),n}(n)),t,(function(t){return t.children}));return u.update(),u.data}function i(){var t=e("nodeSize"),n=e("spacing");return function(e){function r(t){return e.call(this,t)||this}fr(r,e);var i=r.prototype;return i.copy=function(){var t=o(this.constructor,this,(function(t){return t.children}));return t.each((function(t){return t.data=t.data.data})),t},i.spacing=function(t){return n(this,t)},r.maxExtents=function(t,n){return{top:Math.min(t.top,n.top),bottom:Math.max(t.bottom,n.bottom),left:Math.min(t.left,n.left),right:Math.max(t.right,n.right)}},lr(r,[{key:"size",get:function(){return t(this)}},{key:"nodes",get:function(){return this.descendants()}},{key:"xSize",get:function(){return this.size[0]}},{key:"ySize",get:function(){return this.size[1]}},{key:"top",get:function(){return this.y}},{key:"bottom",get:function(){return this.y+this.ySize}},{key:"left",get:function(){return this.x-this.xSize/2}},{key:"right",get:function(){return this.x+this.xSize/2}},{key:"root",get:function(){var t=this.ancestors();return t[t.length-1]}},{key:"numChildren",get:function(){return this.hasChildren?this.children.length:0}},{key:"hasChildren",get:function(){return!this.noChildren}},{key:"noChildren",get:function(){return null===this.children}},{key:"firstChild",get:function(){return this.hasChildren?this.children[0]:null}},{key:"lastChild",get:function(){return this.hasChildren?this.children[this.numChildren-1]:null}},{key:"extents",get:function(){return(this.children||[]).reduce((function(t,n){return r.maxExtents(t,n.extents)}),this.nodeExtents)}},{key:"nodeExtents",get:function(){return{top:this.top,bottom:this.bottom,left:this.left,right:this.right}}}]),r}(dr.prototype.constructor)}function o(t,n,e){return function n(r,i){var o=new t(r);Object.assign(o,{parent:i,depth:null===i?0:i.depth+1,height:0,length:1});var a=e(r)||[];return o.children=0===a.length?null:a.map((function(t){return n(t,o)})),o.children&&Object.assign(o,o.children.reduce((function(t,n){return{height:Math.max(t.height,n.height+1),length:t.length+n.length}}),o)),o}(n,null)}return Object.assign(r,{nodeSize:function(t){return arguments.length?(n.nodeSize=t,r):n.nodeSize},spacing:function(t){return arguments.length?(n.spacing=t,r):n.spacing},children:function(t){return arguments.length?(n.children=t,r):n.children},hierarchy:function(t,e){var r=void 0===e?n.children:e;return o(i(),t,r)},dump:function(t){var n=e("nodeSize");return function t(e){return function(r){var i=e+"  ",o=e+"    ",a=r.x,u=r.y,s=n(r),c=r.children||[],l=0===c.length?" ":","+i+"children: ["+o+c.map(t(o)).join(o)+i+"],"+e;return"{ size: ["+s.join(", ")+"],"+i+"x: "+a+", y: "+u+l+"},"}}("\n")(t)}}),r}wr.version="2.1.1";var xr=function t(n,e){return void 0===e&&(e=0),n.y=e,(n.children||[]).reduce((function(e,r){var i=e[0],o=e[1];t(r,n.y+n.ySize);var a=(0===i?r.lExt:r.rExt).bottom;return 0!==i&&zr(n,i,o),[i+1,Tr(a,i,o)]}),[0,null]),kr(n),Xr(n),n},br=function t(n,e,r){void 0===e&&(e=-n.relX-n.prelim,r=0);var i=e+n.relX;return n.relX=i+n.prelim-r,n.prelim=0,n.x=r+n.relX,(n.children||[]).forEach((function(e){return t(e,i,n.x)})),n},kr=function(t){(t.children||[]).reduce((function(t,n){var e=t[0],r=t[1],i=e+n.shift,o=r+i+n.change;return n.relX+=o,[i,o]}),[0,0])},zr=function(t,n,e){for(var r=t.children[n-1],i=t.children[n],o=r,a=r.relX,u=i,s=i.relX,c=!0;o&&u;){o.bottom>e.lowY&&(e=e.next);var l=a+o.prelim-(s+u.prelim)+o.xSize/2+u.xSize/2+o.spacing(u);(l>0||l<0&&c)&&(s+=l,Mr(i,l),Er(t,n,e.index,l)),c=!1;var h=o.bottom,f=u.bottom;h<=f&&(o=Ar(o))&&(a+=o.relX),h>=f&&(u=Sr(u))&&(s+=u.relX)}!o&&u?Cr(t,n,u,s):o&&!u&&Nr(t,n,o,a)},Mr=function(t,n){t.relX+=n,t.lExtRelX+=n,t.rExtRelX+=n},Er=function(t,n,e,r){var i=t.children[n],o=n-e;if(o>1){var a=r/o;t.children[e+1].shift+=a,i.shift-=a,i.change-=r-a}},Sr=function(t){return t.hasChildren?t.firstChild:t.lThr},Ar=function(t){return t.hasChildren?t.lastChild:t.rThr},Cr=function(t,n,e,r){var i=t.firstChild,o=i.lExt,a=t.children[n];o.lThr=e;var u=r-e.relX-i.lExtRelX;o.relX+=u,o.prelim-=u,i.lExt=a.lExt,i.lExtRelX=a.lExtRelX},Nr=function(t,n,e,r){var i=t.children[n],o=i.rExt,a=t.children[n-1];o.rThr=e;var u=r-e.relX-i.rExtRelX;o.relX+=u,o.prelim-=u,i.rExt=a.rExt,i.rExtRelX=a.rExtRelX},Xr=function(t){if(t.hasChildren){var n=t.firstChild,e=t.lastChild,r=(n.prelim+n.relX-n.xSize/2+e.relX+e.prelim+e.xSize/2)/2;Object.assign(t,{prelim:r,lExt:n.lExt,lExtRelX:n.lExtRelX,rExt:e.rExt,rExtRelX:e.rExtRelX})}},Tr=function(t,n,e){for(;null!==e&&t>=e.lowY;)e=e.next;return{lowY:t,index:n,next:e}};class $r{constructor(){this.listeners=[]}tap(t){return this.listeners.push(t),()=>this.revoke(t)}revoke(t){const n=this.listeners.indexOf(t);n>=0&&this.listeners.splice(n,1)}revokeAll(){this.listeners.splice(0)}call(...t){for(const n of this.listeners)n(...t)}}const Or=Math.random().toString(36).slice(2,8);let Rr=0;function jr(){}function Br(t,n,e="c"){const r=(t,i)=>n(t,(()=>{var n;null==(n=t[e])||n.forEach((n=>{r(n,t)}))}),i);r(t)}function Ir(t){if(Array.from)return Array.from(t);const n=[];for(let e=0;e<t.length;e+=1)n.push(t[e]);return n}function Pr(t,...n){const e=(t||"").split(" ").filter(Boolean);return n.forEach((t=>{t&&e.indexOf(t)<0&&e.push(t)})),e.join(" ")}function qr(t){if("string"==typeof t){const n=t;t=t=>t.tagName===n}const n=t;return function(){let t=Ir(this.childNodes);return n&&(t=t.filter((t=>n(t)))),t}}function Yr(t){const n=t.data;return Math.max(6-2*n.d,1.5)}function Dr(t,n){return t[function(t,n){let e,r=-1,i=-1;if(void 0===n)for(const n of t)++i,null!=n&&(e>n||void 0===e&&n>=n)&&(e=n,r=i);else for(let o of t)null!=(o=n(o,++i,t))&&(e>o||void 0===e&&o>=o)&&(e=o,r=i);return r}(t,n)]}function Hr(t){t.stopPropagation()}const Lr=new $r;class Vr{constructor(t,n){this.options=void 0,this.state=void 0,this.svg=void 0,this.styleNode=void 0,this.g=void 0,this.zoom=void 0,this.viewHooks=void 0,this.revokers=[],["handleZoom","handleClick"].forEach((t=>{this[t]=this[t].bind(this)})),this.viewHooks={transformHtml:new $r},this.svg=t.datum?t:Se(t),this.styleNode=this.svg.append("style"),this.zoom=function(){var t,n,e,r=nr,i=er,o=ar,a=ir,u=or,s=[0,1/0],c=[[-1/0,-1/0],[1/0,1/0]],l=250,h=Fe,f=bt("start","zoom","end"),p=500,d=0,g=10;function v(t){t.property("__zoom",rr).on("wheel.zoom",k).on("mousedown.zoom",z).on("dblclick.zoom",M).filter(u).on("touchstart.zoom",E).on("touchmove.zoom",S).on("touchend.zoom touchcancel.zoom",A).style("-webkit-tap-highlight-color","rgba(0,0,0,0)")}function y(t,n){return(n=Math.max(s[0],Math.min(s[1],n)))===t.k?t:new Ke(n,t.x,t.y)}function m(t,n,e){var r=n[0]-e[0]*t.k,i=n[1]-e[1]*t.k;return r===t.x&&i===t.y?t:new Ke(t.k,r,i)}function _(t){return[(+t[0][0]+ +t[1][0])/2,(+t[0][1]+ +t[1][1])/2]}function w(t,n,e,r){t.on("start.zoom",(function(){x(this,arguments).event(r).start()})).on("interrupt.zoom end.zoom",(function(){x(this,arguments).event(r).end()})).tween("zoom",(function(){var t=this,o=arguments,a=x(t,o).event(r),u=i.apply(t,o),s=null==e?_(u):"function"==typeof e?e.apply(t,o):e,c=Math.max(u[1][0]-u[0][0],u[1][1]-u[0][1]),l=t.__zoom,f="function"==typeof n?n.apply(t,o):n,p=h(l.invert(s).concat(c/l.k),f.invert(s).concat(c/f.k));return function(t){if(1===t)t=f;else{var n=p(t),e=c/n[2];t=new Ke(e,s[0]-n[0]*e,s[1]-n[1]*e)}a.zoom(null,t)}}))}function x(t,n,e){return!e&&t.__zooming||new b(t,n)}function b(t,n){this.that=t,this.args=n,this.active=0,this.sourceEvent=null,this.extent=i.apply(t,n),this.taps=0}function k(t,...n){if(r.apply(this,arguments)){var e=x(this,n).event(t),i=this.__zoom,u=Math.max(s[0],Math.min(s[1],i.k*Math.pow(2,a.apply(this,arguments)))),l=Ue(t);if(e.wheel)e.mouse[0][0]===l[0]&&e.mouse[0][1]===l[1]||(e.mouse[1]=i.invert(e.mouse[0]=l)),clearTimeout(e.wheel);else{if(i.k===u)return;e.mouse=[l,i.invert(l)],Ut(this),e.start()}tr(t),e.wheel=setTimeout(h,150),e.zoom("mouse",o(m(y(i,u),e.mouse[0],e.mouse[1]),e.extent,c))}function h(){e.wheel=null,e.end()}}function z(t,...n){if(!e&&r.apply(this,arguments)){var i=x(this,n,!0).event(t),a=Se(t.view).on("mousemove.zoom",f,!0).on("mouseup.zoom",p,!0),u=Ue(t,s),s=t.currentTarget,l=t.clientX,h=t.clientY;He(t.view),Je(t),i.mouse=[u,this.__zoom.invert(u)],Ut(this),i.start()}function f(t){if(tr(t),!i.moved){var n=t.clientX-l,e=t.clientY-h;i.moved=n*n+e*e>d}i.event(t).zoom("mouse",o(m(i.that.__zoom,i.mouse[0]=Ue(t,s),i.mouse[1]),i.extent,c))}function p(t){a.on("mousemove.zoom mouseup.zoom",null),Le(t.view,i.moved),tr(t),i.event(t).end()}}function M(t,...n){if(r.apply(this,arguments)){var e=this.__zoom,a=Ue(t.changedTouches?t.changedTouches[0]:t,this),u=e.invert(a),s=e.k*(t.shiftKey?.5:2),h=o(m(y(e,s),a,u),i.apply(this,n),c);tr(t),l>0?Se(this).transition().duration(l).call(w,h,a,t):Se(this).call(v.transform,h,a,t)}}function E(e,...i){if(r.apply(this,arguments)){var o,a,u,s,c=e.touches,l=c.length,h=x(this,i,e.changedTouches.length===l).event(e);for(Je(e),a=0;a<l;++a)s=[s=Ue(u=c[a],this),this.__zoom.invert(s),u.identifier],h.touch0?h.touch1||h.touch0[2]===s[2]||(h.touch1=s,h.taps=0):(h.touch0=s,o=!0,h.taps=1+!!t);t&&(t=clearTimeout(t)),o&&(h.taps<2&&(n=s[0],t=setTimeout((function(){t=null}),p)),Ut(this),h.start())}}function S(t,...n){if(this.__zooming){var e,r,i,a,u=x(this,n).event(t),s=t.changedTouches,l=s.length;for(tr(t),e=0;e<l;++e)i=Ue(r=s[e],this),u.touch0&&u.touch0[2]===r.identifier?u.touch0[0]=i:u.touch1&&u.touch1[2]===r.identifier&&(u.touch1[0]=i);if(r=u.that.__zoom,u.touch1){var h=u.touch0[0],f=u.touch0[1],p=u.touch1[0],d=u.touch1[1],g=(g=p[0]-h[0])*g+(g=p[1]-h[1])*g,v=(v=d[0]-f[0])*v+(v=d[1]-f[1])*v;r=y(r,Math.sqrt(g/v)),i=[(h[0]+p[0])/2,(h[1]+p[1])/2],a=[(f[0]+d[0])/2,(f[1]+d[1])/2]}else{if(!u.touch0)return;i=u.touch0[0],a=u.touch0[1]}u.zoom("touch",o(m(r,i,a),u.extent,c))}}function A(t,...r){if(this.__zooming){var i,o,a=x(this,r).event(t),u=t.changedTouches,s=u.length;for(Je(t),e&&clearTimeout(e),e=setTimeout((function(){e=null}),p),i=0;i<s;++i)o=u[i],a.touch0&&a.touch0[2]===o.identifier?delete a.touch0:a.touch1&&a.touch1[2]===o.identifier&&delete a.touch1;if(a.touch1&&!a.touch0&&(a.touch0=a.touch1,delete a.touch1),a.touch0)a.touch0[1]=this.__zoom.invert(a.touch0[0]);else if(a.end(),2===a.taps&&(o=Ue(o,this),Math.hypot(n[0]-o[0],n[1]-o[1])<g)){var c=Se(this).on("dblclick.zoom");c&&c.apply(this,arguments)}}}return v.transform=function(t,n,e,r){var i=t.selection?t.selection():t;i.property("__zoom",rr),t!==i?w(t,n,e,r):i.interrupt().each((function(){x(this,arguments).event(r).start().zoom(null,"function"==typeof n?n.apply(this,arguments):n).end()}))},v.scaleBy=function(t,n,e,r){v.scaleTo(t,(function(){return this.__zoom.k*("function"==typeof n?n.apply(this,arguments):n)}),e,r)},v.scaleTo=function(t,n,e,r){v.transform(t,(function(){var t=i.apply(this,arguments),r=this.__zoom,a=null==e?_(t):"function"==typeof e?e.apply(this,arguments):e,u=r.invert(a),s="function"==typeof n?n.apply(this,arguments):n;return o(m(y(r,s),a,u),t,c)}),e,r)},v.translateBy=function(t,n,e,r){v.transform(t,(function(){return o(this.__zoom.translate("function"==typeof n?n.apply(this,arguments):n,"function"==typeof e?e.apply(this,arguments):e),i.apply(this,arguments),c)}),null,r)},v.translateTo=function(t,n,e,r,a){v.transform(t,(function(){var t=i.apply(this,arguments),a=this.__zoom,u=null==r?_(t):"function"==typeof r?r.apply(this,arguments):r;return o(Qe.translate(u[0],u[1]).scale(a.k).translate("function"==typeof n?-n.apply(this,arguments):-n,"function"==typeof e?-e.apply(this,arguments):-e),t,c)}),r,a)},b.prototype={event:function(t){return t&&(this.sourceEvent=t),this},start:function(){return 1==++this.active&&(this.that.__zooming=this,this.emit("start")),this},zoom:function(t,n){return this.mouse&&"mouse"!==t&&(this.mouse[1]=n.invert(this.mouse[0])),this.touch0&&"touch"!==t&&(this.touch0[1]=n.invert(this.touch0[0])),this.touch1&&"touch"!==t&&(this.touch1[1]=n.invert(this.touch1[0])),this.that.__zoom=n,this.emit("zoom"),this},end:function(){return 0==--this.active&&(delete this.that.__zooming,this.emit("end")),this},emit:function(t){var n=Se(this.that).datum();f.call(t,this.that,new Ge(t,{sourceEvent:this.sourceEvent,target:v,type:t,transform:this.that.__zoom,dispatch:f}),n)}},v.wheelDelta=function(t){return arguments.length?(a="function"==typeof t?t:Ze(+t),v):a},v.filter=function(t){return arguments.length?(r="function"==typeof t?t:Ze(!!t),v):r},v.touchable=function(t){return arguments.length?(u="function"==typeof t?t:Ze(!!t),v):u},v.extent=function(t){return arguments.length?(i="function"==typeof t?t:Ze([[+t[0][0],+t[0][1]],[+t[1][0],+t[1][1]]]),v):i},v.scaleExtent=function(t){return arguments.length?(s[0]=+t[0],s[1]=+t[1],v):[s[0],s[1]]},v.translateExtent=function(t){return arguments.length?(c[0][0]=+t[0][0],c[1][0]=+t[1][0],c[0][1]=+t[0][1],c[1][1]=+t[1][1],v):[[c[0][0],c[0][1]],[c[1][0],c[1][1]]]},v.constrain=function(t){return arguments.length?(o=t,v):o},v.duration=function(t){return arguments.length?(l=+t,v):l},v.interpolate=function(t){return arguments.length?(h=t,v):h},v.on=function(){var t=f.on.apply(f,arguments);return t===f?v:t},v.clickDistance=function(t){return arguments.length?(d=(t=+t)*t,v):Math.sqrt(d)},v.tapDistance=function(t){return arguments.length?(g=+t,v):g},v}().on("zoom",this.handleZoom),this.options=ur({},Vr.defaultOptions,n),this.state={id:this.options.id||(Rr+=1,`mm-${Or}-${Rr}`)},this.g=this.svg.append("g").attr("class",`${this.state.id}-g`),this.updateStyle(),this.svg.call(this.zoom),this.revokers.push(Lr.tap((()=>{this.setData()})))}getStyleContent(){const{style:t,nodeFont:n}=this.options,{id:e}=this.state;return`.${e} { line-height: 1; }\n.${e} a { color: #0097e6; }\n.${e} a:hover { color: #00a8ff; }\n.${e}-g > path { fill: none; }\n.${e}-g > g > circle { cursor: pointer; }\n.${e}-fo > div { display: inline-block; font: ${n}; white-space: nowrap; }\n.${e}-fo code { font-size: calc(1em - 2px); color: #555; background-color: #f0f0f0; border-radius: 2px; }\n.${e}-fo :not(pre) > code { padding: .2em .4em; }\n.${e}-fo del { text-decoration: line-through; }\n.${e}-fo em { font-style: italic; }\n.${e}-fo strong { font-weight: bolder; }\n.${e}-fo pre { margin: 0; padding: .2em .4em; }\n${"function"==typeof t?t(e):""}\n`}updateStyle(){this.svg.attr("class",Pr(this.svg.attr("class"),this.state.id)),this.styleNode.text(this.getStyleContent())}handleZoom(t){const{transform:n}=t;this.g.attr("transform",n)}handleClick(t,n){var e;const{data:r}=n;r.p=ur({},r.p,{f:!(null!=(e=r.p)&&e.f)}),this.renderData(n.data)}initializeData(t){let n=0;const{nodeFont:e,color:r,nodeMinHeight:i}=this.options,{id:o}=this.state,a=document.createElement("div"),u=`${o}-container`;a.className=Pr(a.className,`${o}-fo`,u);const s=document.createElement("style");s.textContent=`\n${this.getStyleContent()}\n.${u} {\n  position: absolute;\n  width: 0;\n  height: 0;\n  top: -100px;\n  left: -100px;\n  overflow: hidden;\n  font: ${e};\n}\n.${u} > div {\n  display: inline-block;\n}\n`,document.body.append(s,a),Br(t,((t,e)=>{var i;t.c=null==(i=t.c)?void 0:i.map((t=>ur({},t))),n+=1;const o=document.createElement("div");o.innerHTML=t.v,a.append(o),t.p=ur({},t.p,{i:n,el:o}),r(t),e()}));const c=Ir(a.childNodes);this.viewHooks.transformHtml.call(this,c),Br(t,((t,n,e)=>{var r;const o=t.p.el.getBoundingClientRect();t.v=t.p.el.innerHTML,t.p.s=[Math.ceil(o.width),Math.max(Math.ceil(o.height),i)],t.p.k=`${(null==e||null==(r=e.p)?void 0:r.i)||""}.${t.p.i}:${t.v}`,n()})),a.remove(),s.remove()}setOptions(t){Object.assign(this.options,t)}setData(t,n){t&&(this.state.data=t),this.initializeData(this.state.data),n&&this.setOptions(n),this.renderData()}renderData(e){var r,i;if(!this.state.data)return;const{spacingHorizontal:o,paddingX:a,spacingVertical:u,autoFit:s,color:c}=this.options,{id:l}=this.state,h=wr().children((t=>{var n;return!(null!=(n=t.p)&&n.f)&&t.c})).nodeSize((t=>{const[n,e]=t.data.p.s;return[e,n+(n?2*a:0)+o]})).spacing(((t,n)=>t.parent===n.parent?u:2*u)),f=h.hierarchy(this.state.data);h(f),function(t,n){Br(t,((t,e)=>{t.ySizeInner=t.ySize-n,t.y+=n,e()}),"children")}(f,o);const p=f.descendants().reverse(),d=f.links(),g=function(t){var n=Pe,e=qe,r=Be,i=Ie,o=null;function a(){var a,u=Re.call(arguments),s=n.apply(this,u),c=e.apply(this,u);if(o||(o=a=Oe()),t(o,+r.apply(this,(u[0]=s,u)),+i.apply(this,u),+r.apply(this,(u[0]=c,u)),+i.apply(this,u)),a)return o=null,a+""||null}return a.source=function(t){return arguments.length?(n=t,a):n},a.target=function(t){return arguments.length?(e=t,a):e},a.x=function(t){return arguments.length?(r="function"==typeof t?t:je(+t),a):r},a.y=function(t){return arguments.length?(i="function"==typeof t?t:je(+t),a):i},a.context=function(t){return arguments.length?(o=null==t?null:t,a):o},a}(Ye),v=n(p,(t=>t.x-t.xSize/2)),y=t(p,(t=>t.x+t.xSize/2)),m=n(p,(t=>t.y)),_=t(p,(t=>t.y+t.ySizeInner));Object.assign(this.state,{minX:v,maxX:y,minY:m,maxY:_}),s&&this.fit();const w=e&&p.find((t=>t.data===e))||f,x=null!=(r=w.data.p.x0)?r:w.x,b=null!=(i=w.data.p.y0)?i:w.y,k=this.g.selectAll(qr("g")).data(p,(t=>t.data.p.k)),z=k.enter().append("g").attr("transform",(t=>`translate(${b+w.ySizeInner-t.ySizeInner},${x+w.xSize/2-t.xSize})`)),M=this.transition(k.exit());M.select("rect").attr("width",0).attr("x",(t=>t.ySizeInner)),M.select("foreignObject").style("opacity",0),M.attr("transform",(t=>`translate(${w.y+w.ySizeInner-t.ySizeInner},${w.x+w.xSize/2-t.xSize})`)).remove();const E=k.merge(z);this.transition(E).attr("transform",(t=>`translate(${t.y},${t.x-t.xSize/2})`));const S=E.selectAll(qr("rect")).data((t=>[t]),(t=>t.data.p.k)).join((t=>t.append("rect").attr("x",(t=>t.ySizeInner)).attr("y",(t=>t.xSize-Yr(t)/2)).attr("width",0).attr("height",Yr)),(t=>t),(t=>t.remove()));this.transition(S).attr("x",-1).attr("width",(t=>t.ySizeInner+2)).attr("fill",(t=>c(t.data)));const A=E.selectAll(qr("circle")).data((t=>t.data.c?[t]:[]),(t=>t.data.p.k)).join((t=>t.append("circle").attr("stroke-width","1.5").attr("cx",(t=>t.ySizeInner)).attr("cy",(t=>t.xSize)).attr("r",0).on("click",this.handleClick)),(t=>t),(t=>t.remove()));this.transition(A).attr("r",6).attr("stroke",(t=>c(t.data))).attr("fill",(t=>{var n;return null!=(n=t.data.p)&&n.f&&t.data.c?c(t.data):"#fff"}));const C=E.selectAll(qr("foreignObject")).data((t=>[t]),(t=>t.data.p.k)).join((t=>{const n=t.append("foreignObject").attr("class",`${l}-fo`).attr("x",a).attr("y",0).style("opacity",0).attr("height",(t=>t.xSize)).on("mousedown",Hr).on("dblclick",Hr);return n.append("xhtml:div").select((function(t){const n=t.data.p.el.cloneNode(!0);return this.replaceWith(n),n})).attr("xmlns","http://www.w3.org/1999/xhtml"),n}),(t=>t),(t=>t.remove())).attr("width",(t=>Math.max(0,t.ySizeInner-2*a)));this.transition(C).style("opacity",1);const N=this.g.selectAll(qr("path")).data(d,(t=>t.target.data.p.k)).join((t=>{const n=[b+w.ySizeInner,x+w.xSize/2];return t.insert("path","g").attr("d",g({source:n,target:n}))}),(t=>t),(t=>{const n=[w.y+w.ySizeInner,w.x+w.xSize/2];return this.transition(t).attr("d",g({source:n,target:n})).remove()}));this.transition(N).attr("stroke",(t=>c(t.target.data))).attr("stroke-width",(t=>Yr(t.target))).attr("d",(t=>{const n=[t.source.y+t.source.ySizeInner,t.source.x+t.source.xSize/2],e=[t.target.y,t.target.x+t.target.xSize/2];return g({source:n,target:e})})),p.forEach((t=>{t.data.p.x0=t.x,t.data.p.y0=t.y}))}transition(t){const{duration:n}=this.options;return t.transition().duration(n)}async fit(){const t=this.svg.node(),{width:n,height:e}=t.getBoundingClientRect(),{fitRatio:r}=this.options,{minX:i,maxX:o,minY:a,maxY:u}=this.state,s=u-a,c=o-i,l=Math.min(n/s*r,e/c*r,2),h=Qe.translate((n-s*l)/2-a*l,(e-c*l)/2-i*l).scale(l);return this.transition(this.svg).call(this.zoom.transform,h).end().catch(jr)}async ensureView(t,n){let e,r;if(this.g.selectAll(qr("g")).each((function(n){n.data===t&&(e=this,r=n)})),!e||!r)return;const i=this.svg.node(),o=i.getBoundingClientRect(),a=We(i),[u,s]=[r.y,r.y+r.ySizeInner+2].map((t=>t*a.k+a.x)),[c,l]=[r.x-r.xSize/2,r.x+r.xSize/2].map((t=>t*a.k+a.y)),h=ur({left:0,right:0,top:0,bottom:0},n),f=[h.left-u,o.width-h.right-s],p=[h.top-c,o.height-h.bottom-l],d=f[0]*f[1]>0?Dr(f,Math.abs)/a.k:0,g=p[0]*p[1]>0?Dr(p,Math.abs)/a.k:0;if(d||g){const t=a.translate(d,g);return this.transition(this.svg).call(this.zoom.transform,t).end().catch(jr)}}async rescale(t){const n=this.svg.node(),{width:e,height:r}=n.getBoundingClientRect(),i=e/2,o=r/2,a=We(n),u=a.translate((i-a.x)*(1-t)/a.k,(o-a.y)*(1-t)/a.k).scale(t);return this.transition(this.svg).call(this.zoom.transform,u).end().catch(jr)}destroy(){this.svg.remove(),this.revokers.forEach((t=>{t()}))}static create(t,n,e){const r=new Vr(t,n);return e&&(r.setData(e),r.fit()),r}}var Fr;Vr.defaultOptions={duration:500,nodeFont:"300 16px/20px sans-serif",nodeMinHeight:16,spacingVertical:5,spacingHorizontal:80,autoFit:!1,fitRatio:.95,color:(Fr=function t(){var n=new Map,e=[],r=[],i=Me;function o(t){var o=t+"",a=n.get(o);if(!a){if(i!==Me)return i;n.set(o,a=e.push(t))}return r[(a-1)%r.length]}return o.domain=function(t){if(!arguments.length)return e.slice();e=[],n=new Map;for(const r of t){const t=r+"";n.has(t)||n.set(t,e.push(r))}return o},o.range=function(t){return arguments.length?(r=Array.from(t),o):r.slice()},o.unknown=function(t){return arguments.length?(i=t,o):i},o.copy=function(){return t(e,r).unknown(i)},ze.apply(o,arguments),o}(Ee),t=>Fr(t.p.i)),paddingX:8};const Ur="function"==typeof atob,Zr="function"==typeof Buffer,Gr="function"==typeof TextDecoder?new TextDecoder:void 0,Kr=(t=>{let n={};return t.forEach(((t,e)=>n[t]=e)),n})(("function"==typeof TextEncoder&&new TextEncoder,[..."ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/="])),Qr=/^(?:[A-Za-z\d+\/]{4})*?(?:[A-Za-z\d+\/]{2}(?:==)?|[A-Za-z\d+\/]{3}=?)?$/,Wr=String.fromCharCode.bind(String),Jr="function"==typeof Uint8Array.from?Uint8Array.from.bind(Uint8Array):(t,n=(t=>t))=>new Uint8Array(Array.prototype.slice.call(t,0).map(n)),ti=t=>t.replace(/[^A-Za-z0-9\+\/]/g,""),ni=/[\xC0-\xDF][\x80-\xBF]|[\xE0-\xEF][\x80-\xBF]{2}|[\xF0-\xF7][\x80-\xBF]{3}/g,ei=t=>{switch(t.length){case 4:var n=((7&t.charCodeAt(0))<<18|(63&t.charCodeAt(1))<<12|(63&t.charCodeAt(2))<<6|63&t.charCodeAt(3))-65536;return Wr(55296+(n>>>10))+Wr(56320+(1023&n));case 3:return Wr((15&t.charCodeAt(0))<<12|(63&t.charCodeAt(1))<<6|63&t.charCodeAt(2));default:return Wr((31&t.charCodeAt(0))<<6|63&t.charCodeAt(1))}},ri=Ur?t=>atob(ti(t)):Zr?t=>Buffer.from(t,"base64").toString("binary"):t=>{if(t=t.replace(/\s+/g,""),!Qr.test(t))throw new TypeError("malformed base64.");t+="==".slice(2-(3&t.length));let n,e,r,i="";for(let o=0;o<t.length;)n=Kr[t.charAt(o++)]<<18|Kr[t.charAt(o++)]<<12|(e=Kr[t.charAt(o++)])<<6|(r=Kr[t.charAt(o++)]),i+=64===e?Wr(n>>16&255):64===r?Wr(n>>16&255,n>>8&255):Wr(n>>16&255,n>>8&255,255&n);return i},ii=Zr?t=>Jr(Buffer.from(t,"base64")):t=>Jr(ri(t),(t=>t.charCodeAt(0))),oi=Zr?t=>Buffer.from(t,"base64").toString("utf8"):Gr?t=>Gr.decode(ii(t)):t=>ri(t).replace(ni,ei),ai=t=>oi(ti(t.replace(/[-_]/g,(t=>"-"==t?"+":"/")))),ui={style:t=>`.${t}-fo pre {\n  padding: .2em .4em;\n  font-size: calc(1em - 2px);\n  color: #555;\n  background-color: #f0f0f0;\n  border-radius: 2px;\n}`,autoFit:!0};function si(t,n){const{minX:e,maxX:r,minY:i,maxY:o}=t.state,a=(o-i)*n,u=(r-e)*n,s=t.svg.node();s.style.width=`${a}`,s.style.height=`${u}`,t.fit()}!function(){const t=document.querySelectorAll(".markmap");for(const n of t){const t=JSON.parse(ai(n.innerHTML));si(Vr.create(n,ui,t.root),t.attrs.scale??1.1)}}()})()})();
+</script>
+
+    </head>
+    <body class="vscode-body vscode-light">
+        <a for="toc-anchor" id="sailors-on-the-starless-sea"></a><h1 id="sailors-on-the-starless-sea">Sailors on the Starless Sea</h1>
+<a for="toc-anchor" id="a-level-0-adventure"></a><h2 id="a-level-0-adventure">A Level 0 Adventure</h2>
+<div class="attribution" markdown="1">
+<p>By Harley Stroh • Cover artist and cartographer: Doug Kovacs • Editor: Aeryn “Blackdirge” Rudel Interior artists: Jim Holloway, Doug Kovacs, Russ Nicholson, Stefan Poag • Art direction &amp; layout: Joseph Goodman</p>
+<p>Playtesters: (North Texas RPG Convention) Ryan Simm, Martin Britt, Mark Greenberg, Joan McDonald, Jimmy Simpson, Scot H. P. Drew, Jimm Johnson, James R. Cone, Kevin “Iron Phoenix” Highlander, Drew Balog, Steve “Balrog62” Balog, Charles Cliff, Rachel “Half-Dwarvish” Marsh; (SaurusCon) Alex Anderegg, Jon Obert, Matt Ruzicka, Will Stroh; (San Diego Playtest Group) Karina Benish, Kevin Cousineau, Jayson French, Becky Jones, Robert Jones, Sam Carter, Steven Thivierge, Todd Thomas; (Brothers Grim) Michael Curtis, Mark Kellenberger, David Key, Mike Russo, Joe Scagluso, Jack Simonson. Special thanks to the North Texas Roleplaying Games Convention. DCC RPG is copyright © 2012 Goodman Games. Dungeon Crawl Classics is a trademark of Goodman Games. DCC RPG is published under the Open Game License. Refer to the OGL in this work for additional information. <a href="http://www.goodman-games.com">http://www.goodman-games.com</a></p>
+</div>
+<a for="toc-anchor" id="introduction"></a><h2 id="introduction">Introduction</h2>
+<p><u>Remember the good old days, when adventures were underground, NPCs were there to be killed, and the finale of every dungeon was the dragon on the 20th level? Those days are back. Dungeon Crawl Classics adventures don’t waste your time with long-winded speeches, weird campaign settings, or NPCs who aren’t meant to be killed. Each adventure is 100% good, solid dungeon crawl, with the monsters you know, the traps you remember, and the secret doors you know are there somewhere.</u></p>
+<p><u>This adventure is designed for <strong>10 to 15 0-level characters</strong>. Remember that <strong>each player should have 3 characters</strong>. In playtest groups of 15 PCs, 7 or 8 typically survive. The adventure can also be enjoyed by a party of 1st- to 2nd-level characters who are aided by hirelings.</u></p>
+<p>Bent on stopping the rash of abductions plaguing their village, the characters discover a horde of vile beastmen inhabiting the ancient keep on the hill. Seeking the source of these abomina- tions, the PCs uncover an ancient chaos cult and its source: an antediluvian ziggurat set in the center of a vast, underground sea. There, at the font of chaos, the PCs witness a wicked rite culminating in the sacrifice of their fellow villagers. If the PCs can interrupt the rite before its conclusion and stave off the rebirth of the legendary chaos lord, they stand a chance of escaping the underworld alive. But if their courage or luck should fail them, the PCs will suffer a fate more fearsome than death, their spirits fueling the infernal might of the reborn chaos lord.</p>
+<a for="toc-anchor" id="background"></a><h2 id="background">Background</h2>
+<p>Ages past, innumerable chaos cults flourished on the edge of civilization. For each holy spire rising to extol the virtues of goodness and law, there was an infernal reflection, offering mankind material power and wealth in exchange for cruel acts and bloody sacrifice. Humanity was a young and foolish race, and many a prince and peon sold his soul in exchange for power over his foeman. But as civilization endured, uniting tribes into clans and clans into kingdoms, slowly the light of law beat back the chaos.</p>
+<p>Not to be outdone, the powers of chaos and evil sought out champions of profound wickedness and cruelty, mortals possessed of the strength of will to lead the hordes of chaos against the armies of the enemy.</p>
+<p>These champions were the <strong><u>chaos lords</u></strong>.</p>
+<p>The brothers <strong><u>Molan</u></strong> and <strong><u>Felan</u></strong> were two such champions. Vicious and cunning beyond measure, and without a scrap of mercy in their war-hardened hearts, they led hordes of bestial humanoids to victory against the armies of good. With the spoils of their bloody campaigns, they raised a mighty keep and rained terror and violence down upon all in their demesne.</p>
+<p>In the end, the brothers’ success was their undoing. Disparate forces of men, dwarves, and elves rallied together in a crusade against the wicked chaos lords. For thirty-nine days, the allies laid siege to the foul keep. And on the fortieth day, the captain of the elves dealt <strong>Felan</strong> a mortal blow.</p>
+<p>Realizing that his own end was drawing near, <strong>Molan</strong> retreated into the ancient caves beneath the keep. First the chaos lord entombed his brother in a hidden crypt, defended by no less than four curses. Then, as the armies of good laid waste to the keep, <strong>Molan</strong> gave up his mortal shell, commending his damned soul into the writhing limbs of the gods of Chaos.</p>
+<p><strong>Molan</strong> made only one request. When ages had passed, and the armies of good fell into disarray once more, he asked to return and lay waste to his ancient foes.</p>
+<p><strong><u>That time has come.</u></strong></p>
+<a for="toc-anchor" id="rumors-%26-superstitions"></a><h2 id="rumors--superstitions">Rumors &amp; Superstitions</h2>
+<p>The keep looming high on the hill has long been a source of fearsome tales and terrible legends. The locals are steeped in superstitious lore surrounding the keep; some of the tales ring with truth while others are misleading wives’ tales or the fanciful mumblings of a town drunk.</p>
+<p>Before beginning the adventure, <strong>each player (not character) should roll 1d10 on the following table</strong>. It is up to the players to sort the truth from the lies, for while the rumors offer valuable clues, they can also lure foolish characters to their doom.</p>
+<p Rumors="" &amp;="" Superstitions="">@RollTable[T0oCS8SqJ4syfOX2]</p>
+<table>
+<thead>
+<tr>
+<th>1d10</th>
+<th>Rumors &amp; Superstitions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The great treasure vault of a lost dynasty remains hidden beneath the keep.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>The keep sits atop an ancient horror, a seed so wicked that it taints all that come near.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>While the keep fell to the armies of good, they did not eradicate its fell legacy. Evil still festers within the ruined walls, awaiting the day when it can emerge once more.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Some of the villagers kidnapped in the night return as feral, bestial monsters!</td>
+</tr>
+<tr>
+<td>5</td>
+<td>The keep was ruled by chaos lords. Even after their defeat, their corpses were never discovered.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>A sleeping dragon lurks beneath the keep. Accept his quest and he will grant you a wish.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Beware the well! It has swallowed many a poor soul.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Nothing good can come of disturbing the evil ruins. You’ll only unleash the horror beneath the hill.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Look for treasure in the keep’s sole remaining tower. A wealth of gold is hidden there.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>The keep was once ruled by a pair of brothers—chaos lords, the foulest champions of evil to ever stalk the land.</td>
+</tr>
+</tbody>
+</table>
+<a for="toc-anchor" id="encounter-table"></a><h2 id="encounter-table">Encounter Table</h2>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Type</th>
+<th>Encounter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A (The Devil's Causeway)</td>
+<td>C</td>
+<td>2 vine horrors</td>
+</tr>
+<tr>
+<td>B (Ruined Wall)</td>
+<td>T</td>
+<td>Collapsing slope</td>
+</tr>
+<tr>
+<td>B-1 (Tomb of the Fallen)</td>
+<td>T</td>
+<td>4 banes</td>
+</tr>
+<tr>
+<td>C (Gatehouse)</td>
+<td>T</td>
+<td>Portcullis trap, 2 beastmen</td>
+</tr>
+<tr>
+<td>E</td>
+<td>C</td>
+<td>Tar ooze</td>
+</tr>
+<tr>
+<td>F</td>
+<td>P</td>
+<td>Well of Souls</td>
+</tr>
+<tr>
+<td>G</td>
+<td>H</td>
+<td>Sinkhole</td>
+</tr>
+<tr>
+<td>H</td>
+<td>C</td>
+<td>Beastman champion, 6 beastmen, Rot grub</td>
+</tr>
+<tr>
+<td>1-1A</td>
+<td>T</td>
+<td>Blade trap</td>
+</tr>
+<tr>
+<td>1-2</td>
+<td>T</td>
+<td>Pool trap</td>
+</tr>
+<tr>
+<td>1-4</td>
+<td>C</td>
+<td>Chaos leviathan</td>
+</tr>
+<tr>
+<td>1-5</td>
+<td>C</td>
+<td>22 beastmen</td>
+</tr>
+<tr>
+<td>1-5a</td>
+<td>C</td>
+<td>Chaos Lord, Beastman shaman, 3 beastmen acolytes</td>
+</tr>
+</tbody>
+</table>
+<a for="toc-anchor" id="player-start"></a><h2 id="player-start">Player start</h2>
+<div class="readaloud" markdown="1">
+<p><u>You stand before the ruined keep, which squats atop a low, craggy hill, its walls of toppled stone and massive granite blocks hinting at forgotten battles and the clash of mighty armies. Now the ruins seem host only to creeping vines and the foul miasma that drifts down from the keep.</u></p>
+<p><u>The air is overrun with pestilence. Fat flies bite at you incessantly, and clouds of small black insects choke your every breath. The long-abandoned land is choked with thorny vines that drape the sickly trees and hang from the ruined walls. There is an odor of rot and decay, as if the hill itself were decomposing from within.</u></p>
+<p><u>A sight gives you pause: a ragged banner, depicting a crimson skull on a black field, stands high atop the ruined walls. Whatever lurks within has terrorized you and your village for far too long.</u></p>
+<p><u>You turn to your companions and ready your meager weapons. The time for retribution has come.</u></p>
+</div>
+<a for="toc-anchor" id="the-ruined-keep"></a><h2 id="the-ruined-keep">The Ruined Keep</h2>
+<p><strong>General Features:</strong></p>
+<p>The keep’s <strong>walls rise 30 feet from their rammed earth embankments</strong>. The walls and all the fallen stones are covered in a patchwork of moss, sickly vines, and lichen. Rather than simple carved blocks, the keep seems to have been <strong>built of enormous standing stones and mighty dolmens</strong>. The blocks are fitted together crudely, leaving cracks be- tween the stones for rotting vegetation and pools of water that act as host to the gnats and mosquitoes.</p>
+<p><strong>Approaching the Ruins:</strong></p>
+<p>The PCs are free to enter as they see fit.</p>
+<ul>
+<li>While the most obvious approach takes them <strong>up the causeway</strong> (area A), this is also the most dangerous. Wily characters will be rewarded for their suspicion, though hesitation should never be mistaken for caution.</li>
+<li><strong>Approaching from the west</strong> requires the characters to ascend the rubble (area B). Picking their way through the fallen blocks is not difficult, but carries its own risks as noted below.</li>
+<li><strong>Approaching from northeast</strong> brings the PCs directly to the sinkhole (area G).</li>
+<li>Characters <strong>attempting to ascend walls</strong> face a difficult climb. Each character must succeed on a <u>DC 15 climb check</u> or pitch from the wall—falling 20 feet for 2d6 damage—before tumbling down to the base of the rammed earth mound.</li>
+</ul>
+<hr>
+<a for="toc-anchor" id="area-a-%E2%80%93-devil%E2%80%99s-causeway%3A"></a><h3 id="area-a--devils-causeway">Area A – Devil’s Causeway:</h3>
+<div class="readaloud" markdown="1">
+<p><u>An old dirt road, now overrun with weeds and sickly vines, rises towards the ruined citadel. A grisly sight bars your way: a pair of bodies, secured to poles by long ropey vines. The wicked vines have wormed their way inside the bodies’ eyes, ears, and mouths. To your horror, you realize the bodies are still moving.</u></p>
+</div>
+<aside class="creature" markdown="1">
+<p><strong>Vine Horrors (2):</strong> Init +2; Atk vine +2 melee (1d4); AC 13; HD 2d10; hp 10 each; MV 20’; Act 2d20; SP entangle (automatic 1d6 damage on next round if both vine attacks land; DC 15 Str check to escape), death throes (seeds); SV Fort +2, Ref +0, Will +2; AL C.</p>
+<ul>
+<li><strong>Entangle:</strong> If both vines strike the same victim in one round, they entangle the target, automatically inflicting 1d6 points of crushing and choking damage on the following round. An entangled victim can win free with a DC 15 Strength check.</li>
+<li><strong>Death Throes:</strong> On the attack that kills a vine horror, the host corpse splits open, spilling out thousands of small seeds slick with mucus. The seeds become unviable in 12 hours but can move 1 foot per hour until then. If a seed reaches a corpse before expiring, the corpse rises as a vine horror in 1d4 days.</li>
+</ul>
+<p>Vine Horrors are corpses animated by foul vines growing from seeds planted in their chests. The rotting bodies serve both as nutritious hosts for the vines and as seed pods for future vine horrors. Each horror attacks twice per round, flailing with its long, ropey vines.</p>
+</aside>
+<p>The Judge may wish to ask players if any of the characters are blacksmiths, or often interacted with the village blacksmith, as it is possible that one or more members of the party may recognize the corpses at a distance. The two corpses are those of <strong>Keary</strong> and <strong>Alban</strong>, the grown sons of the smith, who vanished from the village eleven days ago. The beastmen killed the brothers and seeded their corpses with vine horrors to ward off any investigations from the townsfolk.</p>
+<p>The horrors’ true nature becomes apparent when the characters approach. The vines unwind from the posts, freeing the horrors to shamble toward the PCs.</p>
+<p>Keary’s corpse is still carrying a <strong>short sword</strong> and <strong>dagger</strong> (gifts forged by his father), and Alban’s corpse has <strong>5 cp</strong> hidden in its right boot.</p>
+<a for="toc-anchor" id="area-b-%E2%80%93-ruined-wall%3A"></a><h3 id="area-b--ruined-wall">Area B – Ruined Wall:</h3>
+<div class="readaloud" markdown="1">
+<p><u>The keep’s massive wall has collapsed here, spilling cyclopean stone blocks down the rocky slope. The blocks are precariously balanced atop one another, like a titan’s game of dice.</u></p>
+</div>
+<p>It is relatively simple work for the PCs to pick their way up the blocks and enter the keep. Several of the blocks are poised to shift if disturbed.</p>
+<p>Cautious PCs that choose to carefully inspect the slope can <strong>detect and avoid the dangerous blocks with a DC 10 Intelligence check. Dwarves or miners receive a free check (Intelligence, DC 8) to notice the same. Dwarves should apply their racial bonus to the check.</strong></p>
+<div class="trap" markdown="1">
+<p>Those ascending the slope without noting the danger inevitably trigger a slide. One false step and massive granite blocks tumble down the slope, crushing all in their path. Clouds of choking dust fill the air along with the screams of the dying and the deafening crash of stone against stone</p>
+<p>All PCs on the slope are targets: Atk avalanche +5 melee; dmg 1d10. The gear of anyone killed in the slide is destroyed. Once the slide is triggered, the slope is safe.</p>
+<p>Triggering the avalanche reveals the entrance to a long forgotten tomb. Characters searching the rubble in the aftermath discover a narrow, rocky shaft descending 14 feet before opening into a small cave at the foot of an enormous, rune-carved portal. This is area B-1.</p>
+</div>
+<a for="toc-anchor" id="area-b-1-%E2%80%93-tomb-of-the-fallen%3A"></a><h3 id="area-b-1--tomb-of-the-fallen">Area B-1 – Tomb of the Fallen:</h3>
+<p>If the PCs <strong>approach from the northwest</strong>, read or paraphrase the following:</p>
+<div class="readaloud" markdown="1">
+<p><u>You squeeze down through the narrow opening, dropping into the small cave below. The air is choked with chalky dust and the per- vasive smell of rot. A single shaft of light cuts through the swirling dust to illuminate an enormous stone door set in a portal.</u></p>
+<p><u>The portal is circumscribed in runes. At the center of the door is a large pentagram inscribed within a circle. Both the runes and the pentagram are set with silver and seem to glimmer faintly in the dim light.</u></p>
+</div>
+<p>If the PCs <strong>approach from the southeast</strong> read or paraphrase the following:</p>
+<div class="readaloud" markdown="1">
+<p><u>A strange and foreboding portal bars your way. The portal is cir- cumscribed in runes. At the center of the portal is a large pentagram inscribed within a circle. Both the runes and the pentagram are set with silver and seem to glimmer faintly in the dim light.</u></p>
+</div>
+<p>Wizards, their apprentices, fortune-tellers and astrologers may attempt to decipher the runes (Intelligence, DC 12). A successful check reveals the following phrases:</p>
+<div class="readaloud" markdown="1">
+<pre><code>the burning purge, which scours the earth
+the hardened glamour, stilling life
+the baleful storm, heedless to supplication
+the raging tempest, devourer from within
+banes four I place upon this gate:
+Fire, Ice, Storm and Hate
+</code></pre>
+</div>
+<p>On a failed check, the Judge is encouraged to make up a misleading translation.</p>
+<div class="trap" markdown="1">
+<a for="toc-anchor" id="the-fire-curse"></a><h4 id="the-fire-curse">The Fire Curse</h4>
+<p>Though heavy, the stone portal is not locked, and can be opened with a <strong>DC 20 Strength</strong> check. Forcing the door trig- gers the first ward: a blast of flame engulfs the door, targeting any within 10 feet (Atk fire ward +0 melee; dmg 1d10). Those scrambling out of the hole (<strong>Reflex save, DC 15</strong>) take only half damage.</p>
+</div>
+<p>Once the portal is cleared the PCs see the following:</p>
+<div class="readaloud" markdown="1">
+<p><u>As the last wisps of flame fade, you can make out a soft crackling sound rustling in the chamber beyond. An icy chill settles over the air and your breath condenses into misty clouds.</u></p>
+<p><u>Through the portal you can make out a low funerary bier. A body lies in repose atop the stone. The body was once a warrior of some sort—it wears a suit of thick hide armor and clutches an enormous battle axe to its chest.</u></p>
+<p><u>The entire chamber sparkles with a soft, elfin glow.</u></p>
+</div>
+<p>This chamber is the tomb of the warrior <strong>Felan</strong>, brother to <strong>Molan</strong>, and fellow chaos lord. <strong>Felan</strong> was killed in battle with the forces of good and was entombed here to prevent his corpse’s capture and desecration.</p>
+<p>The elfin glow emanates from a <strong>hardened sheet of ice that coats the entire chamber</strong>. Though there is no light source within the tomb, <strong>the ice refracts the sunlight from above</strong>, bathing the entire chamber in a soft glow.</p>
+<div class="trap" markdown="1">
+<a for="toc-anchor" id="the-ice-curse"></a><h4 id="the-ice-curse">The Ice Curse</h4>
+<p>As evidenced by the characters’ breath, the chamber is <strong>preternaturally cold</strong>. The cold and ice pose <strong>three threats</strong>:</p>
+<ul>
+<li>Characters must make a <strong>DC 12 Fortitude save</strong> for every round spent within the chamber. Each failed save lowers the PC’s movement by 15 feet as his body succumbs to the cold. Once a PC’s movement drops to zero, he can no longer take any actions.</li>
+<li>The floor is covered in polished, hardened ice. Characters attempting to walk across the ice must succeed on a <strong>DC 15 Reflex save or slip to the ground</strong>. Attempting to stand takes 1 round. The ice is slick enough for PCs to slide. A PC can push off the bier (or get a running leap from out- side) and slide across the room.</li>
+<li><strong>After 5 rounds</strong> within the chamber, the PC takes <strong>1d6 points of cold damage per round</strong>.</li>
+</ul>
+</div>
+<div class="unique-item" markdown="1">
+<a for="toc-anchor" id="felan's-hide-armor"></a><h1 id="felans-hide-armor">Felan's Hide Armor</h1>
+<p>Excellently made armor for an enormous man, sewn of basilisks' hides and furs of polar worms. No one living could identify it as belonging to the chaos lord Felan.</p>
+</div>
+<div class="unique-item" markdown="1">
+<a for="toc-anchor" id="felan's-axe"></a><h1 id="felans-axe">Felan's Axe</h1>
+<p>A huge axe forged of meteoric iron. Can only be wielded by a character with a Strength score 16 or better. The terrible weapon inflicts 1d10 damage on a hit and inflicts critical hits on a threat range expanded by 1 (i.e., a natural roll of 19-20 for most characters, or 18-20 for a warrior or dwarf who is already at a 19-20 crit range).</p>
+</div>
+<p><strong>Felan</strong> was an enormous man, nearly seven feet tall and muscled like a bear. His <span id="felan-hide-armor" class="unique-item">hide armor</span> is of excellent craftsmanship, sewn from the thick hides of basilisks and the fur of polar worms. <span id="felan-axe" class="unique-item">Felan’s enormous axe</span> is forged of meteoric iron and can only be wielded by a character with a Strength score 16 or better. The terrible weapon inflicts 1d10 damage on a hit and inflicts critical hits on a threat range expanded by 1 (i.e., a natural roll of 19-20 for most characters, or 18-20 for a warrior or dwarf who is already at a 19-20 crit range).</p>
+<p>Unfortunately, the corpse and its treasures are all frozen within the ice. A <strong>DC 20 Strength check is required to break the axe free of the corpse</strong>. (This is particularly grisly, snapping Felan’s icy fingers in the process.) <strong>Freeing the corpse and its armor is even more difficult, requiring two subsequent DC 23 Strength checks. Each attempt to free the axe or corpse from the ice takes 1 round.</strong></p>
+<div class="trap" markdown="1">
+<a for="toc-anchor" id="the-storm-and-hate-curses"></a><h4 id="the-storm-and-hate-curses">The Storm and Hate Curses</h4>
+<p>Heroes escaping the tomb with either <strong>the axe</strong> or <strong>the armor</strong> are subject to two last wards: the curse of storm and hate. Judges are encouraged to create their own curse, specific to their home campaign. Following are some sample curses to serve as inspiration:</p>
+<ul>
+<li>The next time the PCs are at sea, their ship is overtaken by a fearsome storm. Just as their ship is torn asunder, the heroes see an image of Felan, silhouetted in the heart of the clouds. To survive the PCs must make it to a jungle island, where ancient reptiles lie in wait.</li>
+<li>The wielder of the Axe of Felan is slowly overcome by his passions. At the judge’s choosing (at least once per adventure) the wielder must succeed on a DC 15 Will save or succumb to a violent rage, mindlessly attacking his foes and savagely pursuing them to the death.</li>
+<li>The next time the PCs are traveling through the wilderness, they are overtaken by towering thunderclouds on an otherwise clear day. Just before the rain starts to fall, the PCs spy the silhouette of Felan in the heart of the roiling black clouds. Then comes the lightning. Each PC that entered the tomb is attacked by a bolt of lightning: Atk lightning bolt +1 missile fire; dmg 2d10.</li>
+</ul>
+</div>
+<a for="toc-anchor" id="area-c-%E2%80%93-gatehouse%3A"></a><h3 id="area-c--gatehouse">Area C – Gatehouse:</h3>
+<div class="readaloud" markdown="1">
+<p><u>The dark, moss-eaten gatehouse towers above you, grim and forbidding. Murder holes, fashioned in the like- ness of looming toads, threaten to gout forth flaming oil and tar. Black arrow slits pierce the high stone walls. You can hear the flap of the heretical banner above, hidden from sight by the vine-draped battlements.</u></p>
+<p><u>The ancient drawbridge has long since fallen away into ruin, leav- ing only a few rotting planks placed across the ditch. The heavy iron portcullis stands half-raised, the rusty spikes a mere four feet above slots cut into the stone floor.</u></p>
+</div>
+<aside class="creature" markdown="1">
+<p>Beastmen (2): Init +1; Atk spear +0 melee (1d6); AC 12; HD 1d8; hp 3 each; MV 30’; Act 1d20; SV Fort +1, Ref +1, Will -1; AL C.</p>
+<p>These beastmen try to hide on the second floor of the gatehouse. When the party enters, they attempt to drop the portcullis on the last rank, then ring a great bell and retreat to Area H.</p>
+</aside>
+<aside id="Beastmen-in-general" class="detail" markdown="1">
+<a for="toc-anchor" id="beastmen"></a><h1 id="beastmen">Beastmen</h1>
+<p>The beastmen lurking within the keep are all villagers corrupted by the lure of the chaos gods. The transfor- mation is both slow and torturous, inevitably driving the subject mad with pain. And while the end result is always horrific, each beastman is mutated in its own unique fashion.</p>
+<p>In general—insofar as such a term can be used—most beastmen resemble their namesake: a hunched, feral cross between a man and a beast. Consult the follow- ing table to determine the specific mutation of any par- ticular beastman or use it as inspiration for your own unique monstrosities.</p>
+<table>
+<thead>
+<tr>
+<th>1d12</th>
+<th>Mutation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Thick, bristly fur, and the head of a (1) bear, (2) ram, (3) rat, (4) ape, (5) tiger, or (6) wolf.</td>
+</tr>
+<tr>
+<td>2</td>
+<td>A hunched, furred back, with a second, diminutive head.</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Dense coat of feathers and the head of a (1) vul- ture, (2) raven, or (3) owl.</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Receding lips that curl back to reveal saber-like fangs, and the slit pupils of a cat.</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Mottled, clammy flesh and the head of a (1) frog, (2) octopus, (3) eel, or (4) salamander.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Curling ram’s horns and bulbous, oversized eyes.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Oversized, hanging jowls that drip black ichor and tiny pinholes for eyes.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Iridescent scales and the head of a (1) snake or (2) lizard.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>A face devoid of mandible form, leaving a flap- ping, wet mess in the place of the mouth and nose.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>A body that weeps maggots, larvae, and flies from its open maw, ears, and eyes.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Thick, leathery skin and the head of an (1) el- ephant, (2) bull, (3) horse, or (4) rhino.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Dark, shiny skin and the head of a (1) fly, (2) spider, (3) cockroach, or (4) ant.</td>
+</tr>
+</tbody>
+</table>
+<p>While beastmen have the capacity to take orders, only the champions and shamans retain the reasoning that once distinguished them from the animal kingdom. In the place of true intelligence, they develop animal cun- ning, stalking their prey like a pack of wolves or a pride of lions.</p>
+</aside>
+<p>Two snarling beastmen lurk on the second floor of the gatehouse (accessible only from area H). Cautious PCs pausing to listen will hear animal-like sniffing sounds and the scratch of claws on stone coming from above.</p>
+<p>The beastmen wait for the PCs to enter, then drop the portcul- lis on the last rank (Atk portcullis -5 melee; Dmg 1d6/round). A hero pinned by the portcullis takes ongoing damage each round until he dies or is freed (DC 23 Str check; alternately, 4 characters lifting together can hoist the portcullis if their com- bined Str exceeds 40).</p>
+<p>After dropping the portcullis, the beastmen toll a great bell. This alerts their brothers to the PCs’ presence. Their work done, the howling beastmen withdraw to area H.</p>
+<a for="toc-anchor" id="area-d-%E2%80%93-courtyard%3A"></a><h3 id="area-d--courtyard">Area D – Courtyard:</h3>
+<div class="readaloud" markdown="1">
+<p><u>The courtyard is overgrown with sickly weeds and thick brambles. A deathly silence hangs in the air, as if even the frogs and insects are afraid to draw attention to themselves. The smell of rotting vegetation is pervasive, and the ground sucks at your boots with every tentative step.</u></p>
+<p><u>Nearly all of the courtyard’s buildings have fallen into ruin. A single burnt-out shell set against the keep’s east wall is the only remaining structure. Set near the heart of the courtyard is a well, framed with a crude pulley system. To the east is the keep’s sole standing tower.</u></p>
+</div>
+<p>Heroes pausing to inspect the ground easily discover a muddy trail leading from the gatehouse through the brambles to the south tower (area H). The small side trail runs to the well (area F).</p>
+<p>The muddy prints indicate a wide variety of creatures: human footprints, the tracks of large creatures with only three toes, hawk-like talons, and perhaps even the slithering trail of an enormous snake. While seeming to hint at a variety of mon- sters, all the tracks belong to mutated beastmen.</p>
+<div class="secret" markdown="1">
+<p>Should the party explicitly search the courtyard, they locate:</p>
+<a for="toc-anchor" id="area-d-1-%E2%80%93-forgotten-cache%3A"></a><h3 id="area-d-1--forgotten-cache">Area D-1 – Forgotten Cache:</h3>
+<div class="readaloud" markdown="1">
+<p><u>Pulling away the dead brambles and matted weeds, you find a long flagstone, half-buried in the muddy ground. Digging away the rotting soil, you discover a sigil carved into the face of the flagstone.</u></p>
+</div>
+<p>The cache can only be found by PCs explicitly searching the courtyard. The flagstone is actually a capstone concealing a small subterranean cist. The small chamber was intended to conceal treasures in case the keep was abandoned to invaders.</p>
+<p>Wizards, their apprentices and scribes can attempt a DC 12 Intelligence check to translate the rune. Properly identified, it reads: ‘ Til Death Shall Pass. If the check fails, the judge is wel- come to make up a misleading translation.</p>
+<p>Hoisting the capstone requires prodigious might (Strength check, DC 30). Alternately, clever PCs might opt to use the block and tackle from the well to lift the stone. Lifting the cap- stone reveals a small, coffin-like nook, walled and floored with stone.</p>
+<p>A hide-wrapped bundle, roughly 5 feet in length, sits atop a pair of wooden rests. Inside the bundle is:</p>
+<ul>
+<li>A stone idol depicting the chaos god Nimlurun.</li>
+<li>A longsword forged of milky steel sheathed in a jewel- encrusted scabbard (worth 75 gp).</li>
+<li>A fur-tufted longbow and a leather quiver containing 25 arrows. Age has ruined the bow: on a roll of a natural 1 or 2, the bow snaps, inflicting 1d2 points of damage to the wielder. This weakness is immediately obvious to any hunter or forester.</li>
+<li>A leather pouch containing a granular green powder and a roll of five cloth bandages. When wine or water is added to the green powder, it forms a poultice that heals 1d4+ hp of damage. Any healer, herbalist, shaman, or cleric can readily identify the powder, or PCs can discover its pur- pose through experimentation. There is sufficient powder for 10 applications.</li>
+</ul>
+<p>The hide is the fur of a rare spotted mountain leopard and can fetch up to 50 gp if sold to the right buyer.</p>
+</div>
+<a for="toc-anchor" id="area-e-%E2%80%93-the-charnel-ruins%3A"></a><h3 id="area-e--the-charnel-ruins">Area E – The Charnel Ruins:</h3>
+<p><u>This once-proud edifice has fallen into ruin like the rest of the keep. All that remains of the building are fire-scarred high stone walls and toad-faced gargoyles leering from above. The singed, bronze doors—cast with hundreds of wailing demonic faces—are barred <strong>from the outside</strong>. The portal is marked with a single word drawn in flaking red paint: REPENT.</u></p>
+<p>When the keep fell to the forces of good, acolytes of the chaos god sought refuge within their chapel. Fearing to tread on unholy ground, the invaders barred the doors from without and set fire to the temple, burning the wicked acolytes alive.</p>
+<p>It is a simple matter to open the portals. Heroes removing the great wooden beam can easily draw open the bronze portals by the enormous rings held within the maws of two fiendish demons.</p>
+<p>Inside, the PCs discover a horrific scene:</p>
+<p><u>Six charred skeletons lie about the chapel, some crushed by burnt fallen beams. At the head of the chapel is a fountain depicting a squat, demonic toad. A foul, black ichor seeps from the toad’s broad lips, pooling in the basin seated at the foot of the fountain.</u></p>
+<p>Even though the slaughter took place decades ago, the stench of charred flesh lingers in the air along with the sour scent of freshly burnt incense.</p>
+<p>Brave PCs that dare to test the skeletons find that the charred bones are hot to the touch, as if the fire burned only yesterday. Cinders glow red and orange beneath each fallen bone.</p>
+<aside class="creature" markdown="1">
+<p><strong>Tar Ooze</strong>: Init (always last); Atk pseudopod +4 melee (1d4 + ignite for additional 1d4 on following round); AC 10; HD 2d10; hp 10; MV 5’, climb 5’; Act 1d20; SP ooze, awed; SV Fort +6, Ref -8, Will -6; AL N.</p>
+<ul>
+<li><strong>Ignite:</strong> On the round following a successful pseudopod attack, the tar ooze ignites, inflicting 1d4 points of fire damage and setting fire to the unlucky PC. Putting out the fire requires 1 action and quickness on the part of the hero. (“Stop, drop and roll!” is sufficient, but PCs whose players are unable to succinctly describe how they put out the flaming tar burn for another round.)</li>
+<li><strong>Ooze:</strong> Half damage from slicing and piercing weapons.</li>
+<li><strong>Awed:</strong> The tar ooze is unmoving and still in the presence of certain religious practices, such as the burning of sanctified incense.</li>
+</ul>
+<p>The origin of tar ooze is unknown. It is theorized by some to be a byproduct of or side effect of certain chaotic religious practices, as it respects religious observances.</p>
+</aside>
+<p>The tar ooze can also be placated by swinging the charred censer, filling the fallen chapel with incense smoke. So long as the area is suffused with smoke, the tar ooze sits motionless, unmoving and still.</p>
+<p>A cursory inspection of the frog fountain reveals red gemstone eyes and jeweled fangs within the loathsome maw. All togeth- er, the 12 semi-precious stones are worth 150 gp.</p>
+<p>The following items lie scattered about the temple and skeletons:</p>
+<ul>
+<li>A golden censer, hanging at the end of a long bronze chain, blackened from the heat. The censer is worth 65 gp and can be used to placate certain agents of Chaos (see below).</li>
+<li>A blackened iron coffer, half-buried in the rubble. The coffer is locked and must be picked (DC 15 pick locks) or smashed open (DC 12 Str). Inside are three cones of incense wrapped in sanctified, unholy cloth stitched with golden signs of Chaos.</li>
+<li>Three scorched chainmail hauberks.</li>
+<li>Three blackened maces and one flail.</li>
+</ul>
+<p>Retrieving any of the gear or the gems requires entering the chapel. Those stepping inside the temple immediately hear the crackling of cinders and feel the heat of the blackened earth beneath their feet. Though unsettling, this poses no threat to the heroes. Similarly, the charred skeletons offer no danger.</p>
+<p>The same cannot be said, however, of the black ichor dribbling from the fountain’s maw and collecting in the fetid basin. He- roes coming within 10 feet of the basin can feel the heat coming off of the toad-fountain. As the PCs come within 5 feet, the ooze animates and rolls up and out of the basin, attacking the nearest PC.</p>
+<p>On the round following a successful pseudopod attack, the tar ooze ignites, inflicting 1d4 points of fire damage and setting fire to the unlucky PC. Putting out the fire requires 1 action and quickness on the part of the hero. (“Stop, drop and roll!” is sufficient, but PCs whose players are unable to succinctly describe how they put out the flaming tar burn for another round.)</p>
+<p>The tar ooze can also be placated by swinging the charred censer, filling the fallen chapel with incense smoke. So long as the area is suffused with smoke, the tar ooze sits motionless, unmoving and still. There is sufficient incense in the censer to keep the ooze still for 5 rounds. The 3 cones sealed in the coffer can also burn for up to 5 rounds each.</p>
+<p>The censer can also be used to placate the chaos leviathan lurking beneath the waves in area 1-4.</p>
+<a for="toc-anchor" id="area-f-%E2%80%93-well-of-souls%3A"></a><h3 id="area-f--well-of-souls">Area F – Well of Souls:</h3>
+<p>A barren ridge of black stone rises from the overgrown courtyard. A low stone wall marked with eerie sigils is built atop the crest of the stone, marking a well. A stout block and tackle frame supports a single thick chain that plunges into the inky blackness. A soft moan rises from the well, like a faint cry for help.</p>
+<p>Though resembling a normal well, the Well of Souls is far more sinister. For reasons unknown even to the chaos lords, the well opens up into an inter-dimensional nexus, permitting access to the raw stuff of proto-elemental chaos. Before the keep fell to the forces of Law, the well was used to condition living sac- rifices. Now the inhabitants of the keep use the well to trans- form captives into the savage, half-feral beastmen.</p>
+<p>Very little good can come from toying with the well, but heroes are nothing if not fools.</p>
+<p>Those daring to peer into the depths of the well see a yawning darkness. Depth perception and spatial reality have no rela- tionship within the well; it seems to fall away from the PCs even as they draw closer, forcing any PC that peers into the depths to succeed on a DC 13 Will save or pitch over the lip of the well. Adjacent heroes can attempt DC 15 Reflex saves to catch their falling comrade; otherwise the unfortunate soul</p>
+<p>plummets down into darkness. The victim never strikes bot- tom; instead, his mind, body, and soul dissolve into nothing- ness, lost to the ceaseless winds of Chaos.</p>
+<p>A falling PC has one last chance to catch himself—a DC 15 Reflex save to catch the chain, but the damage is already done.</p>
+<p>Characters entering the well are subsumed by chaos and emerge from the well forever changed. As the PCs descend, damned souls circle about them, and the links of the chain grow tacky, then soft to the touch, and finally drip away like rivulets from a molten candle. The very being of the PC is flayed, with unpredictable results.</p>
+<p>For every round spent within the well, the PC must roll 1d plus 5 plus Personality bonus, on the minor corruption table (see DCC RPG core rulebook), as if he had rolled a 1 on a spell check.</p>
+<p>Curiously, the well acts as both a boon and bane to wizards. Arcane spells cast within 50 feet of the well receive a +10 bo- nus to the caster’s spell check. However, each spell cast au- tomatically incurs a corruption (rolled normally on the cor- ruption table). Attempts to invoke lawful patrons within the well’s sphere of influence always fail. Area G – Sinkhole: A yawning sinkhole has devoured nearly a third of the courtyard, causing a tower and wall to collapse and plunge down into the depths. Mist billows up from the sinkhole, ob- scuring sight. Tortured faces and writhing forms appear briefly in the mists above your heads, only to dissolve back into nothingness as quickly as they appeared.</p>
+<p>The raw power emanating from the temple of Chaos (see area 1-5) has undermined the ground, causing the earth to collapse. Approaching the edge is risky—any additional weight can cause the earth to give way.</p>
+<aside id="500-feet-of-rope" class="detail" markdown="1">
+<a for="toc-anchor" id="500-feet-of-rope%3F-let-me-check-my-pack!"></a><h1 id="500-feet-of-rope-let-me-check-my-pack">500 feet of roPe? let me check my Pack!</h1>
+<p>So there is always the chance that—by either obscene miracle or shifty recordkeeping—the PCs actually have enough rope for the sinkhole at area G. Never mind that carrying that much medieval rope strains credulity. Where does descend- ing through the nigh-endless mists get them?</p>
+<p>Heroes that succeed in anchoring the rope and rappelling into the black emerge a mere 55 feet from the island (see area 1-5), with the chaos leviathan lurking just below the surface of the inky waters. Worse, after half the party has descended the rope, the beastmen charge from the tower (area H) and attack the party. If the beastmen win the battle, they sever the rope, sealing the surviving PCs within the depths of the underworld.</p>
+</aside>
+<p>Heroes coming within 15 feet of the lip of the sinkhole have the eerie premonition that the earth is hollow beneath them, as if they were walking on a frozen lake. If the PCs come within 5 feet, the earth gives way. A PC must succeed on a DC 13 Reflex save to seize hold of the crumbling lip or plummet to his doom.</p>
+<p>A PC can pull himself up over the lip with a desperate DC 15 Strength check. Other heroes can leap to his aid, but their weight causes the edge of the sinkhole to fall away, sending allies plummeting to their deaths and starting the cycle anew. Heroes can counteract the weak crust by splaying out, spread eagle. However, at the judge’s discretion, large PCs or those encumbered by heavy armor may cause the earth to give way regardless.</p>
+<p>Characters peering down into the writhing mists can see only 30 feet before their vision is entirely obscured by the billowing clouds of mist rising from below. While the goal of their quest lies exposed, over 500 feet below, descending the sinkhole is almost physically impossible. Heroes can rappel down the side of the sinkhole, but after 45 feet it opens into the ceiling of the yawning cave. Without several hundred feet of rope, the PCs will be forced to find another route to the caverns below.</p>
+<a for="toc-anchor" id="area-h-%E2%80%93tower-of-the-beast%3A"></a><h3 id="area-h-tower-of-the-beast">Area H –Tower of the Beast:</h3>
+<p>Flanked by crumbling stone walls, the moss-covered tower stands proud despite the ravages of time. A tall, rust-bound portal bars the tower’s sole entrance, watched over by a leering demonic gargoyle. Rings of deep arrow slits pierce the thick walls, and overarching battlements loom high above.</p>
+<p>Heroes trying the tower door discover it barred from within. Breaking down the door requires a DC 20 Strength check. Al- ternately, a PC armed with an axe or hammer can destroy the door with 5 minutes of hard labor.</p>
+<p>The first PCs into the tower discover a hellish scene:</p>
+<p>The hot stench of rot rolls from the tower, raising bile in the back of your throat. The floor of the wide tower is covered in rotting hides of cattle, sheep and men. A narrow staircase spirals around the tower wall. Dark forms hang from chains spiked through the wall—surely these are your fellow countrymen!</p>
+<div class="creature" markdown="1">
+<p><strong>Beastman Champion:</strong> Init +1; Atk axe +2 melee (1d6+2); AC 12; HD 2d8; hp 8; MV 30’; Act 1d20; SV Fort +2, Ref +1, Will -1; AL C.</p>
+</div>
+<p>A pack of snarling beast-men slowly emerges from the shadows, bloody spears clutched in their gnarled hands!</p>
+<p>The beastmen lurk within the tower, trying to lure the PCs in- side one at a time. An enormous beastman champion—a sev- en-foot monstrosity with the head of a feral bull— crouches atop the spiral staircase directly above the door, attacking the PCs with surprise from above.</p>
+<p>The beastmen fight so long as the champion lives, then do their best to flee the tower into the courtyard. They refuse to surrender but take captives if they are able. Captured PCs are bound in chains and hung upside-down from the arrow slits</p>
+<p>like their fellow villagers, before being subjected to the soul- warping energies of the Well of Souls, transforming the erst- while heroes into feral beastmen.</p>
+<div class="unique-item" markdown="1">
+<p>The beastman champion wears a large silver torc hung with bleached skulls. Each skull is branded with a chaos rune. By virtue of the craftsmanship and precious metal, the torc is worth 100 gp, but when donned by a chaotic or evil wizard, the torc grants a +1 bonus to all spell checks. Destroying the torc grants lawful aligned PCs a bonus of +1 XP, while earning them the notice (and perhaps enmity) of the gods of Chaos.</p>
+</div>
+<div class="creature" markdown="1">
+<p><strong>Beastmen (6):</strong> Init +1; Atk spear +0 melee (1d6); AC 12; HD 1d8; hp 4 each; MV 30’; Act 1d20; SV Fort +1, Ref +1, Will -1; AL C.</p>
+</div>
+<p>The tower floor and the steps spiraling up the wall are covered in gore-covered furs. Searching the chamber scatters waves of fleas and lice. Worse, there is a 1 in 6 chance that the searcher encounters a rot grub hidden amid the rotting hides. On a suc- cessful attack, the grub burrows into the PC’s flesh, working its way toward the heart in 1d4+2 rounds. Digging out the grub requires a DC 15 Agility check, causing 1 hp of damage per attempt. Barbers, surgeons, and other PCs with a medical background receive a +2 bonus to the check. If the grub isn’t removed in time, it burrows into the victim’s heart, resulting in instantaneous death.</p>
+<div class="creature" markdown="1">
+<p><strong>Rot Grub:</strong> Init (always last); Atk burrow +0 melee (special); AC 10; hp 1; MV N/A; Act 1d20; SP burrow (causes instant death 1d4+2 rounds after successful attack); SV Fort +0, Ref -4, Will +2; AL N.</p>
+</div>
+<div class="secret" markdown="1">
+Persistent **searchers discover a small alcove** set in the floor, hidden by piles of rotting hides. The alcove contains **loose coins (53 sp, 23 gp, and 2 pp)** and an **elven short sword set with emeralds (worth 150 gp)** wrapped in a simple green cloak. Sewn into the hem of the cloak is a treasure map inked on vellum and leading to the location of the judge’s choos- ing. **Three torches**, still flammable despite their age, are set in sconces on the wall.
+</div>
+<p>Finally, if an unlucky player has lost all his PCs in the course of the adventure, the judge can opt to allow the PCs to res- cue villagers from their chains on the walls. Nursed back to consciousness, the unfortunate souls offer to join the party, be- coming PCs under the players’ control. Regrettably (though perhaps mercifully), freed villagers can recall nothing of their ordeal after their capture. The player should roll up the 0-level PCs per the standard rules. At the judge’s discretion, up to six PCs can be added to the party from the captives hanging in the tower.</p>
+<p>If none of the players need replacement PCs, the freed captives are too weak and terrified to do anything other than flee back to their village. Regardless of how many captives are freed, they are but a third of the total villagers kidnapped from the characters’ home.</p>
+<a for="toc-anchor" id="the-starless-sea"></a><h3 id="the-starless-sea">the starless sea</h3>
+<p><strong>General Features:</strong></p>
+<p>Unless noted otherwise, the dungeon is dark and the air is cool and wet.</p>
+<p><strong>Doors are unlocked but swollen with moisture and must be forced open.</strong> A door can be forced open in a single round with a <strong>DC 15 Strength</strong> check. Otherwise, <strong>battering down the door takes 1d4+1 rounds</strong>, alerting anyone (or anything) lurking be- yond.</p>
+<p>Judges should note that there is little native light in the underworld. PCs can use the torches found in area H, the glowing skulls from area 1-2, or improvise their own light sources.</p>
+<a for="toc-anchor" id="area-1-1-%E2%80%93-trail-of-gold%3A"></a><h4 id="area-1-1--trail-of-gold">Area 1-1 – Trail of Gold:</h4>
+<p><u>You pause for an instant on the broad stone steps. The hint of gold glimmers at the edge of your light, sev- eral steps below.</u></p>
+<p>Closer inspection reveals the glimmer to be entirely mundane: three gold pieces forgotten on the gray stone step. The coins were dropped by the beastmen transporting the wealth of pre- cious coins from area 1-1A to 1-5.</p>
+<p>The beastmen failed to fully close the vault’s secret door. The entrance to area 1-1A can be found with only a cursory in- spection. However, PCs that don’t pause to search miss the entrance to area 1-1A.</p>
+<p>Area 1-1A – The Empty Vault: <u>The narrow hall is lined with cut stone blocks. Dusty cobwebs hang from the low ceiling and time itself seems to weigh upon this ancient place. A trio of upended chests rest in the shadows in the rear of the chamber amid a scattering of coins. Tracks in the dust record the path of recent looters.</u></p>
+<p>This vault once held the amassed wealth of the chaos lords. Unfortunately, the beastmen have already transported the bulk of the wealth to area 1-5. All that remains are three chests and the spilled coins littering the floor (1d20 cp, 1d12 sp, 1d8 gp). While all of the chests are unlocked and emptied of wealth, the beastmen missed a secret compartment hidden in the base of the second chest.</p>
+<p>While the hidden compartment is easy to discover (the floor of the chest is 4 inches too high), opening the compartment poses a danger. The compartment can be opened by sliding a false panel in the back of the chest. Unless the PC also succeeds on a DC 15 Reflex save, the PC is struck by a slim, scything blade trap, inflicting 1d4 points of damage and slicing off 1d2 fingers.</p>
+<p>Hidden inside the compartment are two silver rings set with emeralds (worth 15 gp each), a silk tabard stitched with the si- gil of Chaos (worth 5 gp) and a steel vial containing two doses of black lotus oil. Characters imbibing the lotus oil gain 1d hp for 1 hour, but at the end of the hour lose any hp gained from the oil and must succeed on a DC 20 Fortitude save or take 1d4 points of damage.</p>
+<p>Area 1-2 – The Dread Hall: Wide stone steps descend into a long hall. The walls are decorated with elaborate tile mosaics depict- ing foul ceremonies to horrific and baleful fiends. The walls are slick with condensation and black algae. The condensation runs in rivu- lets and collects in a long, brackish pool set in the center of the hall.</p>
+<p>Have the PCs make a Luck check; on a DC 15 result, a char- acter feels a strange compulsion to inspect the base of the</p>
+<p>pool, then pick up and carry off a skull once discovered (as described below).</p>
+<p>When the cult was young and strong, this chamber was used by acolytes to prepare their minds and souls for the awesome presence of the scions of Chaos. Now the chamber has fallen into disuse, scarcely noticed by the beastmen as they pass free- ly between the underworld and the sunlit lands above.</p>
+<p>Characters inspecting the mosaics discover three distinct scenes, as shown on the player handouts (see inside cover):</p>
+<ul>
+<li>A hooded form standing atop a towering stone on the edge of a vast lake; seven tentacles wave from the water. <u>This</u> <u>mosaic offers a clue as to the means of crossing the sea (area 1-4).</u></li>
+<li>Two armored figures, holding a single flail, commanding legions of hunched, beast-like warriors. <u>This mosaic depicts</u> <u>the brothers Molan and Felan, prior to their defeat by the armies</u> <u>of Law.</u></li>
+<li>A low island set in the center of a black lake. A golden pyramid is set atop the island, and a figure armed with a flail is preparing to sacrifice a maiden. <u>This hints to the</u> <u>nature of the chaos lord and the fate of the kidnapped villagers.</u></li>
+</ul>
+<p>A casual inspection of the chamber reveals four nooks con- cealed in the corners of the hall. Each nook contains a single hooded robe, embroidered with bizarre sigils stitched in silver thread. While the robes are mold-eaten and rotten to the touch, they can still be worn as disguises in dim light. The beastmen retain a subconscious memory of the sacred order of Chaos, and, unless provoked, will not attack anyone wearing a robe. Of course, if a PC wearing a robe does attack a beastman or chaos beast, any pretense is immediately ruined.</p>
+<p>The fetid pool set in the center of the chamber is thick with black algae and natural slime. Narrow in relation to its length, the pool is 20 feet deep, and its base is lined with hundreds of skulls.</p>
+<p>If a character peers into the pool, a skull rises to the surface, a faint glow emanating from its eye sockets. The skulls are the last remnants of challengers that sought to dethrone the chaos lords and still hold a spark of their former spirit, bearing an unholy hatred for the brothers Felan and Molan.</p>
+<p>The skulls can be lifted from the murky water and glow bright- er the closer they are brought to area 1-5. Though the skulls</p>
+<p>and their infernal spirits are not lawful-aligned by any means, their hatred can aid the characters in their battle against the chaos lord (see area 1-5A).</p>
+<p>If the PCs are brazen enough to enter the pool and dig through the mounds of skulls, they discover a simple bronze ring, roughly 12 inches in diameter, set into the floor of the pool. Rotating the ring 90 degrees causes the floor of the pool to fall away, taking the brackish water, the skulls, and the un- fortunate soul that released the valve along with it. The PC is sucked down a narrow tube, slick with algae, into area 1-3. A character sucked down the tube must succeed on a DC 15 Fortitude save or take 1d4 damage as he crashes into area 1-3. Those descending the tube by normal means can climb down to the pool below without risk.</p>
+<p>Area 1-3 – The Hidden Pool: The inky cave is nearly sub- merged with water, the slick ceiling dripping with black algae. Sta- lactites hang to the dark water’s surface, obscuring the far side of the cavern. Half-submerged along the banks of the pool, skulls leer at you through empty eye sockets. The chamber is as still as a tomb, save for the slow drip of water and slime from above.</p>
+<p>The chamber’s ceiling is a mere 4 feet above the floor and only 2 feet above the water’s surface. The water runs in a trickle out the far side of the chamber, down through the rubble, and finally empties into the underground sea (area 1-4).</p>
+<p>The chamber can be discovered by opening the valve in area 1- or by inquisitive PCs exploring the rocky slope above area 1-4.</p>
+<p>The floor of the pool is covered in a slurry of bones and miner- al-heavy silt from above. Lucky searchers (DC 12 Intelligence or a DC 12 Luck check) may discover a plain iron ring set with three small rubies on a finger bone. When held in total dark- ness, the rubies pulse like faint embers. This seemingly simple ring is actually the band of fire , an arcanist antiquity belonging to the enigmatic wizard Sezrakan. When worn by low-level characters, the band has the following powers:</p>
+<ul>
+<li>The wearer may attempt to cast <u>magic missile</u> thrice per day.</li>
+<li>The wearer may attempt to cast <u>magic shield</u> twice per day.</li>
+<li>The wearer may attempt to cast <u>scorching ray</u> once per day.</li>
+<li>Finally, when worn by a wizard, the ring grants a +1 bonus to all spell checks. A natural 1 still results in failure and pos- sibly worse.</li>
+</ul>
+<p>Non-wizards attempting to harness the powers of the <u>band</u> make spell checks at 1d20 + class level, but do not add their Personality or Intelligence modifiers. Penalties for bulky ar- mor still apply. Wizards using the <u>band of fire</u> make their spell checks per the core rules.</p>
+<p>Note that while non-wizards may attempt to use the first three powers, they are also subject to any corruption or misfires re- sulting from failed spell checks. At the judge’s discretion, the <u>band</u> may grant additional powers to powerful wizards (5th level and above).</p>
+<p>This is a powerful magic item. If other adventurers hear of the PCs’ possession of it, they can expect to be challenged.</p>
+<p>Area 1-4 – The Starless Sea: <u>The wide stone steps run down to the dark-sand beach of a vast underground sea. Far out across the water, you can make out a golden glow through the gloom. An enormous menhir stands at the water’s edge, dark waves lapping at its intricately carved faces.</u></p>
+<p><u>Past the towering standing stone, a dragon-prowed longship emerg- es from the darkness, its hull scrawled with forbidding sigils and runes that glow a sickly green in the dim light. The ship draws to a stop some 50 feet offshore.</u></p>
+<p><u>The beat of distant drums and far-off wails of terror mixes with the quiet lapping of the waves.</u></p>
+<p>A quick inspection confirms the beach is churned by hun- dreds of bestial feet, talons, and hooves. Characters pausing to search carefully also discover a single trail of human foot- prints—tracks left by their fellow villagers chained together— and 1d6 silver coins.</p>
+<p>The Starless Sea presents two puzzles to the characters, one apparent and one hidden. The first: how best to board the en- chanted ship. The second: how to avoid the wrath of the chaos leviathan lurking beneath the waves of the wine-dark sea.</p>
+<p>The menhir is carved with mesmerizing spirals that are almost impossible to trace. Characters that attempt to trace or deci- pher the carvings are struck by the overwhelming urge to sac- rifice their fellows to the leviathan lurking beneath the waves. The PC must succeed on a DC 15 Will save or attack his near- est fellow with the intent of offering his victim’s still-beating heart to the leviathan. The geased PC can attempt to shrug off the compulsion once per round; having made a successful Will save, the PC cannot be compelled by the menhir again.</p>
+<p>A narrow series of steps wind up the surface of the menhir. Those climbing to the peak of the standing stone discover that the top of the stone has been fashioned into a platform. A shallow bowl has been cut into the center of the platform. The bowl is partially filled with hardened wax, and the stub of a red candle sits atop the mounds of wax.</p>
+<p><strong>The Dragon Ship:</strong> Boarding the enchanted ship can be as simple as the PCs swimming out into the sea and clamber- ing aboard the ship. This inevitably draws the wrath of the leviathan: a tentacle slithers after the first swimmer that climbs aboard. See below for details on the battle sure to follow.</p>
+<p>Relighting the candle—or lighting a new candle—atop the menhir draws the enchanted ship to shore, allowing charac- ters to board in safety.</p>
+<p>Once all the PCs have boarded, the ship sets course for the island temple at the heart of the sea (area 1-5). However, half- way through the journey, the PCs must deal with the leviathan (see below).</p>
+<p>The ship can also be drawn to shore by lighting the censer (found in area E).</p>
+<p>The dragon ship is equipped with oars and, failing magic, can be rowed to the island (area 1-5).</p>
+<p>Treating with the Leviathan : Upon discovering the under- ground sea, the original chaos lords struck a pact with the fell beast, and their contract holds to this day. Crossing the un- derground sea requires successfully dealing with the leviathan lurking in the watery depths. As soon as the enchanted dragon ship crosses halfway to the island, the leviathan’s tentacles emerge from the black waters. Unless the PCs succeed in pla- cating the leviathan within 5 rounds, two great tentacles wrap about the stern, arresting the ships progress across the sea. The following round, the leviathan attacks the fools that would dare to cross its domain without offering the required tribute.</p>
+<p>Pressed for time, the PCs are certain to come up with innova- tive and wild solutions to their dilemma. However the PCs attempt to treat with the leviathan, the judge is encouraged to entertain clever solutions and punish foolish ones. Following are some guidelines and indications to help the judge adjudi- cate the encounter:</p>
+<ul>
+<li>Burning incense in the censer dedicated to the forces of Chaos (found in area E) stills the great tentacles. The levia- than acknowledges its age-old pact, placing its tentacles at the feet of the summoner, before sliding back beneath the waves.</li>
+<li>Sacrificing one or more creatures to the leviathan (as de- picted in area 1-2) appeases the leviathan but sorely of- fends any gods of Law. Characters taking this route damn themselves to the service of wicked gods, or worse, to the absence of any patron whatsoever. Alternately, PCs sac- rificing more than 500 gp worth of goods (pouring them into the waves) can placate the chaos beast without of- fending the patrons of Law.</li>
+<li>False Sacrifice: PCs may attempt to distract the beast by “chumming” the water with corpses or blood. Depend- ing on the sophistication of the ruse, this can buy the PCs time. In this case, the furious leviathan seizes the boat as it draws within 50 feet of the island-temple’s shore.</li>
+<li>Battle the Leviathan: while battling the chaos beast is cer- tainly direct, it likely ends in the destruction of the party, or at the very least the death of those unlucky enough to come within reach of the beast’s 75-foot-long tentacles. The only hope of those electing to attack the beast lies in a critical hit; otherwise, their doom is nearly certain.</li>
+</ul>
+<p>In battle, the leviathan first pulls PCs into the sea, then tears them limb from limb. On a successful attack, the leviathan can opt to forgo inflicting damage and instead loop around the PC’s limbs or waist. The following round, the PC must succeed on a Strength check (DC 20) or be drawn into the dark waters.</p>
+<p>Note that the leviathan’s body never surfaces and only ten- tacles emerge dripping from the water. Characters diving beneath the waves to take the battle directly to the leviathan</p>
+<p>discover an enormous beast covered by thousands of thickly hooded eyes and slack jaws—the horrified, tortured faces of all its previous victims.</p>
+<p>Dealing 66 hp of damage to the leviathan does not slay the mighty creature. Rather, the beast withdraws from the battle, propelling itself deep beneath the waves. Any PCs still caught within its tentacles are permitted one last Strength check (DC 20) to wrest free of the leviathan’s mighty grip. Those that fail are drawn beneath the waves and never seen again—except perhaps as terrified, slack-jawed faces embedded into the le- viathan’s gibbering hide.</p>
+<p><strong>Chaos Leviathan:</strong> Init +0; Atk tentacle +6 melee (1d8+2); AC 15; HD 10d10; HP 66; MV 50’; Act 6d20; SP grapple on success- ful hit (Str DC 20 to escape); SV Fort +10, Ref -2, Will +6; AL C.</p>
+<p>Area 1-5 – Temple of Chaos: <u>The island draws closer, reveal- ing the source of the golden glow: a towering ziggurat, with burning light radiating from within the sliver-thin cracks between its massive stone blocks.</u></p>
+<p><u>A wide ramp circles the edifice, sloping to the top of the temple. Hordes of beastmen crowd the ramp, howling to the darkness, ham- mering on massive hide drums and pushing a terrified string of prisoners to the ziggurat’s glowing peak. High atop the temple, you can make out a fearsome silhouette of an enormous armored figure, wreathed in infernal smoke lit from below.</u></p>
+<p>The ziggurat serves as a mystical forge designed for a single purpose: reuniting the spirit of the chaos lord with a physi- cal body. The beastmen are driving the kidnapped villagers up the ziggurat to be slaughtered, their bodies pitched into the molten heart of the ziggurat along with a king’s ransom in gold, silver, and copper. A beastman shaman reigns over the ceremony, hoisting an effigy of the chaos lord high into the smoke. While the effigy cannot fool PCs reaching the upper- most level of the ziggurat, it is sufficient to deceive characters peering up from below.</p>
+<p>PCs disguised as chaos priests (with the robes from area 1-2) or as beastmen (with the hides and furs from area H) can pass through the throngs of beastmen with little difficulty. The judge should call for Personality checks to maintain the ten- sion, but the beastmen are lost in religious fervor and not ex- pecting infiltrators within their midst. Of course, if the PCs attack either the beastmen or the mock chaos lord, the con is instantly detected.</p>
+<p>If the characters haven’t adopted a ruse, gaining the peak of the ziggurat is more difficult. The beastmen do not immedi- ately notice the PCs’ arrival; if the PCs sneak and climb along beneath the ramp, there is a slim chance they can draw close to the peak of the ziggurat before being discovered. The lead PC must make a series of Agility checks with increasing diffi- culty to avoid notice as the party climbs higher up the temple. Circling the first level requires a DC 10 Agility check; circling the second, a DC 15 check; ascending the third level, DC 20. Climbing from the third level to the peak of the ziggurat im- mediately alerts the beastmen to the characters’ presence, but the PCs gain a free surprise round. (Thieves can use their skills in place of an Agility check.)</p>
+<p>Finally, if the PCs opt to attack the beastmen from the onset and take the temple by storm, they will pay the price in blood.</p>
+<p>Again, the PCs are granted a free surprise round before the beastmen turn their full might on the audacious characters. There are 22 beastmen crowded onto the ramp, with another 3 acolytes atop the ziggurat attending the beastman shaman.</p>
+<p>Beastmen (22): Init +1; Atk spear +0 melee (1d6); AC 12; HD 1d8; hp 3 each; MV 30’; Act 1d20; SV Fort +1, Ref +1, Will -1; AL C.</p>
+<p>Area 1-5A – Atop the Temple: PCs reaching the peak of the ziggurat discover a horrifying scene:</p>
+<p>The peak of the temple is dominated by a vast, smoking pit that glows with a hellish light. A mighty beastman hoists an effigy of a fearsome armored figure high into the swirling clouds as the prisoners are hurled screaming, one after another, into the pit. A trio of snarling beastmen upends woven baskets, pouring thousands of coins in after your fellow villagers, producing gouts of hissing smoke and flame! All about you is the thundering cacophony of drums and bestial howls as the bizarre ritual nears its climax!</p>
+<p>However the PCs decide to reveal themselves, the beastmen swarm towards the PCs while the shaman and his acolytes do their best to finish the ritual. The beastmen on the ramp do not fight to kill, but rather try to seize the PCs, bear them to the pit, and hurl the characters into the sacrificial flames. A PC is seized on a successful attack and must succeed on a DC 15 Strength check or be borne 15 feet up the ramp towards the pit. Adjacent beastmen making successful attacks on the same PC increase the difficulty of the Strength check by +2 per attack. On the PC’s own turn, he can do nothing but attempt to escape the grapple with another Strength check.</p>
+<p>Characters carried this way to the pit are hurled into the flames and permitted one final save (Reflex DC 20) to catch hold of the edge of the pit. Anyone failing this check plunges to his death in the magma below.</p>
+<p>Unlike their fellows, the shaman and his acolytes understand the gravity of the PCs’ presence and fight to kill. If the PCs reach the peak of the ziggurat, the shaman howls to the dark- ness above and pitches the chaos lord’s effigy into the pit. This immediately extinguishes the flames and plunges the cavern into darkness. The only light remaining is the hellish glow emanating from the pit.</p>
+<p>Characters with a view of the pit see the sacrificial bodies and coins consumed by a pool of unholy magma. The effigy bursts into flame, magically drawing in the flesh and gold-steeped magma. Animated by the spirit of the chaos lord, the glowing effigy emerges from the magma, rapidly cooling into a hard- ened, blackened form. One round later, the rock crust shatters, revealing the fully-armored body of the chaos lord: a hellish, horned humanoid, with a single, cyclopean eye that blazes with infernal light. Molan emerges from his unholy forge and strides into battle, hammering down foes with his triple-head- ed spiked flail. The skull-faced chaos lord eagerly fights to the death, madly reveling in the destruction of life.</p>
+<p>Any skulls brought from the pool in area 1-2 flare bright with hatred. The skulls can be hurled at the chaos lord (Agility check, DC 10 to hit); the skulls shatter on impact, erupting in flame and causing 1d6+1 damage to the chaos lord. Any im- mediately-adjacent targets take half damage (Reflex save, DC 12 to avoid taking damage altogether).</p>
+<p><strong>The Destruction of the Chaos Lord:</strong> Upon taking 20 hp of damage, the body of the chaos lord dissolves back into magma, the chaos lord’s spirit unable to sustain its hold on its physical form. The flail and the demon armor fall to the ground, the sole remnants of their fallen master.</p>
+<p>If the PCs take up either the flail or the armor within 5 rounds, the magma surges back to life with unholy fury, forming a pillar of flaming brilliance. The magma lashes out at any PC within 10’ (Atk +2 melee; dmg 1d4+3). But even the chaos lord’s hatred cannot sustain this form for long: regardless of whether the PCs deal it damage or not, the pillar collapses back into formlessness on the third round, never to rise again.</p>
+<p>This true death of the chaos lord triggers the destruction of his temple and cavern. A low rumble rolls through the cavern, building to a deafening roar. Massive stone slabs peel away from the cavern’s ceiling and fall into the sea. Waves crash up the sides of the ziggurat, even as sizzling magma seeps through the seams in the stone blocks. It should be apparent to the PCs that their time atop the chaos lord’s temple is draw- ing to a close. The PCs have only 1d6+2 actions to escape to the dragon ship before the western cavern collapses, driving a towering wall of water 30 feet over the top of the ziggurat. The judge should not warn the players about their characters’ impending doom. Rather, the judge should make the roll in se- cret, describe the cataclysmic acts taking place within the cav- ern, and ask the players to describe their PCs’ actions. Reach- ing the ship and climbing aboard requires 2 actions.</p>
+<p>When the roaring wave engulfs the ziggurat, those aboard the ship are swept towards area 1-6, and all others perish amid the dark waters. Characters that fail to reach the ship in time can attempt a final DC 17 Luck check to pull themselves aboard.</p>
+<p><strong>Favor from the Gods:</strong> The characters’ patrons look on with favor as the chaos lord is destroyed. Characters worshipping good or lawful deities, or those with supernatural patrons who would be opposed to the reign of Chaos, receive a permanent +1 bonus to Luck when the chaos lord is destroyed.</p>
+<p><strong>Treasure:</strong> A king’s ransom of gold and silver is consumed in the chaos lord’s rite, but not all the wealth is lost; ample coin- age remains scattered about the top ziggurat. A PC can sweep up 1d20 gp and 2d20 sp per action.</p>
+<p>Finally, there remains the arms and armor of the chaos lord himself. Topped with blackened iron and ringed with spikes, the chaos lord’s spiked flail is a weapon of great power. In ad- dition to being +1 to both hit and damage, once per day the wielder of the spiked flail can wreathe the weapon in flames for 3 rounds, inflicting an additional 1d6 points of damage on a successful strike.</p>
+<p>The chaos lord’s armor is plate mail forged of blackened iron. While it has no magical properties, its superior construction grants its wearer a Fortitude save (DC 20) against the effects of critical hits.</p>
+<p>Taking up either the spiked flail or the armor requires an action.</p>
+<p>Chaos Lord Animated Effigy : Init +0; Atk flail +6 melee (1d6+1); AC 13; HD 5d10; hp 20; MV 20’; Act 1d20; SV Fort +8, Ref +4, Will +4; AL L.</p>
+<p>Beastman Shaman: Init +1; Atk effigy +0 melee (1d4+2); AC 10; HD 2d8; hp 6; MV 30’; Act 1d20; SV Fort +1, Ref +0, Will +3; AL C.</p>
+<p>Beastmen Acolytes (3): Init +1; Atk claw +0 melee (1d4); AC 12; HD 2d8; hp 5 each; MV 30’; Act 1d20; SV Fort +1, Ref +1, Will -1; AL C.</p>
+<p>Area 1-6 – Into the Unknown: The towering wave propels you with terrifying speed towards the distant carven wall! Ahead, through a sea of towering whitecaps and the debris of falling boulders you spy the mouth of a narrow cave! The dragon-prowed ship rides down the crest of the giant wave and shoots into the rocky maw, the howling surf crashing all around you!</p>
+<p>The ending of the adventure (and the start of the next) is en- tirely up to the judge. Area 1-6 can open into an above-ground river, seated deep in the base of a ravine, or plunge the PCs deeper beneath the surface of the earth. The former allows the PCs to return to their home village, lick their wounds, and consider their next quest. The latter plunges the PCs into an- other adventure before their first has scarcely ended.</p>
+<p>Whatever the judge’s whim, XP and Luck should be awarded prior to the beginning of the next adventure, for—be it by luck or skill—surviving PCs have surely earned their just rewards.</p>
+<p>This printing of DCC#67: Sailors on the Starless Sea is done under version 1.0 of the Open Gaming License, and the System Reference Document by permission from Wizards of the Coast, Inc.Designation of Product Identity: The following items are hereby designated as Product Identity in accordance with Section 1(e) of the Open Game License, version 1.0: Dungeon Crawl Classics, DCC RPG, Mighty Deed of Arms, spell check, Luck check, spellburn, mercurial magic, corruption, disapproval, all spell names, all proper nouns, capitalized terms, italicized terms, artwork, maps, symbols, depictions, and illustrations, except such elements that already appear in the System Reference Document. Designation of Open Content: Subject to the Product Identity designation above, such sections of Chapter One: Characters and Chapter Four: Combat as derive from the SRD are designated as Open Gaming Content. Some of the portions of this book which are delineated OGC originate from the System Reference Document and are copyright © 1999, 2000 Wizards of the Coast, Inc. The remainder of these OGC portions of these book are hereby added to Open Game Content and, if so used, should bear the COPYRIGHT NOTICE “DCC #67: SAILORS ON THE STARLESS SEA, copyright © 2012 Goodman Games, all rights reserved, visit <a href="http://www">http://www</a>. <a href="http://goodman-games.com">goodman-games.com</a> or contact info@goodman- <a href="http://games.com">games.com</a>” DCC#67: Sailors on the Starless Sea is copyright © 2012 Goodman Games. Open game content may only be used under and in the terms of the Open Game License. OPEN GAME LICENSE Version 1.0a</p>
+<p>The following text is the property of Wizards of the Coast, Inc. and is Copyright 2000 Wizards of the Coast, Inc (“Wizards”). All Rights Reserved.</p>
+<ol>
+<li>Definitions: (a)”Contributors” means the copyright and/or trademark owners who have contributed Open Game Content; (b)”Derivative Material” means copyrighted material including derivative works and translations (including into other computer languages), potation, modification, correction, addition, extension, upgrade, improvement, compilation, abridgment or other form in which an existing work may be recast, transformed or adapted; (c) “Distribute” means to reproduce, license, rent, lease, sell, broadcast, publicly display, transmit or otherwise distribute; (d)”Open Game Content” means the game mechanic and includes the methods, procedures, processes and routines to the extent such content does not embody the Product Identity and is an enhancement over the prior art and any additional content clearly identified as Open Game Content by the Contributor, and means any work covered by this License, including translations and derivative works under copyright law, but specifically excludes Product Identity. (e) “Product Identity” means product and product line names, logos and identifying marks including trade dress; artifacts; creatures characters; stories, storylines, plots, thematic elements, dialogue, incidents, language, artwork, symbols, designs, depictions, likenesses, formats, poses, concepts, themes and graphic, photographic and other visual or audio representations; names and descriptions of characters, spells, enchantments, personalities, teams, personas, likenesses and special abilities; places, locations, environments, creatures, equipment, magical or supernatural abilities or effects,</li>
+</ol>
+<p>logos, symbols, or graphic designs; and any other trademark or registered trademark clearly identified as Product identity by the owner of the Product Identity, and which specifically excludes the Open Game Content; (f) “Trademark” means the logos, names, mark, sign, motto, designs that are used by a Contributor to identify itself or its products or the associated products contributed to the Open Game License by the Contributor (g) “Use”, “Used” or “Using” means to use, Distribute, copy, edit, format, modify, translate and otherwise create Derivative Material of Open Game Content. (h) “You” or “Your” means the licensee in terms of this agreement.</p>
+<ol start="2">
+<li>The License: This License applies to any Open Game Content that contains a notice indicating that the Open Game Content may only be Used under and in terms of this License. You must affix such a notice to any Open Game Content that you Use. No terms may be added to or subtracted from this License except as described by the License itself. No other terms or conditions may be applied to any Open Game Content distributed using this License. 3.Offer and Acceptance: By Using the Open Game Content You indicate Your acceptance of the terms of this License.</li>
+<li>Grant and Consideration: In consideration for agreeing to use this License, the Contributors grant You a perpetual, worldwide, royalty-free, non-exclusive license with the exact terms of this License to Use, the Open Game Content. 5.Representation of Authority to Contribute: If You are contributing original material as Open Game Content, You represent that Your Contributions are Your original creation and/or You have sufficient rights to grant the</li>
+</ol>
+<p>rights conveyed by this License. 6.Notice of License Copyright: You must update the COPYRIGHT NOTICE portion of this License to include the exact text of the COPYRIGHT NOTICE of any Open Game Content You are copying, modifying or distributing, and You must add the title, the copyright date, and the copyright holder’s name to the COPYRIGHT NOTICE of any original Open Game Content you Distribute.</p>
+<ol start="7">
+<li>Use of Product Identity: You agree not to Use any Product Identity, including as an indication as to compatibility, except as expressly licensed in another, independent Agreement with the owner of each element of that Product Identity. You agree not to indicate compatibility or co-adaptability with any Trademark or Registered Trademark in conjunction with a work containing Open Game Content except as expressly licensed in another, independent Agreement with the owner of such Trademark or Registered Trademark. The use of any Product Identity in Open Game Content does not constitute a challenge to the ownership of that Product Identity. The owner of any Product Identity used in Open Game Content shall retain all rights, title and interest in and to that Product Identity.</li>
+<li>Identification: If you distribute Open Game Content You must clearly indicate which portions of the work that you are distributing are Open Game Content.</li>
+<li>Updating the License: Wizards or its designated Agents may publish updated versions of this License. You may use any authorized version of this License to copy, modify and distribute any Open Game Content originally distributed under any version of this License. 10 Copy of this License: You MUST include a copy of</li>
+</ol>
+<p>this License with every copy of the Open Game Content You Distribute.</p>
+<ol start="11">
+<li>Use of Contributor Credits: You may not market or advertise the Open Game Content using the name of any Contributor unless You have written permission from the Contributor to do so. 12 Inability to Comply: If it is impossible for You to comply with any of the terms of this License with respect to some or all of the Open Game Content due to statute, judicial order, or governmental regulation then You may not Use any Open Game Material so affected. 13 Termination: This License will terminate automatically if You fail to comply with all terms herein and fail to cure such breach within 30 days of becoming aware of the breach. All sublicenses shall survive the termination of this License. 14 Reformation: If any provision of this License is held to be unenforceable, such provision shall be reformed only to the extent necessary to make it enforceable. 15 COPYRIGHT NOTICE Open Game License v 1.0 Copyright 2000, Wizards of the Coast, Inc. System Rules Document Copyright 2000 Wizards of the Coast, Inc.; Authors Jonathan Tweet, Monte Cook, Skip Williams, based on original material by E. Gary Gygax and Dave Arneson. DCC#67: Sailors on the Starless Sea, copyright © 2012 Goodman Games, all rights reserved, visit <a href="http://www.">http://www.</a> <a href="http://goodman-games.com">goodman-games.com</a> or contact <a href="mailto:info@goodman-games.com">info@goodman-games.com</a></li>
+</ol>
+
+    </body>
+    </html>
