@@ -18,6 +18,7 @@ obj/
 dist/*hot-update.*
 dist/packs
 dist/packs/*
+.nyc_output/
 
 # If you add foundry.js for autocomplete
 foundry.js

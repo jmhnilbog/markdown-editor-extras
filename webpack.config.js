@@ -1,4 +1,5 @@
 /* eslint-disable */
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
@@ -24,18 +25,20 @@ module.exports = (env) => {
   const isDevelopment = environment.mode === "development";
 
   const config = {
-    entry: "./src/sailors-on-the-starless-sea.ts",
+    entry: {
+      module: "./src/markdown-editor-extras.ts",
+      style: "./src/markdown-editor-extras.scss",
+    },
     watch: environment.watch,
     devtool: "inline-source-map",
     stats: "minimal",
     mode: environment.mode,
     resolve: {
-      extensions: [".wasm", ".mjs", ".ts", ".js", ".json"],
+      extensions: [".wasm", ".mjs", ".ts", ".js", ".json", ".scss"],
     },
     output: {
-      filename: "module.js",
-      path: path.resolve(__dirname, "dist"),
-      publicPath: "",
+      filename: "[name].js",
+      path: __dirname + "/dist",
     },
     devServer: {
       hot: true,
@@ -76,27 +79,32 @@ module.exports = (env) => {
             },
           ],
         },
+        // {
+        //   test: /\.scss$/,
+        //   use: [
+        //     MiniCssExtractPlugin.loader,
+        //     // "style-loader",
+        //     {
+        //       loader: "css-loader",
+        //       options: {
+        //         sourceMap: isDevelopment,
+        //         url: false,
+        //       },
+        //     },
+        //     {
+        //       loader: "sass-loader",
+        //       options: {
+        //         sourceMap: isDevelopment,
+        //         sassOptions: {
+        //           importer: globImporter(),
+        //         },
+        //       },
+        //     },
+        //   ],
+        // },
         {
-          test: /\.scss$/,
-          use: [
-            "style-loader",
-            {
-              loader: "css-loader",
-              options: {
-                sourceMap: isDevelopment,
-                url: false,
-              },
-            },
-            {
-              loader: "sass-loader",
-              options: {
-                sourceMap: isDevelopment,
-                sassOptions: {
-                  importer: globImporter(),
-                },
-              },
-            },
-          ],
+          test: /\.s[ac]ss$/i,
+          use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
         },
       ],
     },
@@ -116,6 +124,12 @@ module.exports = (env) => {
       new SymlinkWebpackPlugin([
         { origin: "../packs", symlink: "packs", force: true },
       ]),
+      new MiniCssExtractPlugin({
+        // Options similar to the same options in webpackOptions.output
+        // both options are optional
+        filename: "styles/[name].css",
+        chunkFilename: "styles/[id].css",
+      }),
     ],
   };
 

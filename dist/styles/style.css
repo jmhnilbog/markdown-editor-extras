@@ -1,0 +1,22 @@
+.chat-message .location,
+.editor .location {
+  background-color: rgba(100, 100, 100, 0.5); }
+
+.chat-message .creature,
+.editor .creature {
+  background-color: rgba(0, 0, 100, 0.7); }
+
+.chat-message .read-aloud,
+.editor .read-aloud {
+  background-color: rgba(0, 0, 100, 0.5); }
+
+.chat-message .hazard,
+.editor .hazard {
+  background-color: rgba(0, 0, 100, 0.3); }
+
+.chat-message .impression,
+.editor .impression {
+  background-color: rgba(0, 0, 100, 0.3); }
+
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9tYXJrZG93bi1lZGl0b3ItZXh0cmFzLy4vc3JjL21hcmtkb3duLWVkaXRvci1leHRyYXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7RUFHSSwwQ0FBMEM7O0FBSDlDOztFQU9JLHNDQUFzQzs7QUFQMUM7O0VBV0ksc0NBQXNDOztBQVgxQzs7RUFlSSxzQ0FBc0M7O0FBZjFDOztFQW1CSSxzQ0FBc0MiLCJmaWxlIjoic3R5bGVzL3N0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jaGF0LW1lc3NhZ2UsXG4uZWRpdG9yIHtcbiAgLmxvY2F0aW9uIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiByZ2JhKDEwMCwgMTAwLCAxMDAsIDAuNSk7XG4gIH1cblxuICAuY3JlYXR1cmUge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMTAwLCAwLjcpO1xuICB9XG5cbiAgLnJlYWQtYWxvdWQge1xuICAgIGJhY2tncm91bmQtY29sb3I6IHJnYmEoMCwgMCwgMTAwLCAwLjUpO1xuICB9XG5cbiAgLmhhemFyZCB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAxMDAsIDAuMyk7XG4gIH1cblxuICAuaW1wcmVzc2lvbiB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiYSgwLCAwLCAxMDAsIDAuMyk7XG4gIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0=*/
