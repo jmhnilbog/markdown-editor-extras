@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const ESLintPlugin = require("eslint-webpack-plugin");
+const SymlinkWebpackPlugin = require("symlink-webpack-plugin");
 const globImporter = require("node-sass-glob-importer");
 const path = require("path");
 const glob = require("glob");
@@ -120,6 +121,9 @@ module.exports = (env) => {
           },
         ],
       }),
+      new SymlinkWebpackPlugin([
+        { origin: "../packs", symlink: "packs", force: true },
+      ]),
       new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
         // both options are optional
